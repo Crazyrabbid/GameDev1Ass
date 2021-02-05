@@ -3,28 +3,37 @@
 
 #include "EnemyAIController.h"
 #include "Kismet/GameplayStatics.h"
+#include "BehaviorTree/BlackboardComponent.h"
 #include "Engine/TargetPoint.h"
 
 void AEnemyAIController::BeginPlay() {
 	Super::BeginPlay();
+
+	APawn* PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
+
 	UGameplayStatics::GetAllActorsOfClass(GetWorld(), ATargetPoint::StaticClass(), Waypoints);
-	RandomPatrol();
-	/*APawn* PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
-	SetFocus(PlayerPawn);
-	UE_LOG(LogTemp, Warning, TEXT("Override Ai Controller Called"));
-	MoveToActor(PlayerPawn, 10.0f);*/
+	for (AActor* Waypoint : Waypoints) {
+		if (Waypoint->ActorHasTag(TEXT("LookOut"))) LookOutPoint = Waypoint; 
+		else if (Waypoint->ActorHasTag(TEXT("Home"))) HomePoint = Waypoint;
+	}
+	
+	if(BT_EnemyAI != NULL) RunBehaviorTree(BT_EnemyAI);
+	if (HomePoint != NULL) GetBlackboardComponent()->SetValueAsVector(TEXT("HomePosition"), HomePoint->GetActorLocation());
+	if (LookOutPoint != NULL) GetBlackboardComponent()->SetValueAsVector(TEXT("LookOutPosition"), LookOutPoint->GetActorLocation());
+	if (PlayerPawn != NULL) GetBlackboardComponent()->SetValueAsVector(TEXT("PlayerPosition"), PlayerPawn->GetActorLocation());
 }
 
-AActor* AEnemyAIController::ChooseWaypoint() {
-	int index = FMath::RandRange(0, Waypoints.Num() - 1);
-	return Waypoints[index];
+void AEnemyAIController::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+	APawn* PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
+	if (LineOfSightTo(PlayerPawn)) {
+		GetBlackboardComponent()->SetValueAsVector(TEXT("PlayerPosition"), PlayerPawn->GetActorLocation());
+	}
+	else {
+		GetBlackboardComponent()->ClearValue(TEXT("PlayerPosition"));
+	}
+
 }
 
-void AEnemyAIController::RandomPatrol() {
-	MoveToActor(ChooseWaypoint(), 10.0f);
-}
-
-void AEnemyAIController::OnMoveCompleted(FAIRequestID RequestID, const FPathFollowingResult& Result) {
-	Super::OnMoveCompleted(RequestID, Result);
-	RandomPatrol();
-}

@@ -6,23 +6,23 @@
 #include "AIController.h"
 #include "EnemyAIController.generated.h"
 
-/**
- * 
- */
+
 UCLASS()
 class GAMEDEV1ASS_API AEnemyAIController : public AAIController
 {
 	GENERATED_BODY()
 protected:
 	virtual void BeginPlay() override;
-
-public:
-	void OnMoveCompleted(FAIRequestID RequestID, const FPathFollowingResult& Result) override;
+	virtual void Tick(float DeltaTime) override;
 
 private:
 	UPROPERTY()
 		TArray<AActor*> Waypoints;
-
-	AActor* ChooseWaypoint();
-	void RandomPatrol();
+	UPROPERTY(EditAnywhere)
+		UBehaviorTree* BT_EnemyAI;
+public:
+	UPROPERTY()
+		AActor* LookOutPoint;
+	UPROPERTY()
+		AActor* HomePoint;
 };
