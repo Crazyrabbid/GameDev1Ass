@@ -19,8 +19,8 @@ APlayerCharacter::APlayerCharacter()
 	SpringArm->SetRelativeLocation(FVector(0.0f, 0.0f, 20.0f));
 	SpringArm->SetRelativeRotation(FRotator(-15.0f, 0.0f, 0.0f));
 	SpringArm->TargetArmLength = 200.0f;
-	SpringArm->CameraLagSpeed = 5.0f;
-	SpringArm->CameraRotationLagSpeed = 5.0f;
+	SpringArm->CameraLagSpeed = 10.0f;
+	SpringArm->CameraRotationLagSpeed = 10.0f;
 	SpringArm->bEnableCameraLag = true;
 	SpringArm->bEnableCameraRotationLag = true;
 
@@ -52,11 +52,17 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	PlayerInputComponent->BindAxis(TEXT("Strafe"), this, &APlayerCharacter::Strafe);
 	PlayerInputComponent->BindAxis(TEXT("Turn"), this, &APlayerCharacter::Turn);
 	PlayerInputComponent->BindAxis(TEXT("Pitch"), this, &APlayerCharacter::Pitch);
+	PlayerInputComponent->BindAction(TEXT("Jump"), IE_Pressed, this, &APlayerCharacter::JumpCharacter);
 }
 
 void APlayerCharacter::MoveForwards(float axisAmount)
 {
 	AddMovementInput(GetActorForwardVector() * axisAmount);
+}
+
+void APlayerCharacter::JumpCharacter()
+{
+	Jump();
 }
 
 void APlayerCharacter::Strafe(float axisAmount)

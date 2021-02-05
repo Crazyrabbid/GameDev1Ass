@@ -33,6 +33,7 @@ private:
 	UPROPERTY(EditAnywhere) UCameraComponent* Camera;
 	UPROPERTY(EditAnywhere) USpringArmComponent* SpringArm;
 	void MoveForwards(float axisAmount);
+	void JumpCharacter();
 	void Strafe(float axisAmount);
 	void Turn(float axisAmount);
 	void Pitch(float axisAmount);
