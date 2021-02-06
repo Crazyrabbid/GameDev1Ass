@@ -26,14 +26,5 @@ void AEnemyAIController::BeginPlay() {
 void AEnemyAIController::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
-	APawn* PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
-	if (LineOfSightTo(PlayerPawn)) {
-		GetBlackboardComponent()->SetValueAsVector(TEXT("PlayerPosition"), PlayerPawn->GetActorLocation());
-	}
-	else {
-		GetBlackboardComponent()->ClearValue(TEXT("PlayerPosition"));
-	}
-
 }
 
