@@ -3,7 +3,9 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Ball.h"
 #include "GameFramework/Character.h"
+#include "GameDev1AssGameModeBase.h"
 #include "PlayerCharacter.generated.h"
 
 class UCameraComponent;
@@ -29,11 +31,15 @@ public:
 
 	// Called to bind functionality to input
 	//virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	void Fire();
 
 private:
 	UPROPERTY(EditAnywhere) UCameraComponent* Camera;
 	UPROPERTY(EditAnywhere) USpringArmComponent* SpringArm;
-	/*
+	UPROPERTY(EditAnywhere) USceneComponent* ProjectileSpawnPoint;
+	UPROPERTY(EditAnywhere) TSubclassOf<ABall> BallClass;
+	UPROPERTY() AGameDev1AssGameModeBase* GameModeRef;
+ 	/*
 	void MoveForwards(float axisAmount);
 	void JumpCharacter();
 	void Strafe(float axisAmount);

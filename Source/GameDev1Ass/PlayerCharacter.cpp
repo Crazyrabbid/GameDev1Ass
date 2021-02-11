@@ -5,6 +5,7 @@
 #include "Camera/CameraComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "Kismet/GameplayStatics.h"
 #include "CustomMovementComponent.h"
 
 
@@ -32,7 +33,29 @@ APlayerCharacter::APlayerCharacter()
 	Camera->SetupAttachment(SpringArm, USpringArmComponent::SocketName);
 	Camera->SetRelativeLocation(FVector(-400.0f, 0.0f, 350.0f));
 	Camera->SetRelativeRotation(FRotator(-20.0f, 0.0f, 0.0f));
+
+	ProjectileSpawnPoint = CreateDefaultSubobject<USceneComponent>(TEXT("Projectile Spawn Point"));
+	ProjectileSpawnPoint->SetupAttachment(GetMesh());
+	ProjectileSpawnPoint->SetRelativeLocation(FVector(10.0f, 20.0f, 100.0f));
+
+	GameModeRef = Cast<AGameDev1AssGameModeBase>(UGameplayStatics::GetGameMode(GetWorld()));
 }
+
+void APlayerCharacter::Fire() {
+	UE_LOG(LogTemp, Warning, TEXT("Fire Activated"));
+	if (BallClass) {
+		UE_LOG(LogTemp, Warning, TEXT("Fire Activated, Ball Class Exists"));
+		FVector SpawnLocation = ProjectileSpawnPoint->GetComponentLocation();
+		FRotator SpawnRotation = Camera->GetComponentRotation();
+		ABall* TempBall = GetWorld()->SpawnActor<ABall>(BallClass, SpawnLocation, SpawnRotation);
+		GameModeRef = Cast<AGameDev1AssGameModeBase>(UGameplayStatics::GetGameMode(GetWorld()));
+		if (GameModeRef) {
+			UE_LOG(LogTemp, Warning, TEXT("inPlayBall Assigned"));
+			GameModeRef->inPlayBall = TempBall;
+		}
+	}
+}
+
 /*
 // Called when the game starts or when spawned
 void APlayerCharacter::BeginPlay()

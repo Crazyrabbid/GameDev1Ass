@@ -27,9 +27,9 @@ public:
 
 private:
 	UPROPERTY(EditAnywhere)
-		float MovementSpeed = 1000.0f;
+		float MovementSpeed = 2500.0f;
 	UPROPERTY(EditAnywhere)
 		UStaticMeshComponent* BallMesh;
 	UPROPERTY(EditAnywhere)
-	UProjectileMovementComponent* ProjectileMovement;
+		UProjectileMovementComponent* ProjectileMovement;
 };

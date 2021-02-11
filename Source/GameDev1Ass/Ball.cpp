@@ -17,7 +17,7 @@ ABall::ABall()
 
 	ProjectileMovement = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("Projectile Movement"));
 	ProjectileMovement->MaxSpeed = MovementSpeed;
-	ProjectileMovement->InitialSpeed = 0.0f;
+	ProjectileMovement->InitialSpeed = MovementSpeed;
 	InitialLifeSpan = 100.0f;
 }
 
