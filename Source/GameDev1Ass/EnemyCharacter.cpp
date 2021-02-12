@@ -32,3 +32,8 @@ void AEnemyCharacter::Tick(float DeltaTime)
 //
 //}
 
+float AEnemyCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) {
+	health -= DamageAmount;
+	if (health <= 0) Destroy();
+	return DamageAmount;
+}

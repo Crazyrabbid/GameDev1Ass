@@ -5,11 +5,13 @@
 #include "PlayerCharacter.h"
 #include "Components/InputComponent.h"
 #include "Kismet/GameplayStatics.h"
+#include "Perception/PawnSensingComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 
 void ACustomPlayerController::BeginPlay() {
 	Super::BeginPlay();
 	playerCharacter = Cast<APlayerCharacter>(GetPawn());
+	GameModeRef = Cast<AGameDev1AssGameModeBase>(UGameplayStatics::GetGameMode(GetWorld()));
 }
 
 void ACustomPlayerController::SetupInputComponent() {
@@ -23,7 +25,6 @@ void ACustomPlayerController::SetupInputComponent() {
 	InputComponent->BindAction(TEXT("Fire"), IE_Pressed, this, &ACustomPlayerController::Fire);
 	InputComponent->BindAction(TEXT("Fire"), IE_Released, this, &ACustomPlayerController::Fire);
 	InputComponent->BindAction(TEXT("Catch"), IE_Pressed, this, &ACustomPlayerController::Catch);
-	GameModeRef = Cast<AGameDev1AssGameModeBase>(UGameplayStatics::GetGameMode(GetWorld()));
 }
 
 void ACustomPlayerController::JumpCharacter()
@@ -44,7 +45,7 @@ void ACustomPlayerController::Catch() {
 	UE_LOG(LogTemp, Warning, TEXT("Catch Pressed"));
 	if (playerCharacter) {
 		UE_LOG(LogTemp, Warning, TEXT("Catch Pressed, Player Character exists"));
-		//if (playerCharacter->ActorLineTraceSingle())
+		//if (playerCharacter->ActorLineTraceSingle());
 		BallHeld = true;
 		GameModeRef->DeleteBall();
 	}

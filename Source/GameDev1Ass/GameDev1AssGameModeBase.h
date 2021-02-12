@@ -34,6 +34,8 @@ private:
 		void StartGame();
 	UFUNCTION()
 		void GameOver();
+	UFUNCTION()
+		void RoundReset();
 
 	UPROPERTY(EditAnywhere) //Don't Expose after testing
 		int playerTeamScore = 0;

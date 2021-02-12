@@ -11,14 +11,15 @@ void AGameDev1AssGameModeBase::BeginPlay() {
 void AGameDev1AssGameModeBase::PlayerPointScored() {
 	UE_LOG(LogTemp, Warning, TEXT("PlayerPointScored"));
 	playerTeamScore++;
-	if (playerTeamScore > scoreLimit) GameOver();
+	if (playerTeamScore < scoreLimit) RoundReset();
+	else GameOver();
 }
 
 void AGameDev1AssGameModeBase::EnemyPointScored() {
 	UE_LOG(LogTemp, Warning, TEXT("EnemyPointScored"));
 	enemyTeamScore++;
-	if (enemyTeamScore > scoreLimit) GameOver();
-
+	if (enemyTeamScore < scoreLimit) RoundReset();
+	else GameOver();
 }
 
 void AGameDev1AssGameModeBase::DeleteBall() {
@@ -34,6 +35,10 @@ void AGameDev1AssGameModeBase::DeleteBall() {
 void AGameDev1AssGameModeBase::StartGame()
 {
 	UE_LOG(LogTemp, Warning, TEXT("StartGameCalled"));
+}
+
+void AGameDev1AssGameModeBase::RoundReset() {
+	UE_LOG(LogTemp, Warning, TEXT("RoundResetCalled"));
 }
 
 void AGameDev1AssGameModeBase::GameOver()

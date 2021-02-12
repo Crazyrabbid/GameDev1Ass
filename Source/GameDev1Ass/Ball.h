@@ -26,10 +26,15 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 private:
+
+	UFUNCTION() void OnHit(AActor* SelfActor, AActor* OtherActor, FVector NormalImpulse, const FHitResult& Hit);
+
 	UPROPERTY(EditAnywhere)
 		float MovementSpeed = 2500.0f;
 	UPROPERTY(EditAnywhere)
 		UStaticMeshComponent* BallMesh;
 	UPROPERTY(EditAnywhere)
 		UProjectileMovementComponent* ProjectileMovement;
+	UPROPERTY(EditAnywhere)
+		float baseDamage = 100.0f;
 };

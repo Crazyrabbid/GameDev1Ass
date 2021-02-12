@@ -48,6 +48,7 @@ void APlayerCharacter::Fire() {
 		FVector SpawnLocation = ProjectileSpawnPoint->GetComponentLocation();
 		FRotator SpawnRotation = Camera->GetComponentRotation();
 		ABall* TempBall = GetWorld()->SpawnActor<ABall>(BallClass, SpawnLocation, SpawnRotation);
+		TempBall->SetOwner(this);
 		GameModeRef = Cast<AGameDev1AssGameModeBase>(UGameplayStatics::GetGameMode(GetWorld()));
 		if (GameModeRef) {
 			UE_LOG(LogTemp, Warning, TEXT("inPlayBall Assigned"));
