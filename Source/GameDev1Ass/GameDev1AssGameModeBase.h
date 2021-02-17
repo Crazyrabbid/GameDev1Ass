@@ -43,5 +43,9 @@ private:
 		int enemyTeamScore = 0;
 	UPROPERTY(EditAnywhere)
 		int scoreLimit = 3;
-
+	UPROPERTY()
+		TArray<AActor*> Targets;
+	UPROPERTY()
+		AActor* BallSpawn;
+	UPROPERTY(EditAnywhere) TSubclassOf<ABall> BallClass;
 };

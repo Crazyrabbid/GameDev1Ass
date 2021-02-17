@@ -2,6 +2,9 @@
 
 
 #include "GameDev1AssGameModeBase.h"
+#include "Kismet/GameplayStatics.h"
+#include "Engine/TargetPoint.h"
+
 
 void AGameDev1AssGameModeBase::BeginPlay() {
 	Super::BeginPlay();
@@ -35,6 +38,22 @@ void AGameDev1AssGameModeBase::DeleteBall() {
 void AGameDev1AssGameModeBase::StartGame()
 {
 	UE_LOG(LogTemp, Warning, TEXT("StartGameCalled"));
+	if (BallClass) {
+		UE_LOG(LogTemp, Warning, TEXT("Ball Class Exist"));
+		UGameplayStatics::GetAllActorsOfClass(GetWorld(), ATargetPoint::StaticClass(), Targets);
+		for (AActor* Waypoint : Targets) {
+			if (Waypoint->ActorHasTag(TEXT("BallSpawnPoint"))) { 
+				BallSpawn = Waypoint;
+				FVector SpawnLocation = BallSpawn->GetActorLocation();
+				FRotator SpawnRotation = FRotator(90.0f,0.0f,0.0f);
+				ABall* TempBall = GetWorld()->SpawnActor<ABall>(BallClass, SpawnLocation, SpawnRotation);
+				TempBall->SetOwner(this);
+				UE_LOG(LogTemp, Warning, TEXT("inPlayBall Assigned"));
+				inPlayBall = TempBall;
+			}
+		}
+
+	}
 }
 
 void AGameDev1AssGameModeBase::RoundReset() {

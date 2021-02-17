@@ -6,7 +6,6 @@
 #include "Components/StaticMeshComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Kismet/GameplayStatics.h"
-#include "CustomMovementComponent.h"
 
 
 // Sets default values

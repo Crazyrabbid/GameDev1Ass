@@ -39,10 +39,10 @@ void ABall::Tick(float DeltaTime)
 }
 
 void ABall::OnHit(AActor* SelfActor, AActor* OtherActor, FVector NormalImpulse, const FHitResult& Hit) {
-	if (OtherActor->GetClass()->IsChildOf(AEnemyCharacter::StaticClass())) {
+	//if (OtherActor->GetClass()->IsChildOf(AEnemyCharacter::StaticClass())) {
 		AActor* ProjectileOwner = GetOwner();
 		if (!ProjectileOwner) return;
 		UGameplayStatics::ApplyDamage(OtherActor, baseDamage, ProjectileOwner->GetInstigatorController(), this, UDamageType::StaticClass());
 		//Destroy();
-	}
+	//}
 }
