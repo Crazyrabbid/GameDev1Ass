@@ -37,6 +37,13 @@ public:
 	ABall* ball;
 
 private:
+	UFUNCTION(BlueprintPure)
+		float GetHealth();
+	UFUNCTION(BlueprintPure)
+		float GetHealthTotal();
+
+	UPROPERTY(EditAnywhere)
+		float playerHealthMax = 100.0f;
 	UPROPERTY(EditAnywhere)
 		float moveSpeed = 100.0f;
 	UPROPERTY(EditAnywhere)
@@ -45,4 +52,10 @@ private:
 		bool BallHeld = false;
 	UPROPERTY()
 		AGameDev1AssGameModeBase* GameModeRef;
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<UUserWidget> PlayerHUDClass;
+	UPROPERTY()
+		UUserWidget* PlayerHUDCount;
+	UPROPERTY()
+		float playerHealth = 100.0f;
 };

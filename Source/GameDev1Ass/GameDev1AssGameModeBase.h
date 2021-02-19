@@ -33,9 +33,11 @@ private:
 	UFUNCTION()
 		void StartGame();
 	UFUNCTION()
-		void GameOver();
+		void GameOver(bool Win);
 	UFUNCTION()
 		void RoundReset();
+	UFUNCTION()
+		void TimeUp();
 
 	UPROPERTY(EditAnywhere) //Don't Expose after testing
 		int playerTeamScore = 0;
@@ -48,4 +50,9 @@ private:
 	UPROPERTY()
 		AActor* BallSpawn;
 	UPROPERTY(EditAnywhere) TSubclassOf<ABall> BallClass;
+
+	UPROPERTY()
+		FTimerHandle EndMatchTimer;
+	UPROPERTY(EditAnywhere)
+		float MatchDuration = 300.0f;
 };

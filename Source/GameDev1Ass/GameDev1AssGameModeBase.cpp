@@ -15,14 +15,14 @@ void AGameDev1AssGameModeBase::PlayerPointScored() {
 	UE_LOG(LogTemp, Warning, TEXT("PlayerPointScored"));
 	playerTeamScore++;
 	if (playerTeamScore < scoreLimit) RoundReset();
-	else GameOver();
+	else GameOver(true);
 }
 
 void AGameDev1AssGameModeBase::EnemyPointScored() {
 	UE_LOG(LogTemp, Warning, TEXT("EnemyPointScored"));
 	enemyTeamScore++;
 	if (enemyTeamScore < scoreLimit) RoundReset();
-	else GameOver();
+	else GameOver(false);
 }
 
 void AGameDev1AssGameModeBase::DeleteBall() {
@@ -52,15 +52,22 @@ void AGameDev1AssGameModeBase::StartGame()
 				inPlayBall = TempBall;
 			}
 		}
-
 	}
+	GetWorld()->GetTimerManager().SetTimer(EndMatchTimer, this, &AGameDev1AssGameModeBase::TimeUp, MatchDuration, false);
 }
 
 void AGameDev1AssGameModeBase::RoundReset() {
 	UE_LOG(LogTemp, Warning, TEXT("RoundResetCalled"));
 }
 
-void AGameDev1AssGameModeBase::GameOver()
+void AGameDev1AssGameModeBase::TimeUp()
+{
+	UE_LOG(LogTemp, Warning, TEXT("TimeUpCalled"));
+	GameOver(false);
+}
+
+void AGameDev1AssGameModeBase::GameOver(bool win)
 {
 	UE_LOG(LogTemp, Warning, TEXT("GameOverCalled"));
+	UGameplayStatics::OpenLevel(GetWorld(), "EndScreen");
 }

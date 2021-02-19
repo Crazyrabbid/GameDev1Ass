@@ -6,12 +6,16 @@
 #include "Components/InputComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "Perception/PawnSensingComponent.h"
+#include "Blueprint/UserWidget.h"
 #include "GameFramework/CharacterMovementComponent.h"
 
 void ACustomPlayerController::BeginPlay() {
 	Super::BeginPlay();
 	playerCharacter = Cast<APlayerCharacter>(GetPawn());
 	GameModeRef = Cast<AGameDev1AssGameModeBase>(UGameplayStatics::GetGameMode(GetWorld()));
+	PlayerHUDCount = CreateWidget(this, PlayerHUDClass);
+	if (PlayerHUDCount) PlayerHUDCount->AddToViewport();
+	playerHealth = playerHealthMax;
 }
 
 void ACustomPlayerController::SetupInputComponent() {
@@ -34,6 +38,7 @@ void ACustomPlayerController::JumpCharacter()
 
 void ACustomPlayerController::Fire() {
 	UE_LOG(LogTemp, Warning, TEXT("Fire Pressed"));
+	playerHealth--;
 	if (BallHeld) {
 		UE_LOG(LogTemp, Warning, TEXT("Ball Held"));
 		if (playerCharacter) playerCharacter->Fire();
@@ -70,4 +75,14 @@ void ACustomPlayerController::Turn(float axisAmount)
 void ACustomPlayerController::Pitch(float axisAmount)
 {
 	if (playerCharacter) playerCharacter->AddControllerYawInput(axisAmount * rotationSpeed * GetWorld()->DeltaTimeSeconds);
+}
+
+float ACustomPlayerController::GetHealth()
+{
+	return playerHealth;
+}
+
+float ACustomPlayerController::GetHealthTotal()
+{
+	return playerHealthMax;
 }
