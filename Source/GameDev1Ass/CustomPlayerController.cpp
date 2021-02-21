@@ -27,7 +27,6 @@ void ACustomPlayerController::SetupInputComponent() {
 	InputComponent->BindAxis(TEXT("Pitch"), this, &ACustomPlayerController::Pitch);
 	InputComponent->BindAction(TEXT("Jump"), IE_Pressed, this, &ACustomPlayerController::JumpCharacter);
 	InputComponent->BindAction(TEXT("Fire"), IE_Pressed, this, &ACustomPlayerController::Fire);
-	InputComponent->BindAction(TEXT("Fire"), IE_Released, this, &ACustomPlayerController::Fire);
 	InputComponent->BindAction(TEXT("Catch"), IE_Pressed, this, &ACustomPlayerController::Catch);
 }
 
@@ -38,11 +37,28 @@ void ACustomPlayerController::JumpCharacter()
 
 void ACustomPlayerController::Fire() {
 	UE_LOG(LogTemp, Warning, TEXT("Fire Pressed"));
-	playerHealth--;
-	if (BallHeld) {
+	if (ballHeld) {
 		UE_LOG(LogTemp, Warning, TEXT("Ball Held"));
 		if (playerCharacter) playerCharacter->Fire();
-		BallHeld = false;
+		ballHeld = false;
+	}
+	else {
+		FVector cameraLocation;
+		FRotator cameraRotation;
+		GetPlayerViewPoint(cameraLocation, cameraRotation);
+
+		FVector end = cameraLocation + cameraRotation.Vector() * castRange;
+
+		FHitResult Hit;
+		FCollisionQueryParams lineTraceParams;
+
+		lineTraceParams.AddIgnoredActor(playerCharacter);
+		bool bDidHit = GetWorld()->LineTraceSingleByChannel(Hit, cameraLocation, end, ECC_Pawn, lineTraceParams);
+		if (bDidHit && Hit.GetActor() != nullptr) {
+			UE_LOG(LogTemp, Warning, TEXT("Hit something: %s"), *Hit.GetActor()->GetName());
+			UPrimitiveComponent* RootComp = Cast<UPrimitiveComponent>(Hit.GetActor()->GetRootComponent());
+			RootComp->AddImpulse(cameraRotation.Vector() * impulseForce * RootComp->GetMass());
+		}
 	}
 }
 
@@ -51,7 +67,7 @@ void ACustomPlayerController::Catch() {
 	if (playerCharacter) {
 		UE_LOG(LogTemp, Warning, TEXT("Catch Pressed, Player Character exists"));
 		//if (playerCharacter->ActorLineTraceSingle());
-		BallHeld = true;
+		ballHeld = true;
 		GameModeRef->DeleteBall();
 	}
 }

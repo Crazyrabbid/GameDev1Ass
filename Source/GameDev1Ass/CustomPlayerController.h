@@ -48,8 +48,13 @@ private:
 		float moveSpeed = 100.0f;
 	UPROPERTY(EditAnywhere)
 		float rotationSpeed = 500.0f;
+	UPROPERTY(EditAnywhere)
+		float castRange = 10000.0f;
+	UPROPERTY(EditAnywhere)
+		float impulseForce = 500.0f;
 	UPROPERTY(EditAnywhere) //Swap this for vs only after testing
-		bool BallHeld = false;
+		bool ballHeld = false;
+
 	UPROPERTY()
 		AGameDev1AssGameModeBase* GameModeRef;
 	UPROPERTY(EditAnywhere)

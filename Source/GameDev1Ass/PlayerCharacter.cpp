@@ -23,8 +23,8 @@ APlayerCharacter::APlayerCharacter()
 	SpringArm->SetRelativeLocation(FVector(0.0f, 0.0f, 20.0f));
 	SpringArm->SetRelativeRotation(FRotator(-15.0f, 0.0f, 0.0f));
 	SpringArm->TargetArmLength = 200.0f;
-	SpringArm->CameraLagSpeed = 10.0f;
-	SpringArm->CameraRotationLagSpeed = 10.0f;
+	SpringArm->CameraLagSpeed = 20.0f;
+	SpringArm->CameraRotationLagSpeed = 20.0f;
 	SpringArm->bEnableCameraLag = true;
 	SpringArm->bEnableCameraRotationLag = true;
 

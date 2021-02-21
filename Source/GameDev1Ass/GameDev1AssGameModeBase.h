@@ -38,6 +38,8 @@ private:
 		void RoundReset();
 	UFUNCTION()
 		void TimeUp();
+	UFUNCTION(BlueprintPure)
+		FString GetTime();
 
 	UPROPERTY(EditAnywhere) //Don't Expose after testing
 		int playerTeamScore = 0;
@@ -50,7 +52,6 @@ private:
 	UPROPERTY()
 		AActor* BallSpawn;
 	UPROPERTY(EditAnywhere) TSubclassOf<ABall> BallClass;
-
 	UPROPERTY()
 		FTimerHandle EndMatchTimer;
 	UPROPERTY(EditAnywhere)

@@ -57,7 +57,9 @@ void AGameDev1AssGameModeBase::StartGame()
 }
 
 void AGameDev1AssGameModeBase::RoundReset() {
+	GetWorld()->GetTimerManager().PauseTimer(EndMatchTimer);
 	UE_LOG(LogTemp, Warning, TEXT("RoundResetCalled"));
+	GetWorld()->GetTimerManager().UnPauseTimer(EndMatchTimer);
 }
 
 void AGameDev1AssGameModeBase::TimeUp()
@@ -66,8 +68,18 @@ void AGameDev1AssGameModeBase::TimeUp()
 	GameOver(false);
 }
 
+FString AGameDev1AssGameModeBase::GetTime()
+{
+	int timeRemaining = GetWorld()->GetTimerManager().GetTimerRemaining(EndMatchTimer);
+	int minsRemaining = timeRemaining / 60;
+	int secsRemaining = timeRemaining % 60;
+	FString timeDesc = FString::Printf(TEXT("%02d:%02d"), minsRemaining, secsRemaining);
+	return timeDesc;
+}
+
 void AGameDev1AssGameModeBase::GameOver(bool win)
 {
+	if(GetWorld()->GetTimerManager().TimerExists(EndMatchTimer)) GetWorld()->GetTimerManager().ClearTimer(EndMatchTimer);
 	UE_LOG(LogTemp, Warning, TEXT("GameOverCalled"));
 	UGameplayStatics::OpenLevel(GetWorld(), "EndScreen");
 }
