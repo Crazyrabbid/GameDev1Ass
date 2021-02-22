@@ -38,8 +38,16 @@ private:
 		void RoundReset();
 	UFUNCTION()
 		void TimeUp();
+	UFUNCTION()
+		void RoundBeginningTimeUp();
+	UFUNCTION()
+		void GameBeginningTimeUp();
 	UFUNCTION(BlueprintPure)
 		FString GetTime();
+	UFUNCTION(BlueprintPure)
+		float GetBlueScore();
+	UFUNCTION(BlueprintPure)
+		float GetRedScore();
 
 	UPROPERTY(EditAnywhere) //Don't Expose after testing
 		int playerTeamScore = 0;
@@ -51,9 +59,25 @@ private:
 		TArray<AActor*> Targets;
 	UPROPERTY()
 		AActor* BallSpawn;
+	UPROPERTY(EditAnywhere) TSubclassOf<UUserWidget> BlueTeamScoredClass;
+	UPROPERTY(EditAnywhere) TSubclassOf<UUserWidget> RedTeamScoredClass;
+	UPROPERTY()
+		UUserWidget* RedTeamScoredCount;
+	UPROPERTY()
+		UUserWidget* BlueTeamScoredCount;
+	UPROPERTY(EditAnywhere) TSubclassOf<UUserWidget> WarmUpCountdownClass;
+	UPROPERTY()
+		UUserWidget* WarmUpCountdownCount;
+	UPROPERTY(EditAnywhere) TSubclassOf<UUserWidget> MatchTimerClass;
+	UPROPERTY()
+		UUserWidget* MatchTimerCount;
 	UPROPERTY(EditAnywhere) TSubclassOf<ABall> BallClass;
 	UPROPERTY()
 		FTimerHandle EndMatchTimer;
 	UPROPERTY(EditAnywhere)
 		float MatchDuration = 300.0f;
+	UPROPERTY()
+		FTimerHandle RoundBeginningTimer;
+	UPROPERTY(EditAnywhere)
+		float RoundStartDuration = 4.0f;
 };

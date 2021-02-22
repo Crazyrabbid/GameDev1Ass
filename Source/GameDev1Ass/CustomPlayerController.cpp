@@ -13,9 +13,10 @@ void ACustomPlayerController::BeginPlay() {
 	Super::BeginPlay();
 	playerCharacter = Cast<APlayerCharacter>(GetPawn());
 	GameModeRef = Cast<AGameDev1AssGameModeBase>(UGameplayStatics::GetGameMode(GetWorld()));
+	playerHealth = playerHealthMax;
+	gunClipAmmo = gunClipSize;
 	PlayerHUDCount = CreateWidget(this, PlayerHUDClass);
 	if (PlayerHUDCount) PlayerHUDCount->AddToViewport();
-	playerHealth = playerHealthMax;
 }
 
 void ACustomPlayerController::SetupInputComponent() {
@@ -27,6 +28,7 @@ void ACustomPlayerController::SetupInputComponent() {
 	InputComponent->BindAxis(TEXT("Pitch"), this, &ACustomPlayerController::Pitch);
 	InputComponent->BindAction(TEXT("Jump"), IE_Pressed, this, &ACustomPlayerController::JumpCharacter);
 	InputComponent->BindAction(TEXT("Fire"), IE_Pressed, this, &ACustomPlayerController::Fire);
+	InputComponent->BindAction(TEXT("Reload"), IE_Pressed, this, &ACustomPlayerController::Reload);
 	InputComponent->BindAction(TEXT("Catch"), IE_Pressed, this, &ACustomPlayerController::Catch);
 }
 
@@ -37,12 +39,52 @@ void ACustomPlayerController::JumpCharacter()
 
 void ACustomPlayerController::Fire() {
 	UE_LOG(LogTemp, Warning, TEXT("Fire Pressed"));
-	if (ballHeld) {
+	if (bBallHeld) {
 		UE_LOG(LogTemp, Warning, TEXT("Ball Held"));
 		if (playerCharacter) playerCharacter->Fire();
-		ballHeld = false;
+		bBallHeld = false;
 	}
 	else {
+		if (gunClipAmmo > 0) {
+			gunClipAmmo--;
+			FVector cameraLocation;
+			FRotator cameraRotation;
+			GetPlayerViewPoint(cameraLocation, cameraRotation);
+
+			FVector end = cameraLocation + cameraRotation.Vector() * castRange;
+
+			FHitResult Hit;
+			FCollisionQueryParams lineTraceParams;
+
+			lineTraceParams.AddIgnoredActor(playerCharacter);
+			bool bDidHit = GetWorld()->LineTraceSingleByChannel(Hit, cameraLocation, end, ECC_Pawn, lineTraceParams);
+			if (bDidHit && Hit.GetActor() != nullptr) {
+				UE_LOG(LogTemp, Warning, TEXT("Hit something: %s"), *Hit.GetActor()->GetName());
+				if (Hit.GetActor()->FindComponentByClass(UCharacterMovementComponent::StaticClass())) {
+
+				}
+				else {
+					UPrimitiveComponent* RootComp = Cast<UPrimitiveComponent>(Hit.GetActor()->GetRootComponent());
+					RootComp->AddImpulse(cameraRotation.Vector() * impulseForce * RootComp->GetMass());
+				}
+				UGameplayStatics::ApplyDamage(Hit.GetActor(), gunBaseDamage, this, playerCharacter, UDamageType::StaticClass());
+				ADamagePointVisualiser* TempDamageVisualiser = GetWorld()->SpawnActor<ADamagePointVisualiser>(DamagePointClass, Hit.ImpactPoint, cameraRotation);
+			}
+		}
+		else {
+			OutOfAmmoCount = CreateWidget(this, OutOfAmmoClass);
+			if (OutOfAmmoCount) OutOfAmmoCount->AddToViewport();
+		}
+	}
+}
+
+void ACustomPlayerController::Reload() {
+	gunClipAmmo = gunClipSize;
+}
+
+void ACustomPlayerController::Catch() {
+	UE_LOG(LogTemp, Warning, TEXT("Catch Pressed"));
+	if (playerCharacter) {
 		FVector cameraLocation;
 		FRotator cameraRotation;
 		GetPlayerViewPoint(cameraLocation, cameraRotation);
@@ -54,21 +96,11 @@ void ACustomPlayerController::Fire() {
 
 		lineTraceParams.AddIgnoredActor(playerCharacter);
 		bool bDidHit = GetWorld()->LineTraceSingleByChannel(Hit, cameraLocation, end, ECC_Pawn, lineTraceParams);
-		if (bDidHit && Hit.GetActor() != nullptr) {
-			UE_LOG(LogTemp, Warning, TEXT("Hit something: %s"), *Hit.GetActor()->GetName());
-			UPrimitiveComponent* RootComp = Cast<UPrimitiveComponent>(Hit.GetActor()->GetRootComponent());
-			RootComp->AddImpulse(cameraRotation.Vector() * impulseForce * RootComp->GetMass());
-		}
-	}
-}
 
-void ACustomPlayerController::Catch() {
-	UE_LOG(LogTemp, Warning, TEXT("Catch Pressed"));
-	if (playerCharacter) {
-		UE_LOG(LogTemp, Warning, TEXT("Catch Pressed, Player Character exists"));
-		//if (playerCharacter->ActorLineTraceSingle());
-		ballHeld = true;
-		GameModeRef->DeleteBall();
+		if (bDidHit && Hit.GetActor() == GameModeRef->inPlayBall && Hit.Distance < ballPickUpDistance) {
+			bBallHeld = true;
+			GameModeRef->DeleteBall();
+		}
 	}
 }
 
@@ -93,6 +125,11 @@ void ACustomPlayerController::Pitch(float axisAmount)
 	if (playerCharacter) playerCharacter->AddControllerYawInput(axisAmount * rotationSpeed * GetWorld()->DeltaTimeSeconds);
 }
 
+void ACustomPlayerController::GravLift(FVector LaunchVelocity, bool bXYOverride, bool bZOverride)
+{
+	playerCharacter->LaunchCharacter(LaunchVelocity, bXYOverride, bZOverride);
+}
+
 float ACustomPlayerController::GetHealth()
 {
 	return playerHealth;
@@ -101,4 +138,14 @@ float ACustomPlayerController::GetHealth()
 float ACustomPlayerController::GetHealthTotal()
 {
 	return playerHealthMax;
+}
+
+float ACustomPlayerController::GetAmmo()
+{
+	return gunClipAmmo;
+}
+
+float ACustomPlayerController::GetAmmoTotal()
+{
+	return gunClipSize;
 }
