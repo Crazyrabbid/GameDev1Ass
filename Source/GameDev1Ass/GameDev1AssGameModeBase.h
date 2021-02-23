@@ -22,6 +22,8 @@ public:
 		void EnemyPointScored();
 	UFUNCTION()
 		void DeleteBall();
+	UFUNCTION()
+		bool GetPlayAllowed();
 
 	UPROPERTY(EditAnywhere)
 		ABall* inPlayBall;
@@ -80,4 +82,6 @@ private:
 		FTimerHandle RoundBeginningTimer;
 	UPROPERTY(EditAnywhere)
 		float RoundStartDuration = 4.0f;
+	UPROPERTY()
+		bool bPlayAllowed = false;
 };

@@ -34,46 +34,48 @@ void ACustomPlayerController::SetupInputComponent() {
 
 void ACustomPlayerController::JumpCharacter()
 {
-	if (playerCharacter) playerCharacter->Jump();
+	if (playerCharacter && GameModeRef->GetPlayAllowed()) playerCharacter->Jump();
 }
 
 void ACustomPlayerController::Fire() {
 	UE_LOG(LogTemp, Warning, TEXT("Fire Pressed"));
-	if (bBallHeld) {
-		UE_LOG(LogTemp, Warning, TEXT("Ball Held"));
-		if (playerCharacter) playerCharacter->Fire();
-		bBallHeld = false;
-	}
-	else {
-		if (gunClipAmmo > 0) {
-			gunClipAmmo--;
-			FVector cameraLocation;
-			FRotator cameraRotation;
-			GetPlayerViewPoint(cameraLocation, cameraRotation);
-
-			FVector end = cameraLocation + cameraRotation.Vector() * castRange;
-
-			FHitResult Hit;
-			FCollisionQueryParams lineTraceParams;
-
-			lineTraceParams.AddIgnoredActor(playerCharacter);
-			bool bDidHit = GetWorld()->LineTraceSingleByChannel(Hit, cameraLocation, end, ECC_Pawn, lineTraceParams);
-			if (bDidHit && Hit.GetActor() != nullptr) {
-				UE_LOG(LogTemp, Warning, TEXT("Hit something: %s"), *Hit.GetActor()->GetName());
-				if (Hit.GetActor()->FindComponentByClass(UCharacterMovementComponent::StaticClass())) {
-
-				}
-				else {
-					UPrimitiveComponent* RootComp = Cast<UPrimitiveComponent>(Hit.GetActor()->GetRootComponent());
-					RootComp->AddImpulse(cameraRotation.Vector() * impulseForce * RootComp->GetMass());
-				}
-				UGameplayStatics::ApplyDamage(Hit.GetActor(), gunBaseDamage, this, playerCharacter, UDamageType::StaticClass());
-				ADamagePointVisualiser* TempDamageVisualiser = GetWorld()->SpawnActor<ADamagePointVisualiser>(DamagePointClass, Hit.ImpactPoint, cameraRotation);
-			}
+	if (GameModeRef->GetPlayAllowed()) {
+		if (bBallHeld) {
+			UE_LOG(LogTemp, Warning, TEXT("Ball Held"));
+			if (playerCharacter) playerCharacter->Fire();
+			bBallHeld = false;
 		}
 		else {
-			OutOfAmmoCount = CreateWidget(this, OutOfAmmoClass);
-			if (OutOfAmmoCount) OutOfAmmoCount->AddToViewport();
+			if (gunClipAmmo > 0) {
+				gunClipAmmo--;
+				FVector cameraLocation;
+				FRotator cameraRotation;
+				GetPlayerViewPoint(cameraLocation, cameraRotation);
+
+				FVector end = cameraLocation + cameraRotation.Vector() * castRange;
+
+				FHitResult Hit;
+				FCollisionQueryParams lineTraceParams;
+
+				lineTraceParams.AddIgnoredActor(playerCharacter);
+				bool bDidHit = GetWorld()->LineTraceSingleByChannel(Hit, cameraLocation, end, ECC_Pawn, lineTraceParams);
+				if (bDidHit && Hit.GetActor() != nullptr) {
+					UE_LOG(LogTemp, Warning, TEXT("Hit something: %s"), *Hit.GetActor()->GetName());
+					if (Hit.GetActor()->FindComponentByClass(UCharacterMovementComponent::StaticClass())) {
+
+					}
+					else {
+						UPrimitiveComponent* RootComp = Cast<UPrimitiveComponent>(Hit.GetActor()->GetRootComponent());
+						RootComp->AddImpulse(cameraRotation.Vector() * impulseForce * RootComp->GetMass());
+					}
+					UGameplayStatics::ApplyDamage(Hit.GetActor(), gunBaseDamage, this, playerCharacter, UDamageType::StaticClass());
+					ADamagePointVisualiser* TempDamageVisualiser = GetWorld()->SpawnActor<ADamagePointVisualiser>(DamagePointClass, Hit.ImpactPoint, cameraRotation);
+				}
+			}
+			else {
+				OutOfAmmoCount = CreateWidget(this, OutOfAmmoClass);
+				if (OutOfAmmoCount) OutOfAmmoCount->AddToViewport();
+			}
 		}
 	}
 }
@@ -84,7 +86,7 @@ void ACustomPlayerController::Reload() {
 
 void ACustomPlayerController::Catch() {
 	UE_LOG(LogTemp, Warning, TEXT("Catch Pressed"));
-	if (playerCharacter) {
+	if (playerCharacter && GameModeRef->GetPlayAllowed()) {
 		FVector cameraLocation;
 		FRotator cameraRotation;
 		GetPlayerViewPoint(cameraLocation, cameraRotation);
@@ -107,27 +109,27 @@ void ACustomPlayerController::Catch() {
 
 void ACustomPlayerController::MoveForwards(float axisAmount)
 {
-	if (playerCharacter) playerCharacter->AddMovementInput(playerCharacter->GetActorForwardVector() * axisAmount * moveSpeed * GetWorld()->DeltaTimeSeconds);
+	if (playerCharacter && GameModeRef->GetPlayAllowed()) playerCharacter->AddMovementInput(playerCharacter->GetActorForwardVector() * axisAmount * moveSpeed * GetWorld()->DeltaTimeSeconds);
 }
 
 void ACustomPlayerController::Strafe(float axisAmount)
 {
-	if (playerCharacter) playerCharacter->AddMovementInput(playerCharacter->GetActorRightVector() * axisAmount * moveSpeed * GetWorld()->DeltaTimeSeconds);
+	if (playerCharacter && GameModeRef->GetPlayAllowed()) playerCharacter->AddMovementInput(playerCharacter->GetActorRightVector() * axisAmount * moveSpeed * GetWorld()->DeltaTimeSeconds);
 }
 
 void ACustomPlayerController::Turn(float axisAmount)
 {
-	if (playerCharacter) playerCharacter->AddControllerPitchInput(axisAmount * rotationSpeed * GetWorld()->DeltaTimeSeconds);
+	if (playerCharacter && GameModeRef->GetPlayAllowed()) playerCharacter->AddControllerPitchInput(axisAmount * rotationSpeed * GetWorld()->DeltaTimeSeconds);
 }
 
 void ACustomPlayerController::Pitch(float axisAmount)
 {
-	if (playerCharacter) playerCharacter->AddControllerYawInput(axisAmount * rotationSpeed * GetWorld()->DeltaTimeSeconds);
+	if (playerCharacter && GameModeRef->GetPlayAllowed()) playerCharacter->AddControllerYawInput(axisAmount * rotationSpeed * GetWorld()->DeltaTimeSeconds);
 }
 
 void ACustomPlayerController::GravLift(FVector LaunchVelocity, bool bXYOverride, bool bZOverride)
 {
-	playerCharacter->LaunchCharacter(LaunchVelocity, bXYOverride, bZOverride);
+	if (playerCharacter && GameModeRef->GetPlayAllowed()) playerCharacter->LaunchCharacter(LaunchVelocity, bXYOverride, bZOverride);
 }
 
 float ACustomPlayerController::GetHealth()

@@ -39,6 +39,11 @@ void AGameDev1AssGameModeBase::DeleteBall() {
 	}
 }
 
+bool AGameDev1AssGameModeBase::GetPlayAllowed()
+{
+	return bPlayAllowed;
+}
+
 
 void AGameDev1AssGameModeBase::StartGame()
 {
@@ -58,6 +63,7 @@ void AGameDev1AssGameModeBase::StartGame()
 			}
 		}
 	}
+	bPlayAllowed = false;
 	GetWorld()->GetTimerManager().SetTimer(RoundBeginningTimer, this, &AGameDev1AssGameModeBase::GameBeginningTimeUp, RoundStartDuration, false);
 	WarmUpCountdownCount = CreateWidget(GetWorld(), WarmUpCountdownClass);
 	if (WarmUpCountdownCount) WarmUpCountdownCount->AddToViewport();
@@ -65,7 +71,19 @@ void AGameDev1AssGameModeBase::StartGame()
 
 void AGameDev1AssGameModeBase::RoundReset() {
 	GetWorld()->GetTimerManager().PauseTimer(EndMatchTimer);
+	bPlayAllowed = false;
 	UE_LOG(LogTemp, Warning, TEXT("RoundResetCalled"));
+	for (AActor* Waypoint : Targets) {
+		if (Waypoint->ActorHasTag(TEXT("BallSpawnPoint"))) {
+			BallSpawn = Waypoint;
+			FVector SpawnLocation = BallSpawn->GetActorLocation();
+			FRotator SpawnRotation = FRotator(90.0f, 0.0f, 0.0f);
+			ABall* TempBall = GetWorld()->SpawnActor<ABall>(BallClass, SpawnLocation, SpawnRotation);
+			TempBall->SetOwner(this);
+			UE_LOG(LogTemp, Warning, TEXT("inPlayBall Assigned"));
+			inPlayBall = TempBall;
+		}
+	}
 	GetWorld()->GetTimerManager().SetTimer(RoundBeginningTimer, this, &AGameDev1AssGameModeBase::RoundBeginningTimeUp, RoundStartDuration, false);
 	WarmUpCountdownCount = CreateWidget(GetWorld(), WarmUpCountdownClass);
 	if (WarmUpCountdownCount) WarmUpCountdownCount->AddToViewport();
@@ -74,17 +92,20 @@ void AGameDev1AssGameModeBase::RoundReset() {
 void AGameDev1AssGameModeBase::TimeUp()
 {
 	UE_LOG(LogTemp, Warning, TEXT("TimeUpCalled"));
+	bPlayAllowed = false;
 	GameOver(false);
 }
 
 void AGameDev1AssGameModeBase::RoundBeginningTimeUp()
 {
 	GetWorld()->GetTimerManager().UnPauseTimer(EndMatchTimer);
+	bPlayAllowed = true;
 }
 
 void AGameDev1AssGameModeBase::GameBeginningTimeUp()
 {
 	MatchTimerCount = CreateWidget(GetWorld(), MatchTimerClass);
+	bPlayAllowed = true;
 	if (MatchTimerCount) MatchTimerCount->AddToViewport();
 	GetWorld()->GetTimerManager().SetTimer(EndMatchTimer, this, &AGameDev1AssGameModeBase::TimeUp, MatchDuration, false);
 }
@@ -111,6 +132,7 @@ float AGameDev1AssGameModeBase::GetRedScore()
 void AGameDev1AssGameModeBase::GameOver(bool win)
 {
 	if(GetWorld()->GetTimerManager().TimerExists(EndMatchTimer)) GetWorld()->GetTimerManager().ClearTimer(EndMatchTimer);
+	bPlayAllowed = false;
 	UE_LOG(LogTemp, Warning, TEXT("GameOverCalled"));
 	UGameplayStatics::OpenLevel(GetWorld(), "EndScreen");
 }
