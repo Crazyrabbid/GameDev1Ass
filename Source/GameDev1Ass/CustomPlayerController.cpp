@@ -17,6 +17,7 @@ void ACustomPlayerController::BeginPlay() {
 	gunClipAmmo = gunClipSize;
 	PlayerHUDCount = CreateWidget(this, PlayerHUDClass);
 	if (PlayerHUDCount) PlayerHUDCount->AddToViewport();
+
 }
 
 void ACustomPlayerController::SetupInputComponent() {

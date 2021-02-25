@@ -14,4 +14,12 @@ class GAMEDEV1ASS_API AStartMenuGameMode : public AGameModeBase
 {
 	GENERATED_BODY()
 	
+protected:
+	virtual void BeginPlay() override;
+
+private:
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<UUserWidget> MainMenuClass;
+	UPROPERTY()
+		UUserWidget* MainMenuCount;
 };

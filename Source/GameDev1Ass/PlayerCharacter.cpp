@@ -3,9 +3,10 @@
 
 #include "PlayerCharacter.h"
 #include "Camera/CameraComponent.h"
+#include "Kismet/GameplayStatics.h"
 #include "Components/StaticMeshComponent.h"
 #include "GameFramework/SpringArmComponent.h"
-#include "Kismet/GameplayStatics.h"
+#include "Components/SceneCaptureComponent2D.h"
 
 
 // Sets default values
@@ -15,8 +16,6 @@ APlayerCharacter::APlayerCharacter()
 	PrimaryActorTick.bCanEverTick = false;
 
 	AutoPossessPlayer = EAutoReceiveInput::Player0;
-
-	//GetMesh()->SetSimulatePhysics(true);
 
 	SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("Spring Arm"));
 	SpringArm->SetupAttachment(GetMesh());
@@ -36,6 +35,11 @@ APlayerCharacter::APlayerCharacter()
 	ProjectileSpawnPoint = CreateDefaultSubobject<USceneComponent>(TEXT("Projectile Spawn Point"));
 	ProjectileSpawnPoint->SetupAttachment(GetMesh());
 	ProjectileSpawnPoint->SetRelativeLocation(FVector(10.0f, 20.0f, 100.0f));
+
+	MapArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("Map Arm"));
+	MapArm->SetupAttachment(GetMesh());
+	MapArm->SetRelativeLocation(FVector(0.0f, 0.0f, 20.0f));
+	MapArm->SetRelativeRotation(FRotator(-90.0f, 0.0f, -90.0f));
 
 	GameModeRef = Cast<AGameDev1AssGameModeBase>(UGameplayStatics::GetGameMode(GetWorld()));
 }

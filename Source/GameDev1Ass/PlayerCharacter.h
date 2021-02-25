@@ -10,6 +10,7 @@
 
 class UCameraComponent;
 class USpringArmComponent;
+class USceneCaptureComponent;
 
 UCLASS()
 class GAMEDEV1ASS_API APlayerCharacter : public ACharacter
@@ -35,7 +36,9 @@ public:
 
 private:
 	UPROPERTY(EditAnywhere) UCameraComponent* Camera;
+	UPROPERTY(EditAnywhere) USceneCaptureComponent2D* MapCapture;
 	UPROPERTY(EditAnywhere) USpringArmComponent* SpringArm;
+	UPROPERTY(EditAnywhere) USpringArmComponent* MapArm;
 	UPROPERTY(EditAnywhere) USceneComponent* ProjectileSpawnPoint;
 	UPROPERTY(EditAnywhere) TSubclassOf<ABall> BallClass;
 	UPROPERTY() AGameDev1AssGameModeBase* GameModeRef;
