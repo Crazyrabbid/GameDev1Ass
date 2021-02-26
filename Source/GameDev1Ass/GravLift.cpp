@@ -1,9 +1,9 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
+#include "GravLift.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "CustomPlayerController.h"
-#include "GravLift.h"
 
 // Sets default values
 AGravLift::AGravLift()

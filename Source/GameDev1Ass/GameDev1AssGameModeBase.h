@@ -4,8 +4,13 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
+#include "CustomPlayerController.h"
+#include "EnemyCharacter.h"
+#include "EnemyAIController.h"
+#include "PlayerCharacter.h"
 #include "Ball.h"
 #include "GameDev1AssGameModeBase.generated.h"
+
 
 /**
  * 
@@ -41,6 +46,10 @@ private:
 	UFUNCTION()
 		void TimeUp();
 	UFUNCTION()
+		void RoundBeginSpawning();
+	UFUNCTION()
+		void RoundEndRemovals();
+	UFUNCTION()
 		void RoundBeginningTimeUp();
 	UFUNCTION()
 		void GameBeginningTimeUp();
@@ -51,37 +60,35 @@ private:
 	UFUNCTION(BlueprintPure)
 		float GetRedScore();
 
-	UPROPERTY(EditAnywhere) //Don't Expose after testing
-		int playerTeamScore = 0;
-	UPROPERTY(EditAnywhere) //Don't Expose after testing
-		int enemyTeamScore = 0;
-	UPROPERTY(EditAnywhere)
-		int scoreLimit = 3;
-	UPROPERTY()
-		TArray<AActor*> Targets;
-	UPROPERTY()
-		AActor* BallSpawn;
+	UPROPERTY(EditAnywhere) int scoreLimit = 3;
+	UPROPERTY() int playerTeamScore = 0;
+	UPROPERTY() int enemyTeamScore = 0;
+
+	UPROPERTY() TArray<AActor*> Targets;
+	UPROPERTY() AActor* BallSpawn;
+	UPROPERTY() AActor* PlayerSpawn;
+	UPROPERTY() TArray<AActor*> EnemySpawns;
+
 	UPROPERTY(EditAnywhere) TSubclassOf<UUserWidget> BlueTeamScoredClass;
+	UPROPERTY() UUserWidget* BlueTeamScoredCount;
 	UPROPERTY(EditAnywhere) TSubclassOf<UUserWidget> RedTeamScoredClass;
-	UPROPERTY()
-		UUserWidget* RedTeamScoredCount;
-	UPROPERTY()
-		UUserWidget* BlueTeamScoredCount;
+	UPROPERTY() UUserWidget* RedTeamScoredCount;
 	UPROPERTY(EditAnywhere) TSubclassOf<UUserWidget> WarmUpCountdownClass;
-	UPROPERTY()
-		UUserWidget* WarmUpCountdownCount;
+	UPROPERTY() UUserWidget* WarmUpCountdownCount;
 	UPROPERTY(EditAnywhere) TSubclassOf<UUserWidget> MatchTimerClass;
-	UPROPERTY()
-		UUserWidget* MatchTimerCount;
+	UPROPERTY() UUserWidget* MatchTimerCount;
+
 	UPROPERTY(EditAnywhere) TSubclassOf<ABall> BallClass;
-	UPROPERTY()
-		FTimerHandle EndMatchTimer;
-	UPROPERTY(EditAnywhere)
-		float MatchDuration = 300.0f;
-	UPROPERTY()
-		FTimerHandle RoundBeginningTimer;
-	UPROPERTY(EditAnywhere)
-		float RoundStartDuration = 4.0f;
-	UPROPERTY()
-		bool bPlayAllowed = false;
+	UPROPERTY(EditAnywhere) TSubclassOf <AEnemyCharacter> EnemyClass;
+	UPROPERTY(EditAnywhere) TSubclassOf <APlayerCharacter> PlayerClass;
+	UPROPERTY() AEnemyAIController* EnemyAIControllerRef;
+	UPROPERTY() ACustomPlayerController* PlayerControllerRef;
+
+
+	UPROPERTY() FTimerHandle EndMatchTimer;
+	UPROPERTY(EditAnywhere) float MatchDuration = 300.0f;
+	UPROPERTY() FTimerHandle RoundBeginningTimer;
+	UPROPERTY(EditAnywhere) float RoundStartDuration = 4.0f;
+
+	UPROPERTY() bool bPlayAllowed = false;
 };

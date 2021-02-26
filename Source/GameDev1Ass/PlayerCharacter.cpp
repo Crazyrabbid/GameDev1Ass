@@ -3,6 +3,7 @@
 
 #include "PlayerCharacter.h"
 #include "Camera/CameraComponent.h"
+#include "GameDev1AssGameModeBase.h"
 #include "Kismet/GameplayStatics.h"
 #include "Components/StaticMeshComponent.h"
 #include "GameFramework/SpringArmComponent.h"
@@ -40,6 +41,9 @@ APlayerCharacter::APlayerCharacter()
 	MapArm->SetupAttachment(GetMesh());
 	MapArm->SetRelativeLocation(FVector(0.0f, 0.0f, 20.0f));
 	MapArm->SetRelativeRotation(FRotator(-90.0f, 0.0f, -90.0f));
+
+	MapCapture = CreateDefaultSubobject<USceneCaptureComponent2D>(TEXT("Map Camera"));
+	MapCapture->SetupAttachment(MapArm);
 
 	GameModeRef = Cast<AGameDev1AssGameModeBase>(UGameplayStatics::GetGameMode(GetWorld()));
 }

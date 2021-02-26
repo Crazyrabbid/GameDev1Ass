@@ -6,9 +6,9 @@
 #include "GameFramework/PlayerController.h"
 #include "DamagePointVisualiser.h"
 #include "PlayerCharacter.h"
-#include "GameDev1AssGameModeBase.h"
 #include "CustomPlayerController.generated.h"
 
+class AGameDev1AssGameModeBase;
 
 /**
  * 
@@ -44,6 +44,8 @@ public:
 		void Pitch(float axisAmount);
 	UFUNCTION()
 		void GravLift(FVector LaunchVelocity, bool bXYOverride, bool bZOverride);
+	UFUNCTION()
+		void RecastPlayerCharacter();
 
 	UPROPERTY()
 		APlayerCharacter* playerCharacter;
@@ -59,7 +61,6 @@ private:
 		float GetAmmo();
 	UFUNCTION(BlueprintPure)
 		float GetAmmoTotal();
-
 
 	UPROPERTY(EditAnywhere)
 		float playerHealthMax = 100.0f;
@@ -81,7 +82,7 @@ private:
 		int gunClipSize = 16;
 	UPROPERTY()
 		int gunClipAmmo = 16;
-	UPROPERTY(EditAnywhere) //Swap this for vs only after testing
+	UPROPERTY() //Swap this for vs only after testing
 		bool bBallHeld = false;
 
 	UPROPERTY()
@@ -95,4 +96,8 @@ private:
 		UUserWidget* PlayerHUDCount;
 	UPROPERTY()
 		UUserWidget* OutOfAmmoCount;
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<UUserWidget> MiniMapClass;
+	UPROPERTY()
+		UUserWidget* MiniMapCount;
 };

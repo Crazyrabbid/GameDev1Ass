@@ -48,20 +48,22 @@ bool AGameDev1AssGameModeBase::GetPlayAllowed()
 void AGameDev1AssGameModeBase::StartGame()
 {
 	UE_LOG(LogTemp, Warning, TEXT("StartGameCalled"));
-	if (BallClass) {
+	PlayerControllerRef = Cast<ACustomPlayerController>(UGameplayStatics::GetPlayerController(GetWorld(), 0));
+	if (BallClass && EnemyClass && PlayerClass) {
 		UE_LOG(LogTemp, Warning, TEXT("Ball Class Exist"));
 		UGameplayStatics::GetAllActorsOfClass(GetWorld(), ATargetPoint::StaticClass(), Targets);
 		for (AActor* Waypoint : Targets) {
 			if (Waypoint->ActorHasTag(TEXT("BallSpawnPoint"))) { 
 				BallSpawn = Waypoint;
-				FVector SpawnLocation = BallSpawn->GetActorLocation();
-				FRotator SpawnRotation = FRotator(90.0f,0.0f,0.0f);
-				ABall* TempBall = GetWorld()->SpawnActor<ABall>(BallClass, SpawnLocation, SpawnRotation);
-				TempBall->SetOwner(this);
-				UE_LOG(LogTemp, Warning, TEXT("inPlayBall Assigned"));
-				inPlayBall = TempBall;
+			}
+			else if (Waypoint->ActorHasTag(TEXT("RedSpawn"))) {
+				EnemySpawns.Emplace(Waypoint);
+			}
+			else if (Waypoint->ActorHasTag(TEXT("PlayerSpawn"))) {
+				PlayerSpawn = Waypoint;
 			}
 		}
+		RoundBeginSpawning();
 	}
 	bPlayAllowed = false;
 	GetWorld()->GetTimerManager().SetTimer(RoundBeginningTimer, this, &AGameDev1AssGameModeBase::GameBeginningTimeUp, RoundStartDuration, false);
@@ -69,21 +71,54 @@ void AGameDev1AssGameModeBase::StartGame()
 	if (WarmUpCountdownCount) WarmUpCountdownCount->AddToViewport();
 }
 
+void AGameDev1AssGameModeBase::RoundBeginSpawning()
+{
+	if (BallSpawn) {
+		FVector SpawnLocation = BallSpawn->GetActorLocation();
+		FRotator SpawnRotation = FRotator(90.0f,0.0f,0.0f);
+		ABall* TempBall = GetWorld()->SpawnActor<ABall>(BallClass, SpawnLocation, SpawnRotation);
+		TempBall->SetOwner(this);
+		inPlayBall = TempBall;
+	}
+	
+	if (EnemySpawns.Num() != 0) {
+		for (AActor* SpawnPoint : EnemySpawns) {
+			FVector SpawnLocation = SpawnPoint->GetActorLocation();
+			FRotator SpawnRotation = SpawnPoint->GetActorRotation();
+			AEnemyCharacter* TempEnemy = GetWorld()->SpawnActor<AEnemyCharacter>(EnemyClass, SpawnLocation, SpawnRotation);
+			//EnemyAIControllerRef->Possess(TempEnemy);
+		}
+	}
+
+	if (PlayerSpawn) {
+		FVector SpawnLocation = PlayerSpawn->GetActorLocation();
+		FRotator SpawnRotation = PlayerSpawn->GetActorRotation();
+		APlayerCharacter* TempPlayer = GetWorld()->SpawnActor<APlayerCharacter>(PlayerClass, SpawnLocation, SpawnRotation);
+		TempPlayer->SetOwner(this);
+	}
+}
+
+void AGameDev1AssGameModeBase::RoundEndRemovals()
+{
+	DeleteBall();
+	UGameplayStatics::GetAllActorsOfClass(GetWorld(), APlayerCharacter::StaticClass(), Targets);
+	for (AActor* player : Targets) {
+		player->Destroy();
+	}
+	UGameplayStatics::GetAllActorsOfClass(GetWorld(), AEnemyCharacter::StaticClass(), Targets);
+	for (AActor* Enemy : Targets) {
+		Enemy->Destroy();
+	}
+}
+
 void AGameDev1AssGameModeBase::RoundReset() {
 	GetWorld()->GetTimerManager().PauseTimer(EndMatchTimer);
 	bPlayAllowed = false;
+	RoundEndRemovals();
 	UE_LOG(LogTemp, Warning, TEXT("RoundResetCalled"));
-	for (AActor* Waypoint : Targets) {
-		if (Waypoint->ActorHasTag(TEXT("BallSpawnPoint"))) {
-			BallSpawn = Waypoint;
-			FVector SpawnLocation = BallSpawn->GetActorLocation();
-			FRotator SpawnRotation = FRotator(90.0f, 0.0f, 0.0f);
-			ABall* TempBall = GetWorld()->SpawnActor<ABall>(BallClass, SpawnLocation, SpawnRotation);
-			TempBall->SetOwner(this);
-			UE_LOG(LogTemp, Warning, TEXT("inPlayBall Assigned"));
-			inPlayBall = TempBall;
-		}
-	}
+	RoundBeginSpawning();
+	PlayerControllerRef->RecastPlayerCharacter();
+
 	GetWorld()->GetTimerManager().SetTimer(RoundBeginningTimer, this, &AGameDev1AssGameModeBase::RoundBeginningTimeUp, RoundStartDuration, false);
 	WarmUpCountdownCount = CreateWidget(GetWorld(), WarmUpCountdownClass);
 	if (WarmUpCountdownCount) WarmUpCountdownCount->AddToViewport();
@@ -100,6 +135,7 @@ void AGameDev1AssGameModeBase::RoundBeginningTimeUp()
 {
 	GetWorld()->GetTimerManager().UnPauseTimer(EndMatchTimer);
 	bPlayAllowed = true;
+	UE_LOG(LogTemp, Warning, TEXT("Play allowed value %s"), bPlayAllowed ? TEXT("true") : TEXT("false"));
 }
 
 void AGameDev1AssGameModeBase::GameBeginningTimeUp()

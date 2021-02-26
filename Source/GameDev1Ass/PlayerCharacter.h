@@ -5,12 +5,12 @@
 #include "CoreMinimal.h"
 #include "Ball.h"
 #include "GameFramework/Character.h"
-#include "GameDev1AssGameModeBase.h"
 #include "PlayerCharacter.generated.h"
 
 class UCameraComponent;
 class USpringArmComponent;
-class USceneCaptureComponent;
+class USceneCaptureComponent2D;
+class AGameDev1AssGameModeBase;
 
 UCLASS()
 class GAMEDEV1ASS_API APlayerCharacter : public ACharacter

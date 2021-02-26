@@ -3,6 +3,7 @@
 
 #include "CustomPlayerController.h"
 #include "PlayerCharacter.h"
+#include "GameDev1AssGameModeBase.h"
 #include "Components/InputComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "Perception/PawnSensingComponent.h"
@@ -17,6 +18,8 @@ void ACustomPlayerController::BeginPlay() {
 	gunClipAmmo = gunClipSize;
 	PlayerHUDCount = CreateWidget(this, PlayerHUDClass);
 	if (PlayerHUDCount) PlayerHUDCount->AddToViewport();
+	MiniMapCount = CreateWidget(GetWorld(), MiniMapClass);
+	if (MiniMapCount) MiniMapCount->AddToViewport();
 
 }
 
@@ -71,6 +74,7 @@ void ACustomPlayerController::Fire() {
 					}
 					UGameplayStatics::ApplyDamage(Hit.GetActor(), gunBaseDamage, this, playerCharacter, UDamageType::StaticClass());
 					ADamagePointVisualiser* TempDamageVisualiser = GetWorld()->SpawnActor<ADamagePointVisualiser>(DamagePointClass, Hit.ImpactPoint, cameraRotation);
+					TempDamageVisualiser->SetOwner(this);
 				}
 			}
 			else {
@@ -102,6 +106,7 @@ void ACustomPlayerController::Catch() {
 
 		if (bDidHit && Hit.GetActor() == GameModeRef->inPlayBall && Hit.Distance < ballPickUpDistance) {
 			bBallHeld = true;
+			UE_LOG(LogTemp, Warning, TEXT("Ball Held value %s"), bBallHeld? TEXT("true") : TEXT("false"));
 			GameModeRef->DeleteBall();
 		}
 	}
@@ -151,4 +156,9 @@ float ACustomPlayerController::GetAmmo()
 float ACustomPlayerController::GetAmmoTotal()
 {
 	return gunClipSize;
+}
+
+void ACustomPlayerController::RecastPlayerCharacter()
+{
+	playerCharacter = Cast<APlayerCharacter>(GetPawn());
 }

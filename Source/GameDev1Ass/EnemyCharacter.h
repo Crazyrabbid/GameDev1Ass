@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "EnemyAIController.h"
 #include "EnemyCharacter.generated.h"
 
 UCLASS()
@@ -26,8 +27,8 @@ public:
 private:
 	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
 
-	UPROPERTY(EditAnywhere)
-		float health = 100.0f;
+	UPROPERTY(EditAnywhere) float health = 100.0f;
+
 	// Called to bind functionality to input
 	//virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
