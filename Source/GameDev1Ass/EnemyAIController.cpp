@@ -6,7 +6,7 @@
 #include "BehaviorTree/BlackboardComponent.h"
 #include "Engine/TargetPoint.h"
 
-void AEnemyAIController::OnPossess(APawn* InPawn) {
+void AEnemyAIController::OnPossess(APawn* InPawn){
 	Super::OnPossess(InPawn);
 
 	APawn* PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);

@@ -2,10 +2,12 @@
 
 
 #include "StartMenuGameMode.h"
+#include "Kismet/GameplayStatics.h"
 #include "Blueprint/UserWidget.h"
 
 void AStartMenuGameMode::BeginPlay() {
 	Super::BeginPlay();
+	UGameplayStatics::PlaySound2D(GetWorld(), GameBackgroundMusic, BackgroundMusicVolume, 1.0f, 0.0f);
 	MainMenuCount = CreateWidget(GetWorld(), MainMenuClass);
 	if (MainMenuCount) MainMenuCount->AddToViewport();
 }

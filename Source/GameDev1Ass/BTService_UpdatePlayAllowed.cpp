@@ -7,7 +7,8 @@
 
 void UBTService_UpdatePlayAllowed::TickNode(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds) {
 	Super::TickNode(OwnerComp, NodeMemory, DeltaSeconds);
-	GameModeRef = Cast<AGameDev1AssGameModeBase>(UGameplayStatics::GetGameMode(GetWorld()));
-
-	OwnerComp.GetBlackboardComponent()->SetValueAsBool(GetSelectedBlackboardKey(), GameModeRef->GetPlayAllowed());
+	if (GetWorld()->GetName() == (TEXT("ArenaLevel"))|| GetWorld()->GetName() == (TEXT("DevMap"))) {
+		GameModeRef = Cast<AGameDev1AssGameModeBase>(UGameplayStatics::GetGameMode(GetWorld()));
+		OwnerComp.GetBlackboardComponent()->SetValueAsBool(GetSelectedBlackboardKey(), GameModeRef->GetPlayAllowed());
+	}
 }

@@ -15,8 +15,9 @@ AEnemyCharacter::AEnemyCharacter()
 void AEnemyCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-	AutoPossessPlayer = EAutoReceiveInput::Disabled;
-	AutoPossessAI = EAutoPossessAI::PlacedInWorldOrSpawned;
+	AIControllerClass = AEnemyAIController::StaticClass();
+	SpawnDefaultController();
+	DisableComponentsSimulatePhysics();
 }
 
 // Called every frame

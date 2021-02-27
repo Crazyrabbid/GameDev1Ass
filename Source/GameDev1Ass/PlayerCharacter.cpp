@@ -64,6 +64,10 @@ void APlayerCharacter::Fire() {
 	}
 }
 
+float APlayerCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) {
+	GetController()->TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
+	return DamageAmount;
+}
 /*
 // Called when the game starts or when spawned
 void APlayerCharacter::BeginPlay()

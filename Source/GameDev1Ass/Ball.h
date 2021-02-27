@@ -37,4 +37,6 @@ private:
 		UProjectileMovementComponent* ProjectileMovement;
 	UPROPERTY(EditAnywhere)
 		float baseDamage = 100.0f;
+	UPROPERTY(EditAnywhere) USoundBase* BounceSoundEffect;
+	UPROPERTY(EditAnywhere) float BounceSoundVolume = 1.0f;
 };

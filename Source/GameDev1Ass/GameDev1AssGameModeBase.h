@@ -60,6 +60,7 @@ private:
 	UFUNCTION(BlueprintPure)
 		float GetRedScore();
 
+
 	UPROPERTY(EditAnywhere) int scoreLimit = 3;
 	UPROPERTY() int playerTeamScore = 0;
 	UPROPERTY() int enemyTeamScore = 0;
@@ -81,6 +82,8 @@ private:
 	UPROPERTY(EditAnywhere) TSubclassOf<ABall> BallClass;
 	UPROPERTY(EditAnywhere) TSubclassOf <AEnemyCharacter> EnemyClass;
 	UPROPERTY(EditAnywhere) TSubclassOf <APlayerCharacter> PlayerClass;
+	UPROPERTY(EditAnywhere) USoundBase* GameBackgroundMusic;
+	UPROPERTY(EditAnywhere) float BackgroundMusicVolume = 1.0f;
 	UPROPERTY() AEnemyAIController* EnemyAIControllerRef;
 	UPROPERTY() ACustomPlayerController* PlayerControllerRef;
 

@@ -19,3 +19,4 @@ void UBTService_LineOfSightToPlayer::TickNode(UBehaviorTreeComponent& OwnerComp,
 		OwnerComp.GetBlackboardComponent()->ClearValue(GetSelectedBlackboardKey());
 	}
 }
+

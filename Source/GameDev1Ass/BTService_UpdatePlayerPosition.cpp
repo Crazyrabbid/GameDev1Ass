@@ -9,5 +9,10 @@ void UBTService_UpdatePlayerPosition::TickNode(UBehaviorTreeComponent& OwnerComp
 	Super::TickNode(OwnerComp, NodeMemory, DeltaSeconds);
 
 	APawn* PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
-	OwnerComp.GetBlackboardComponent()->SetValueAsVector(GetSelectedBlackboardKey(), PlayerPawn->GetActorLocation());
+	if (PlayerPawn) {
+		OwnerComp.GetBlackboardComponent()->SetValueAsVector(GetSelectedBlackboardKey(), PlayerPawn->GetActorLocation());
+	}
+	else {
+		OwnerComp.GetBlackboardComponent()->ClearValue(GetSelectedBlackboardKey());
+	}
 }

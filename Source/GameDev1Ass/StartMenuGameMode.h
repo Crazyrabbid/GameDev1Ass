@@ -22,4 +22,6 @@ private:
 		TSubclassOf<UUserWidget> MainMenuClass;
 	UPROPERTY()
 		UUserWidget* MainMenuCount;
+	UPROPERTY(EditAnywhere) float BackgroundMusicVolume = 1.0f;
+	UPROPERTY(EditAnywhere) USoundBase* GameBackgroundMusic;
 };

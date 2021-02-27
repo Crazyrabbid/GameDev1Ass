@@ -35,6 +35,8 @@ public:
 	void Fire();
 
 private:
+	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
+
 	UPROPERTY(EditAnywhere) UCameraComponent* Camera;
 	UPROPERTY(EditAnywhere) USceneCaptureComponent2D* MapCapture;
 	UPROPERTY(EditAnywhere) USpringArmComponent* SpringArm;

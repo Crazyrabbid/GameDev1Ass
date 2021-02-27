@@ -13,7 +13,12 @@
 void ACustomPlayerController::BeginPlay() {
 	Super::BeginPlay();
 	playerCharacter = Cast<APlayerCharacter>(GetPawn());
-	GameModeRef = Cast<AGameDev1AssGameModeBase>(UGameplayStatics::GetGameMode(GetWorld()));
+	if (GetWorld()->GetName() == (TEXT("ArenaLevel"))) {
+		GameModeRef = Cast<AGameDev1AssGameModeBase>(UGameplayStatics::GetGameMode(GetWorld()));
+	}
+	else if (GetWorld()->GetName() == (TEXT("EndScreen"))) {
+		GameModeRef = nullptr;
+	}
 	playerHealth = playerHealthMax;
 	gunClipAmmo = gunClipSize;
 	PlayerHUDCount = CreateWidget(this, PlayerHUDClass);
@@ -38,12 +43,12 @@ void ACustomPlayerController::SetupInputComponent() {
 
 void ACustomPlayerController::JumpCharacter()
 {
-	if (playerCharacter && GameModeRef->GetPlayAllowed()) playerCharacter->Jump();
+	if (playerCharacter && GetPlayAllowed()) playerCharacter->Jump();
 }
 
 void ACustomPlayerController::Fire() {
 	UE_LOG(LogTemp, Warning, TEXT("Fire Pressed"));
-	if (GameModeRef->GetPlayAllowed()) {
+	if (GetPlayAllowed()) {
 		if (bBallHeld) {
 			UE_LOG(LogTemp, Warning, TEXT("Ball Held"));
 			if (playerCharacter) playerCharacter->Fire();
@@ -52,6 +57,7 @@ void ACustomPlayerController::Fire() {
 		else {
 			if (gunClipAmmo > 0) {
 				gunClipAmmo--;
+				UGameplayStatics::PlaySoundAtLocation(GetWorld(), ShotSoundEffect, playerCharacter->GetActorLocation(), ShotSoundVolume, 1.0f, 0.0f);
 				FVector cameraLocation;
 				FRotator cameraRotation;
 				GetPlayerViewPoint(cameraLocation, cameraRotation);
@@ -74,7 +80,6 @@ void ACustomPlayerController::Fire() {
 					}
 					UGameplayStatics::ApplyDamage(Hit.GetActor(), gunBaseDamage, this, playerCharacter, UDamageType::StaticClass());
 					ADamagePointVisualiser* TempDamageVisualiser = GetWorld()->SpawnActor<ADamagePointVisualiser>(DamagePointClass, Hit.ImpactPoint, cameraRotation);
-					TempDamageVisualiser->SetOwner(this);
 				}
 			}
 			else {
@@ -86,28 +91,31 @@ void ACustomPlayerController::Fire() {
 }
 
 void ACustomPlayerController::Reload() {
+	UGameplayStatics::PlaySoundAtLocation(GetWorld(), ReloadSoundEffect, playerCharacter->GetActorLocation(), ReloadSoundVolume, 1.0f, 0.0f);
 	gunClipAmmo = gunClipSize;
 }
 
 void ACustomPlayerController::Catch() {
 	UE_LOG(LogTemp, Warning, TEXT("Catch Pressed"));
-	if (playerCharacter && GameModeRef->GetPlayAllowed()) {
-		FVector cameraLocation;
-		FRotator cameraRotation;
-		GetPlayerViewPoint(cameraLocation, cameraRotation);
+	if (GameModeRef != nullptr) {
+		if (playerCharacter && GetPlayAllowed()) {
+			FVector cameraLocation;
+			FRotator cameraRotation;
+			GetPlayerViewPoint(cameraLocation, cameraRotation);
 
-		FVector end = cameraLocation + cameraRotation.Vector() * castRange;
+			FVector end = cameraLocation + cameraRotation.Vector() * castRange;
 
-		FHitResult Hit;
-		FCollisionQueryParams lineTraceParams;
+			FHitResult Hit;
+			FCollisionQueryParams lineTraceParams;
 
-		lineTraceParams.AddIgnoredActor(playerCharacter);
-		bool bDidHit = GetWorld()->LineTraceSingleByChannel(Hit, cameraLocation, end, ECC_Pawn, lineTraceParams);
+			lineTraceParams.AddIgnoredActor(playerCharacter);
+			bool bDidHit = GetWorld()->LineTraceSingleByChannel(Hit, cameraLocation, end, ECC_Pawn, lineTraceParams);
 
-		if (bDidHit && Hit.GetActor() == GameModeRef->inPlayBall && Hit.Distance < ballPickUpDistance) {
-			bBallHeld = true;
-			UE_LOG(LogTemp, Warning, TEXT("Ball Held value %s"), bBallHeld? TEXT("true") : TEXT("false"));
-			GameModeRef->DeleteBall();
+			if (bDidHit && Hit.GetActor() == GameModeRef->inPlayBall && Hit.Distance < ballPickUpDistance) {
+				bBallHeld = true;
+				UE_LOG(LogTemp, Warning, TEXT("Ball Held value %s"), bBallHeld ? TEXT("true") : TEXT("false"));
+				GameModeRef->DeleteBall();
+			}
 		}
 	}
 }
@@ -115,27 +123,27 @@ void ACustomPlayerController::Catch() {
 
 void ACustomPlayerController::MoveForwards(float axisAmount)
 {
-	if (playerCharacter && GameModeRef->GetPlayAllowed()) playerCharacter->AddMovementInput(playerCharacter->GetActorForwardVector() * axisAmount * moveSpeed * GetWorld()->DeltaTimeSeconds);
+	if (playerCharacter && GetPlayAllowed()) playerCharacter->AddMovementInput(playerCharacter->GetActorForwardVector() * axisAmount * moveSpeed * GetWorld()->DeltaTimeSeconds);
 }
 
 void ACustomPlayerController::Strafe(float axisAmount)
 {
-	if (playerCharacter && GameModeRef->GetPlayAllowed()) playerCharacter->AddMovementInput(playerCharacter->GetActorRightVector() * axisAmount * moveSpeed * GetWorld()->DeltaTimeSeconds);
+	if (playerCharacter && GetPlayAllowed()) playerCharacter->AddMovementInput(playerCharacter->GetActorRightVector() * axisAmount * moveSpeed * GetWorld()->DeltaTimeSeconds);
 }
 
 void ACustomPlayerController::Turn(float axisAmount)
 {
-	if (playerCharacter && GameModeRef->GetPlayAllowed()) playerCharacter->AddControllerPitchInput(axisAmount * rotationSpeed * GetWorld()->DeltaTimeSeconds);
+	if (playerCharacter && GetPlayAllowed()) playerCharacter->AddControllerPitchInput(axisAmount * rotationSpeed * GetWorld()->DeltaTimeSeconds);
 }
 
 void ACustomPlayerController::Pitch(float axisAmount)
 {
-	if (playerCharacter && GameModeRef->GetPlayAllowed()) playerCharacter->AddControllerYawInput(axisAmount * rotationSpeed * GetWorld()->DeltaTimeSeconds);
+	if (playerCharacter && GetPlayAllowed()) playerCharacter->AddControllerYawInput(axisAmount * rotationSpeed * GetWorld()->DeltaTimeSeconds);
 }
 
 void ACustomPlayerController::GravLift(FVector LaunchVelocity, bool bXYOverride, bool bZOverride)
 {
-	if (playerCharacter && GameModeRef->GetPlayAllowed()) playerCharacter->LaunchCharacter(LaunchVelocity, bXYOverride, bZOverride);
+	if (playerCharacter && GetPlayAllowed()) playerCharacter->LaunchCharacter(LaunchVelocity, bXYOverride, bZOverride);
 }
 
 float ACustomPlayerController::GetHealth()
@@ -156,6 +164,22 @@ float ACustomPlayerController::GetAmmo()
 float ACustomPlayerController::GetAmmoTotal()
 {
 	return gunClipSize;
+}
+
+bool ACustomPlayerController::GetPlayAllowed()
+{
+	if (GetWorld()->GetName() == (TEXT("ArenaLevel"))) {
+		return GameModeRef->GetPlayAllowed();
+	}
+	else {
+		return true;
+	}
+}
+
+float ACustomPlayerController::TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) {
+	playerHealth -= DamageAmount;
+	if (playerHealth <= 0) playerCharacter->Destroy();
+	return DamageAmount;
 }
 
 void ACustomPlayerController::RecastPlayerCharacter()

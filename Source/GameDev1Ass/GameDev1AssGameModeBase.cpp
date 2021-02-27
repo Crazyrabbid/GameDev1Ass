@@ -48,6 +48,7 @@ bool AGameDev1AssGameModeBase::GetPlayAllowed()
 void AGameDev1AssGameModeBase::StartGame()
 {
 	UE_LOG(LogTemp, Warning, TEXT("StartGameCalled"));
+	UGameplayStatics::PlaySound2D(GetWorld(), GameBackgroundMusic, BackgroundMusicVolume, 1.0f, 0.0f);
 	PlayerControllerRef = Cast<ACustomPlayerController>(UGameplayStatics::GetPlayerController(GetWorld(), 0));
 	if (BallClass && EnemyClass && PlayerClass) {
 		UE_LOG(LogTemp, Warning, TEXT("Ball Class Exist"));
@@ -86,7 +87,6 @@ void AGameDev1AssGameModeBase::RoundBeginSpawning()
 			FVector SpawnLocation = SpawnPoint->GetActorLocation();
 			FRotator SpawnRotation = SpawnPoint->GetActorRotation();
 			AEnemyCharacter* TempEnemy = GetWorld()->SpawnActor<AEnemyCharacter>(EnemyClass, SpawnLocation, SpawnRotation);
-			//EnemyAIControllerRef->Possess(TempEnemy);
 		}
 	}
 
@@ -128,7 +128,13 @@ void AGameDev1AssGameModeBase::TimeUp()
 {
 	UE_LOG(LogTemp, Warning, TEXT("TimeUpCalled"));
 	bPlayAllowed = false;
-	GameOver(false);
+	if (playerTeamScore > enemyTeamScore) {
+		GameOver(true);
+
+	}
+	else{
+		GameOver(false);
+	}
 }
 
 void AGameDev1AssGameModeBase::RoundBeginningTimeUp()
@@ -170,5 +176,10 @@ void AGameDev1AssGameModeBase::GameOver(bool win)
 	if(GetWorld()->GetTimerManager().TimerExists(EndMatchTimer)) GetWorld()->GetTimerManager().ClearTimer(EndMatchTimer);
 	bPlayAllowed = false;
 	UE_LOG(LogTemp, Warning, TEXT("GameOverCalled"));
-	UGameplayStatics::OpenLevel(GetWorld(), "EndScreen");
+	if (win) {
+		UGameplayStatics::OpenLevel(GetWorld(), "EndScreenWin");
+	}
+	else {
+		UGameplayStatics::OpenLevel(GetWorld(), "EndScreenLoss");
+	}
 }

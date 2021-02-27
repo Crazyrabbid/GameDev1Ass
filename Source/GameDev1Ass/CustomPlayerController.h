@@ -20,7 +20,7 @@ UCLASS()
 class GAMEDEV1ASS_API ACustomPlayerController : public APlayerController
 {
 	GENERATED_BODY()
-	
+
 protected:
 	virtual void BeginPlay() override;
 
@@ -61,6 +61,9 @@ private:
 		float GetAmmo();
 	UFUNCTION(BlueprintPure)
 		float GetAmmoTotal();
+	UFUNCTION()
+		bool GetPlayAllowed();
+	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
 
 	UPROPERTY(EditAnywhere)
 		float playerHealthMax = 100.0f;
@@ -98,6 +101,10 @@ private:
 		UUserWidget* OutOfAmmoCount;
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<UUserWidget> MiniMapClass;
+	UPROPERTY(EditAnywhere) USoundBase* ShotSoundEffect;
+	UPROPERTY(EditAnywhere) float ShotSoundVolume = 1.0f;
+	UPROPERTY(EditAnywhere) USoundBase* ReloadSoundEffect;
+	UPROPERTY(EditAnywhere) float ReloadSoundVolume = 1.0f;
 	UPROPERTY()
 		UUserWidget* MiniMapCount;
 };
