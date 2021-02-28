@@ -13,6 +13,7 @@ ADamagePointVisualiser::ADamagePointVisualiser()
 	DamageVisualiserMesh->SetNotifyRigidBodyCollision(false);
 	DamageVisualiserMesh->SetSimulatePhysics(false);
 	InitialLifeSpan = 2.0f;
+	
 }
 
 // Called when the game starts or when spawned

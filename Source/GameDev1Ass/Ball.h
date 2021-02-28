@@ -37,6 +37,10 @@ private:
 		UProjectileMovementComponent* ProjectileMovement;
 	UPROPERTY(EditAnywhere)
 		float baseDamage = 100.0f;
+	UPROPERTY(EditAnywhere)
+		float forceSoundCutoffAmount = 0.5f;
 	UPROPERTY(EditAnywhere) USoundBase* BounceSoundEffect;
 	UPROPERTY(EditAnywhere) float BounceSoundVolume = 1.0f;
+	UPROPERTY(EditAnywhere) TSubclassOf<UUserWidget> BallResetNoticeClass;
+	UPROPERTY() UUserWidget* BallResetNoticeCount;
 };

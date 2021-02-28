@@ -43,12 +43,12 @@ void ACustomPlayerController::SetupInputComponent() {
 
 void ACustomPlayerController::JumpCharacter()
 {
-	if (playerCharacter && GetPlayAllowed()) playerCharacter->Jump();
+	if (playerCharacter && GetPlayAllowed() && !GetPlayerDied()) playerCharacter->Jump();
 }
 
 void ACustomPlayerController::Fire() {
 	UE_LOG(LogTemp, Warning, TEXT("Fire Pressed"));
-	if (GetPlayAllowed()) {
+	if (GetPlayAllowed() && !GetPlayerDied() && !bReloading) {
 		if (bBallHeld) {
 			UE_LOG(LogTemp, Warning, TEXT("Ball Held"));
 			if (playerCharacter) playerCharacter->Fire();
@@ -92,13 +92,14 @@ void ACustomPlayerController::Fire() {
 
 void ACustomPlayerController::Reload() {
 	UGameplayStatics::PlaySoundAtLocation(GetWorld(), ReloadSoundEffect, playerCharacter->GetActorLocation(), ReloadSoundVolume, 1.0f, 0.0f);
-	gunClipAmmo = gunClipSize;
+	GetWorld()->GetTimerManager().SetTimer(ReloadTimer, this, &ACustomPlayerController::ReloadTimeUp, ReloadBulletDuration, false);
+	bReloading = true;
 }
 
 void ACustomPlayerController::Catch() {
 	UE_LOG(LogTemp, Warning, TEXT("Catch Pressed"));
 	if (GameModeRef != nullptr) {
-		if (playerCharacter && GetPlayAllowed()) {
+		if (playerCharacter && GetPlayAllowed() && !GetPlayerDied() && !bReloading) {
 			FVector cameraLocation;
 			FRotator cameraRotation;
 			GetPlayerViewPoint(cameraLocation, cameraRotation);
@@ -123,27 +124,27 @@ void ACustomPlayerController::Catch() {
 
 void ACustomPlayerController::MoveForwards(float axisAmount)
 {
-	if (playerCharacter && GetPlayAllowed()) playerCharacter->AddMovementInput(playerCharacter->GetActorForwardVector() * axisAmount * moveSpeed * GetWorld()->DeltaTimeSeconds);
+	if (playerCharacter && GetPlayAllowed() && !GetPlayerDied()) playerCharacter->AddMovementInput(playerCharacter->GetActorForwardVector() * axisAmount * moveSpeed * GetWorld()->DeltaTimeSeconds);
 }
 
 void ACustomPlayerController::Strafe(float axisAmount)
 {
-	if (playerCharacter && GetPlayAllowed()) playerCharacter->AddMovementInput(playerCharacter->GetActorRightVector() * axisAmount * moveSpeed * GetWorld()->DeltaTimeSeconds);
+	if (playerCharacter && GetPlayAllowed() && !GetPlayerDied()) playerCharacter->AddMovementInput(playerCharacter->GetActorRightVector() * axisAmount * moveSpeed * GetWorld()->DeltaTimeSeconds);
 }
 
 void ACustomPlayerController::Turn(float axisAmount)
 {
-	if (playerCharacter && GetPlayAllowed()) playerCharacter->AddControllerPitchInput(axisAmount * rotationSpeed * GetWorld()->DeltaTimeSeconds);
+	if (playerCharacter && GetPlayAllowed() && !GetPlayerDied()) playerCharacter->AddControllerPitchInput(axisAmount * rotationSpeed * GetWorld()->DeltaTimeSeconds);
 }
 
 void ACustomPlayerController::Pitch(float axisAmount)
 {
-	if (playerCharacter && GetPlayAllowed()) playerCharacter->AddControllerYawInput(axisAmount * rotationSpeed * GetWorld()->DeltaTimeSeconds);
+	if (playerCharacter && GetPlayAllowed() && !GetPlayerDied()) playerCharacter->AddControllerYawInput(axisAmount * rotationSpeed * GetWorld()->DeltaTimeSeconds);
 }
 
 void ACustomPlayerController::GravLift(FVector LaunchVelocity, bool bXYOverride, bool bZOverride)
 {
-	if (playerCharacter && GetPlayAllowed()) playerCharacter->LaunchCharacter(LaunchVelocity, bXYOverride, bZOverride);
+	if (playerCharacter && GetPlayAllowed() && !GetPlayerDied()) playerCharacter->LaunchCharacter(LaunchVelocity, bXYOverride, bZOverride);
 }
 
 float ACustomPlayerController::GetHealth()
@@ -158,12 +159,32 @@ float ACustomPlayerController::GetHealthTotal()
 
 float ACustomPlayerController::GetAmmo()
 {
-	return gunClipAmmo;
+	if (bBallHeld) {
+		return 1;
+	}
+	else {
+		return gunClipAmmo;
+	}
 }
 
 float ACustomPlayerController::GetAmmoTotal()
 {
-	return gunClipSize;
+	if (bBallHeld) {
+		return 1;
+	}
+	else {
+		return gunClipSize;
+	}
+}
+
+FString ACustomPlayerController::GetItemEquiped()
+{
+	if (bBallHeld) {
+		return TEXT("Ball");
+	}
+	else {
+		return TEXT("Gun");
+	}
 }
 
 bool ACustomPlayerController::GetPlayAllowed()
@@ -176,13 +197,45 @@ bool ACustomPlayerController::GetPlayAllowed()
 	}
 }
 
+bool ACustomPlayerController::GetPlayerDied()
+{
+	if (GetWorld()->GetName() == (TEXT("ArenaLevel"))) {
+		return GameModeRef->GetPlayerDead();
+	}
+	else {
+		return false;
+	}
+}
+
+void ACustomPlayerController::ReloadTimeUp()
+{
+	if (gunClipAmmo != gunClipSize) {
+		gunClipAmmo++;
+		GetWorld()->GetTimerManager().SetTimer(ReloadTimer, this, &ACustomPlayerController::ReloadTimeUp, ReloadBulletDuration, false);
+	}
+	bReloading = false;
+}
+
 float ACustomPlayerController::TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) {
 	playerHealth -= DamageAmount;
-	if (playerHealth <= 0) playerCharacter->Destroy();
+	if (playerHealth <= 0) {
+		GameModeRef->BeginPlayerRespawnProcess();
+		if (bBallHeld) {
+			playerCharacter->BallDropped();
+			bBallHeld = false;
+		}
+		playerCharacter->Destroy();
+	}
 	return DamageAmount;
 }
 
 void ACustomPlayerController::RecastPlayerCharacter()
 {
 	playerCharacter = Cast<APlayerCharacter>(GetPawn());
+}
+
+void ACustomPlayerController::ResetHealth()
+{
+	playerHealth = playerHealthMax;
+	gunClipAmmo = gunClipSize;
 }

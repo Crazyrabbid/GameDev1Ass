@@ -64,6 +64,22 @@ void APlayerCharacter::Fire() {
 	}
 }
 
+void APlayerCharacter::BallDropped()
+{
+	if (BallClass) {
+		UE_LOG(LogTemp, Warning, TEXT("Fire Activated, Ball Class Exists"));
+		FVector SpawnLocation = ProjectileSpawnPoint->GetComponentLocation();
+		FRotator SpawnRotation = FRotator(0.0f, 0.0f, -90.0f);
+		ABall* TempBall = GetWorld()->SpawnActor<ABall>(BallClass, SpawnLocation, SpawnRotation);
+		TempBall->SetOwner(this);
+		GameModeRef = Cast<AGameDev1AssGameModeBase>(UGameplayStatics::GetGameMode(GetWorld()));
+		if (GameModeRef) {
+			UE_LOG(LogTemp, Warning, TEXT("inPlayBall Assigned"));
+			GameModeRef->inPlayBall = TempBall;
+		}
+	}
+}
+
 float APlayerCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) {
 	GetController()->TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 	return DamageAmount;

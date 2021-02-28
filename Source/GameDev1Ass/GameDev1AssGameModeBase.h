@@ -29,6 +29,12 @@ public:
 		void DeleteBall();
 	UFUNCTION()
 		bool GetPlayAllowed();
+	UFUNCTION()
+		bool GetPlayerDead();
+	UFUNCTION()
+		void BeginPlayerRespawnProcess();
+	UFUNCTION()
+		void BeginEnemyRespawnProcess(AActor* Spawn);
 
 	UPROPERTY(EditAnywhere)
 		ABall* inPlayBall;
@@ -53,6 +59,10 @@ private:
 		void RoundBeginningTimeUp();
 	UFUNCTION()
 		void GameBeginningTimeUp();
+	UFUNCTION()
+		void PlayerRespawnTimeUp();
+	UFUNCTION()
+		void EnemyRespawnTimeUp();
 	UFUNCTION(BlueprintPure)
 		FString GetTime();
 	UFUNCTION(BlueprintPure)
@@ -68,6 +78,7 @@ private:
 	UPROPERTY() TArray<AActor*> Targets;
 	UPROPERTY() AActor* BallSpawn;
 	UPROPERTY() AActor* PlayerSpawn;
+	UPROPERTY() TArray<AActor*> TempEnemySpawns;
 	UPROPERTY() TArray<AActor*> EnemySpawns;
 
 	UPROPERTY(EditAnywhere) TSubclassOf<UUserWidget> BlueTeamScoredClass;
@@ -78,6 +89,7 @@ private:
 	UPROPERTY() UUserWidget* WarmUpCountdownCount;
 	UPROPERTY(EditAnywhere) TSubclassOf<UUserWidget> MatchTimerClass;
 	UPROPERTY() UUserWidget* MatchTimerCount;
+
 
 	UPROPERTY(EditAnywhere) TSubclassOf<ABall> BallClass;
 	UPROPERTY(EditAnywhere) TSubclassOf <AEnemyCharacter> EnemyClass;
@@ -92,6 +104,12 @@ private:
 	UPROPERTY(EditAnywhere) float MatchDuration = 300.0f;
 	UPROPERTY() FTimerHandle RoundBeginningTimer;
 	UPROPERTY(EditAnywhere) float RoundStartDuration = 4.0f;
+	UPROPERTY() FTimerHandle PlayerRespawnTimer;
+	UPROPERTY(EditAnywhere) float PlayerRespawnDuration = 3.0f;
+	UPROPERTY() FTimerHandle EnemyRespawnTimer;
+	UPROPERTY(EditAnywhere) float EnemyRespawnDuration = 3.0f;
 
 	UPROPERTY() bool bPlayAllowed = false;
+	UPROPERTY() bool bPlayerDead = false;
+
 };

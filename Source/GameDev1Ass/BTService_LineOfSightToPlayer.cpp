@@ -16,6 +16,7 @@ void UBTService_LineOfSightToPlayer::TickNode(UBehaviorTreeComponent& OwnerComp,
 		OwnerComp.GetBlackboardComponent()->SetValueAsBool(GetSelectedBlackboardKey(), true);
 	}
 	else {
+		EnemyAIController->ClearFocus(EAIFocusPriority::Default);
 		OwnerComp.GetBlackboardComponent()->ClearValue(GetSelectedBlackboardKey());
 	}
 }

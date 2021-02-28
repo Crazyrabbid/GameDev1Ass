@@ -46,6 +46,8 @@ public:
 		void GravLift(FVector LaunchVelocity, bool bXYOverride, bool bZOverride);
 	UFUNCTION()
 		void RecastPlayerCharacter();
+	UFUNCTION()
+		void ResetHealth();
 
 	UPROPERTY()
 		APlayerCharacter* playerCharacter;
@@ -61,8 +63,16 @@ private:
 		float GetAmmo();
 	UFUNCTION(BlueprintPure)
 		float GetAmmoTotal();
+	UFUNCTION(BlueprintPure)
+		FString GetItemEquiped();
 	UFUNCTION()
 		bool GetPlayAllowed();
+	UFUNCTION()
+		bool GetPlayerDied();
+
+	UFUNCTION()
+		void ReloadTimeUp();	
+
 	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
 
 	UPROPERTY(EditAnywhere)
@@ -87,6 +97,10 @@ private:
 		int gunClipAmmo = 16;
 	UPROPERTY() //Swap this for vs only after testing
 		bool bBallHeld = false;
+	UPROPERTY() //Swap this for vs only after testing
+		bool bReloading = false;
+	UPROPERTY() FTimerHandle ReloadTimer;
+	UPROPERTY(EditAnywhere) float ReloadBulletDuration = 0.4f;
 
 	UPROPERTY()
 		AGameDev1AssGameModeBase* GameModeRef;

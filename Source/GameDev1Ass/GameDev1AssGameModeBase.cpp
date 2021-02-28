@@ -44,6 +44,46 @@ bool AGameDev1AssGameModeBase::GetPlayAllowed()
 	return bPlayAllowed;
 }
 
+bool AGameDev1AssGameModeBase::GetPlayerDead()
+{
+	return bPlayerDead;
+}
+
+void AGameDev1AssGameModeBase::BeginPlayerRespawnProcess()
+{
+	bPlayerDead = true;
+	GetWorld()->GetTimerManager().SetTimer(PlayerRespawnTimer, this, &AGameDev1AssGameModeBase::PlayerRespawnTimeUp, PlayerRespawnDuration, false);
+	WarmUpCountdownCount = CreateWidget(GetWorld(), WarmUpCountdownClass);
+	if (WarmUpCountdownCount) WarmUpCountdownCount->AddToViewport();
+}
+
+void AGameDev1AssGameModeBase::BeginEnemyRespawnProcess(AActor* Spawn)
+{
+	GetWorld()->GetTimerManager().SetTimer(EnemyRespawnTimer, this, &AGameDev1AssGameModeBase::EnemyRespawnTimeUp, EnemyRespawnDuration, false);
+	TempEnemySpawns.Emplace(Spawn);
+}
+
+void AGameDev1AssGameModeBase::PlayerRespawnTimeUp()
+{
+	FVector SpawnLocation = PlayerSpawn->GetActorLocation();
+	FRotator SpawnRotation = PlayerSpawn->GetActorRotation();
+	APlayerCharacter* TempPlayer = GetWorld()->SpawnActor<APlayerCharacter>(PlayerClass, SpawnLocation, SpawnRotation);
+	PlayerControllerRef->RecastPlayerCharacter();
+	PlayerControllerRef->ResetHealth();
+	TempPlayer->SetOwner(this);
+	bPlayerDead = false;
+}
+
+void AGameDev1AssGameModeBase::EnemyRespawnTimeUp()
+{
+	FVector SpawnLocation = TempEnemySpawns.Top()->GetActorLocation();
+	FRotator SpawnRotation = TempEnemySpawns.Top()->GetActorRotation();
+	AEnemyCharacter* TempEnemy = GetWorld()->SpawnActor<AEnemyCharacter>(EnemyClass, SpawnLocation, SpawnRotation);
+	TempEnemy->SetSpawnLocationActor(TempEnemySpawns.Top());
+	TempEnemySpawns.RemoveSingle(TempEnemySpawns.Top());
+	if (TempEnemySpawns.Num() != 0) EnemyRespawnTimeUp();
+}
+
 
 void AGameDev1AssGameModeBase::StartGame()
 {
@@ -87,6 +127,7 @@ void AGameDev1AssGameModeBase::RoundBeginSpawning()
 			FVector SpawnLocation = SpawnPoint->GetActorLocation();
 			FRotator SpawnRotation = SpawnPoint->GetActorRotation();
 			AEnemyCharacter* TempEnemy = GetWorld()->SpawnActor<AEnemyCharacter>(EnemyClass, SpawnLocation, SpawnRotation);
+			TempEnemy->SetSpawnLocationActor(SpawnPoint);
 		}
 	}
 
@@ -113,11 +154,16 @@ void AGameDev1AssGameModeBase::RoundEndRemovals()
 
 void AGameDev1AssGameModeBase::RoundReset() {
 	GetWorld()->GetTimerManager().PauseTimer(EndMatchTimer);
+	if (GetWorld()->GetTimerManager().IsTimerActive(PlayerRespawnTimer))GetWorld()->GetTimerManager().ClearTimer(PlayerRespawnTimer);
+	if (GetWorld()->GetTimerManager().IsTimerActive(EnemyRespawnTimer))GetWorld()->GetTimerManager().ClearTimer(EnemyRespawnTimer);
+	bPlayerDead = false;
 	bPlayAllowed = false;
 	RoundEndRemovals();
 	UE_LOG(LogTemp, Warning, TEXT("RoundResetCalled"));
 	RoundBeginSpawning();
 	PlayerControllerRef->RecastPlayerCharacter();
+
+	if (WarmUpCountdownCount->GetIsEnabled()) WarmUpCountdownCount->RemoveFromViewport();
 
 	GetWorld()->GetTimerManager().SetTimer(RoundBeginningTimer, this, &AGameDev1AssGameModeBase::RoundBeginningTimeUp, RoundStartDuration, false);
 	WarmUpCountdownCount = CreateWidget(GetWorld(), WarmUpCountdownClass);
