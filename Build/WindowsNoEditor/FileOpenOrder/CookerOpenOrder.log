@@ -4,551 +4,552 @@
 "../../../Engine/Content/EngineMaterials/T_Default_Material_Grid_N.uasset" 3
 "../../../Engine/Content/EngineMaterials/DefaultMaterial.uasset" 4
 "../../../Engine/Content/BasicShapes/Sphere.uasset" 5
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/SoundsAndMusic/37155__volivieri__soccer-ball-hit-ground-02.uasset" 6
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/ArenaLevel/BP_Ball.uasset" 7
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/BP_Ball.uasset" 8
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Mesh/UE4_Mannequin_Skeleton.uasset" 9
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Idle_Rifle_Ironsights.uasset" 10
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Jog_Bwd_Rifle.uasset" 11
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Jog_Fwd_Rifle.uasset" 12
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Jog_Lt_Rifle.uasset" 13
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Jog_Rt_Rifle.uasset" 14
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Walk_Bwd_Rifle_Ironsights.uasset" 15
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Walk_Fwd_Rifle_Ironsights.uasset" 16
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Walk_Lt_Rifle_Ironsights.uasset" 17
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Walk_Rt_Rifle_Ironsights.uasset" 18
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/BS_Ironsights.uasset" 19
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/ABP_PlayerAnimation.uasset" 20
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Idle_Rifle_Hip_Break1.uasset" 21
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Idle_Rifle_Hip_Break2.uasset" 22
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/BB_EnemyAI.uasset" 23
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/BT_EnemyAI.uasset" 24
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/BP_EnemyAIController.uasset" 25
-"../../../Engine/Content/Functions/MaterialLayerFunctions/MatLayerBlend_AO.uasset" 26
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BlendAngleCorrectedNormals.uasset" 27
-"../../../Engine/Content/Functions/MaterialLayerFunctions/MatLayerBlend_NormalBlend.uasset" 28
-"../../../Engine/Content/Functions/MaterialLayerFunctions/MatLayerBlend_Simple.uasset" 29
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Materials/MaterialLayers/T_ML_Rubber_Blue_01_D.uasset" 30
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Materials/MaterialLayers/T_ML_Rubber_Blue_01_N.uasset" 31
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Materials/MaterialLayers/ML_GlossyBlack_Latex_UE4.uasset" 32
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Materials/MaterialLayers/ML_Plastic_Shiny_Beige.uasset" 33
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Textures/UE4_LOGO_CARD.uasset" 34
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Materials/MaterialLayers/ML_Plastic_Shiny_Beige_LOGO.uasset" 35
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Materials/MaterialLayers/T_ML_Aluminum01.uasset" 36
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Materials/MaterialLayers/T_ML_Aluminum01_N.uasset" 37
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Materials/MaterialLayers/ML_SoftMetal_UE4.uasset" 38
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Textures/UE4_Mannequin__normals.uasset" 39
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Textures/UE4_Mannequin_MAT_MASKA.uasset" 40
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Textures/UE4_Mannequin_occlusion_Mobile.uasset" 41
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Materials/M_UE4Man_Body.uasset" 42
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Materials/MI_EnemyArmour.uasset" 43
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Textures/UE4Man_Logo_N.uasset" 44
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Materials/M_UE4Man_ChestLogo.uasset" 45
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Mesh/SK_Mannequin_PhysicsAsset.uasset" 46
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Mesh/SK_Mannequin.uasset" 47
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/BP_EnemyCharacter.uasset" 48
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/Map_RT.uasset" 49
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/BP_PlayerCharacterF.uasset" 50
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/SoundsAndMusic/bensound-thelounge.uasset" 51
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/EndScreen/BP_EndLevelGameMode.uasset" 52
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/BP_EndLevelGameMode.uasset" 53
-"../../../Engine/Content/BasicShapes/BasicShapeMaterial.uasset" 54
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/Meshes/SphereMesh.uasset" 55
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/BP_DamagePointVisualiser.uasset" 56
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/ArenaLevel/WBP_NoAmmo.uasset" 57
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/MaterialsAndTextures/T_Crosshair.uasset" 58
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/ArenaLevel/WBP_PlayerHUD.uasset" 59
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/SoundsAndMusic/15545__lagthenoggin__reload.uasset" 60
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/SoundsAndMusic/37236__shades__gun-pistol-one-shot.uasset" 61
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/Map_MTL.uasset" 62
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/WBP_MiniMap.uasset" 63
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/BP_CustomPlayerController.uasset" 64
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/ArenaLevel/WBP_BlueScored.uasset" 65
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/ArenaLevel/WBP_RedScored.uasset" 66
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/ArenaLevel/WBP_Timer.uasset" 67
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/ArenaLevel/WBP_WarmupTimer.uasset" 68
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/SoundsAndMusic/bensound-hipjazz.uasset" 69
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/ArenaLevel/BP_GameDev1AssGameModeBase.uasset" 70
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/BP_GameDev1AssGameModeBase.uasset" 71
-"../../../Engine/Content/EngineMaterials/WorldGridMaterial.uasset" 72
-"../../../Engine/Content/BasicShapes/Cube.uasset" 73
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/ArenaLevel/BP_GoalTrigger.uasset" 74
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/BP_GoalTrigger.uasset" 75
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/BP_PlayerCharacterFix.uasset" 76
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/BP_PlayerCharacter.uasset" 77
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/StartMenu/BP_MainMenuController.uasset" 78
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/StartMenu/WBP_StartMenu.uasset" 79
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/StartMenu/BP_StartMenuGameMode.uasset" 80
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/BP_StartMenuGameMode.uasset" 81
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/EndScreen/EndScreen.uasset" 82
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/EndScreen.uasset" 83
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/EndScreen/EndScreenWin_BuiltData.uasset" 84
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/EndScreen/EndScreen_BuiltData.uasset" 85
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/EndScreen_BuiltData.uasset" 86
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/MI_Ball.uasset" 87
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/MaterialsAndTextures/MI_EnemyGridMaterial.uasset" 88
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/MI_EnemyGridMaterial.uasset" 89
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient.uasset" 90
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/ImageAdjustment/3ColorBlend.uasset" 91
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/MaterialsAndTextures/MI_PlayerGridMaterial.uasset" 92
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/MI_PlayerGridMaterial.uasset" 93
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/StartMenu.uasset" 94
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/StartMenu/StartMenu_BuiltData.uasset" 95
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/StartMenu_BuiltData.uasset" 96
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/ArenaLevel.uasset" 97
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/TestLayoutLevel.uasset" 98
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/ArenaLevel/ArenaLevel_BuiltData.uasset" 99
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/TestLayoutLevel_BuiltData.uasset" 100
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/WBP_PlayerHUD.uasset" 101
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Aim_Space_Hip.uasset" 102
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Aim_Space_Ironsights.uasset" 103
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Crouch_to_Stand_Rifle_Hip.uasset" 104
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Crouch_to_Stand_Rifle_Ironsights.uasset" 105
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Crouch_Walk_Bwd_Rifle_Ironsights.uasset" 106
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Crouch_Walk_Lt_Rifle_Ironsights.uasset" 107
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Crouch_Walk_Rt_Rifle_Ironsights.uasset" 108
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Death_1.uasset" 109
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Death_2.uasset" 110
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Death_3.uasset" 111
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Death_Ironsights_1.uasset" 112
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Death_Ironsights_2.uasset" 113
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Equip_Rifle_Standing.uasset" 114
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Fire_Rifle_Hip.uasset" 115
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Fire_Shotgun_Hip.uasset" 116
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Fire_Shotgun_Ironsights.uasset" 117
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Hit_React_4.uasset" 118
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Idle_Pistol.uasset" 119
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Jump_From_Stand_Ironsights.uasset" 120
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Prone_Death_1.uasset" 121
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Prone_Death_2.uasset" 122
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Prone_Fire_1.uasset" 123
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Prone_Fire_2.uasset" 124
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Prone_Idle.uasset" 125
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Prone_Reload_Rifle.uasset" 126
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Prone_Reload_Shotgun.uasset" 127
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Prone_To_Stand.uasset" 128
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Reload_Pistol.uasset" 129
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Reload_Rifle_Ironsights.uasset" 130
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Reload_Shotgun_Hip.uasset" 131
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Reload_Shotgun_Ironsights.uasset" 132
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Sprint_Fwd_Rifle.uasset" 133
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Stand_to_Crouch_Rifle_Hip.uasset" 134
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Stand_to_Crouch_Rifle_Ironsights.uasset" 135
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Stand_To_Prone.uasset" 136
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/KA74U/T_KA74U_ALB.uasset" 137
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/KA74U/T_KA74U_M_MSK.uasset" 138
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/KA74U/T_KA74U_NRM.uasset" 139
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Patterns/T_Stripes__Pattern.uasset" 140
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Master_Material/M_Weapon_Master_USE.uasset" 141
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Accessories/T_V_Grip_ALB.uasset" 142
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Accessories/T_V_Grip_M_MSK.uasset" 143
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Accessories/T_V_Grip_NRM.uasset" 144
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Accessories/M_V_Grip.uasset" 145
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Accessories/M_V_Grip_Green.uasset" 146
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/AR4/T_AR4_ALB.uasset" 147
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/AR4/T_AR4_M_MSK.uasset" 148
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/AR4/T_AR4_NRM.uasset" 149
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Patterns/T_Desert_Marpat_Pattern.uasset" 150
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/AR4/M_AR4_Pattern.uasset" 151
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/KA47/T_KA47_Gold_ALB.uasset" 152
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/KA47/T_KA47_Gold_M_MSK.uasset" 153
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/KA47/T_KA47_NRM.uasset" 154
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Ka47/M_KA47_Gold.uasset" 155
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/KA47/T_KA47_ALB.uasset" 156
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/KA47/T_KA47_M_MSK.uasset" 157
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Ka47/M_KA47.uasset" 158
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Ka47/M_KA47_Pattern.uasset" 159
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/KA74U/M_KA74U.uasset" 160
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/KA74U/T_KA74U_Gold_ALB.uasset" 161
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/KA74U/T_KA74U_Gold_M_MSK.uasset" 162
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/KA74U/M_KA74U_Gold.uasset" 163
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Patterns/T_LeafSpray_Pattern.uasset" 164
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/KA74U/M_KA74U_LeafSpray.uasset" 165
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/KA_Val/T_KA_Val_ALB.uasset" 166
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/KA_Val/T_KA_Val_M_MSK.uasset" 167
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/KA_Val/T_KA_Val_NRM.uasset" 168
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/KA_Val/M_KA_Val.uasset" 169
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/KA_Val/T_KA_Val_Black_ALB.uasset" 170
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/KA_Val/M_KA_Val_Black.uasset" 171
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Patterns/T_Wood_Marpat_Pattern.uasset" 172
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/KA_Val/M_KA_Val_Black_Camo.uasset" 173
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/KA_Val/M_KA_Val_Black_Striped.uasset" 174
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/RDS/T_RDS_01.uasset" 175
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Master_Material/M_RDS_Master.uasset" 176
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/RDS/M_RDS_01.uasset" 177
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/RDS/T_RDS_02.uasset" 178
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/RDS/M_RDS_02.uasset" 179
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/RDS/T_RDS_03.uasset" 180
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/RDS/M_RDS_03.uasset" 181
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/SMG11/T_SMG11_ALB.uasset" 182
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/SMG11/T_SMG11_M_MSK.uasset" 183
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/SMG11/T_SMG11_NRM.uasset" 184
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/SMG11/M_SMG11.uasset" 185
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Patterns/T_Urban_Marpat_Pattern.uasset" 186
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/SMG11/M_SMG11_Camo.uasset" 187
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/SMG11/M_SMG11_Color.uasset" 188
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Accessories/T_Scope_25x56_ALB.uasset" 189
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Accessories/T_Scope_25x56_M_MSK.uasset" 190
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Accessories/T_Scope_25x56_NRM.uasset" 191
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Accessories/M_Scope_25x56.uasset" 192
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Accessories/T_Scope_25x56_Lens_ALB.uasset" 193
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Accessories/T_Scope_25x56_Lens_M_MSK.uasset" 194
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Master_Material/M_Scope_Lens_MASTER.uasset" 195
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Accessories/M_Scope_25x56_Lens.uasset" 196
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Accessories/SM_Scope_25x56_X.uasset" 197
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_762x39_ALB.uasset" 198
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_762x39_M_MSK.uasset" 199
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_762x39_NRM.uasset" 200
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Ammunition/M_762x39_Empty.uasset" 201
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/AR4/M_AR4.uasset" 202
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/AR4/SK_AR4_X_Physics.uasset" 203
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/AR4/SK_AR4_X_Skeleton.uasset" 204
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/AR4/SK_AR4_X.uasset" 205
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/AR4/SM_AR4.uasset" 206
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/AR4/SM_AR4_X.uasset" 207
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/G67_Grenade/T_G67_ALB.uasset" 208
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/G67_Grenade/T_G67_M_MSK.uasset" 209
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/G67_Grenade/T_G67_NRM.uasset" 210
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/G67_Grenade/M_G67.uasset" 211
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/G67_Grenade/SK_G67_Physics.uasset" 212
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/G67_Grenade/SK_G67_Skeleton.uasset" 213
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/G67_Grenade/SK_G67.uasset" 214
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/G67_Grenade/SM_G67.uasset" 215
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/G67_Grenade/SM_G67_Thrown.uasset" 216
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/G67_Grenade/SM_G67_X.uasset" 217
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ka47/SK_KA47_X_Physics.uasset" 218
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ka47/SK_KA47_X_Skeleton.uasset" 219
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ka47/SK_KA47_X.uasset" 220
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ka47/SM_KA47.uasset" 221
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ka47/SM_KA47_X.uasset" 222
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA74U/SK_KA74U_X_Physics.uasset" 223
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA74U/SK_KA74U_X_Skeleton.uasset" 224
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA74U/SK_KA74U_X.uasset" 225
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA74U/SM_KA74U_Mag_Empty_Y.uasset" 226
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA74U/SM_KA74U_Mag_Y.uasset" 227
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA74U/SM_KA74U_X.uasset" 228
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA74U/SM_KA74U_Y.uasset" 229
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA_Val/SK_KA_Val_X_Physics.uasset" 230
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA_Val/SK_KA_Val_X_Skeleton.uasset" 231
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA_Val/SK_KA_Val_X.uasset" 232
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA_Val/SM_KA_Val_Mag_X.uasset" 233
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA_Val/SM_KA_Val_X.uasset" 234
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA_Val/SM_KA_Val_Y.uasset" 235
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/M9_Knife/T_M9_ALB.uasset" 236
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/M9_Knife/T_M9_M_MSK.uasset" 237
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/M9_Knife/T_M9_NRM.uasset" 238
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/M9_Knife/M_M9_Knife.uasset" 239
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/M9_Knife/SK_M9_Knife_Physics.uasset" 240
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/M9_Knife/SK_M9_Knife_Skeleton.uasset" 241
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/M9_Knife/SK_M9_Knife.uasset" 242
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/M9_Knife/SM_M9_Knife.uasset" 243
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/M9_Knife/SM_M9_Knife_X.uasset" 244
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_9mm_ALB.uasset" 245
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_9mm_M_MSK.uasset" 246
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_9mm_NRM.uasset" 247
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Ammunition/M_9mm.uasset" 248
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/SMG11/T_SMG11_Rem_ALB.uasset" 249
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/SMG11/T_SMG11_Rem_M_MSK.uasset" 250
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/SMG11/T_SMG11_Rem_NRM.uasset" 251
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/SMG11/M_SMG11_Rem.uasset" 252
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SK_SMG11_Nostock_X_Physics.uasset" 253
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SK_SMG11_Nostock_X_Skeleton.uasset" 254
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SK_SMG11_Nostock_X.uasset" 255
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SK_SMG11_X_Physics.uasset" 256
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SK_SMG11_X_Skeleton.uasset" 257
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SK_SMG11_X.uasset" 258
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SM_SMG11_Mag_Empty_Y.uasset" 259
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SM_SMG11_Nostock_X.uasset" 260
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SM_SMG11_Nostock_Y.uasset" 261
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SM_SMG11_X.uasset" 262
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SM_SMG11_Y.uasset" 263
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Patterns/T_80s_Pattern.uasset" 264
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Patterns/T_Chochip_Pattern.uasset" 265
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Patterns/T_Cracks_Pattern.uasset" 266
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Patterns/T_Hexagon_Glow_Pattern.uasset" 267
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Patterns/T_Hexagon_Pattern.uasset" 268
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Patterns/T_Ink_Pattern.uasset" 269
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Patterns/T_Net01_Pattern.uasset" 270
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Patterns/T_W90K_Pattern.uasset" 271
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Patterns/T_W90_Pattern.uasset" 272
-"../../../Engine/Content/Animation/DefaultAnimBoneCompressionSettings.uasset" 273
-"../../../Engine/Content/Animation/DefaultAnimCurveCompressionSettings.uasset" 274
-"../../../Engine/Content/ArtTools/RenderToTexture/Meshes/S_1_Unit_Plane.uasset" 275
-"../../../Engine/Content/BasicShapes/Cone.uasset" 276
-"../../../Engine/Content/BasicShapes/Cylinder.uasset" 277
-"../../../Engine/Content/BasicShapes/Plane.uasset" 278
-"../../../Engine/Content/EditorLandscapeResources/DataLayer.uasset" 279
-"../../../Engine/Content/EditorMaterials/MAT_Groups_Toggle.uasset" 280
-"../../../Engine/Content/EditorMaterials/MAT_Groups_Visibility.uasset" 281
-"../../../Engine/Content/EditorMaterials/PreviewShadowIndicator.uasset" 282
-"../../../Engine/Content/EditorMaterials/PreviewShadowIndicatorMaterial.uasset" 283
-"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_ColorTrack.uasset" 284
-"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Anim.uasset" 285
-"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_AudioMaster.uasset" 286
-"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Director.uasset" 287
-"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Event.uasset" 288
-"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Fade.uasset" 289
-"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Float.uasset" 290
-"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Move.uasset" 291
-"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Slomo.uasset" 292
-"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Sound.uasset" 293
-"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Vector.uasset" 294
-"../../../Engine/Content/EditorMaterials/ParticleSystems/PSysThumbnail_NoImage.uasset" 295
-"../../../Engine/Content/EditorMaterials/ParticleSystems/PSysThumbnail_OOD.uasset" 296
-"../../../Engine/Content/EditorMaterials/Camera/CineMat.uasset" 297
-"../../../Engine/Content/EditorMaterials/Camera/MI_CineMat_Rig.uasset" 298
-"../../../Engine/Content/EditorMeshes/Camera/SM_CraneRig_Arm.uasset" 299
-"../../../Engine/Content/EditorMeshes/Camera/SM_CraneRig_Base.uasset" 300
-"../../../Engine/Content/EditorMeshes/Camera/SM_CraneRig_Body.uasset" 301
-"../../../Engine/Content/EditorMeshes/Camera/SM_CraneRig_Mount.uasset" 302
-"../../../Engine/Content/EditorMeshes/Camera/SM_RailRig_Mount.uasset" 303
-"../../../Engine/Content/EditorMeshes/Camera/SM_RailRig_Track.uasset" 304
-"../../../Engine/Content/EditorResources/BSPVertex.uasset" 305
-"../../../Engine/Content/EditorResources/EmptyActor.uasset" 306
-"../../../Engine/Content/EditorResources/S_Actor.uasset" 307
-"../../../Engine/Content/EditorResources/S_Note.uasset" 308
-"../../../Engine/Content/EditorResources/S_Solver.uasset" 309
-"../../../Engine/Content/EditorResources/S_Trigger.uasset" 310
-"../../../Engine/Content/EditorResources/LightIcons/S_LightError.uasset" 311
-"../../../Engine/Content/EditorResources/SequenceRecorder/Countdown.uasset" 312
-"../../../Engine/Content/EditorResources/SequenceRecorder/RecordingIndicator.uasset" 313
-"../../../Engine/Content/EditorSounds/Notifications/CompileFailed.uasset" 314
-"../../../Engine/Content/EditorSounds/Notifications/CompileFailed_Cue.uasset" 315
-"../../../Engine/Content/EditorSounds/Notifications/CompileSuccess.uasset" 316
-"../../../Engine/Content/EditorSounds/Notifications/CompileStart_Cue.uasset" 317
-"../../../Engine/Content/EditorSounds/Notifications/CompileSuccess_Cue.uasset" 318
-"../../../Engine/Content/EngineDamageTypes/DmgTypeBP_Environmental.uasset" 319
-"../../../Engine/Content/EngineDebugMaterials/DebugEditorMaterial.uasset" 320
-"../../../Engine/Content/EngineDebugMaterials/DebugMeshMaterial.uasset" 321
-"../../../Engine/Content/EngineDebugMaterials/M_SimpleUnlitTranslucent.uasset" 322
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/CameraDirectionVector.uasset" 323
-"../../../Engine/Content/EngineDebugMaterials/VolumeToRender.uasset" 324
-"../../../Engine/Content/EngineDebugMaterials/M_VolumeRenderSphereTracePP.uasset" 325
-"../../../Engine/Content/EngineDebugMaterials/WireframeMaterial.uasset" 326
-"../../../Engine/Content/EngineFonts/Faces/DroidSansFallback.uasset" 327
-"../../../Engine/Content/EngineFonts/Faces/RobotoBold.uasset" 328
-"../../../Engine/Content/EngineFonts/Faces/RobotoBoldItalic.uasset" 329
-"../../../Engine/Content/EngineFonts/Faces/RobotoItalic.uasset" 330
-"../../../Engine/Content/EngineFonts/Faces/RobotoLight.uasset" 331
-"../../../Engine/Content/EngineFonts/Faces/RobotoRegular.uasset" 332
-"../../../Engine/Content/EngineFonts/Roboto.uasset" 333
-"../../../Engine/Content/EngineMaterials/BaseFlattenDiffuseMap.uasset" 334
-"../../../Engine/Content/EngineMaterials/BaseFlattenEmissiveMap.uasset" 335
-"../../../Engine/Content/EngineMaterials/BaseFlattenGrayscaleMap.uasset" 336
-"../../../Engine/Content/EngineMaterials/BaseFlattenNormalMap.uasset" 337
-"../../../Engine/Content/EngineMaterials/BaseFlattenMaterial.uasset" 338
-"../../../Engine/Content/EngineMaterials/BlueNoise.uasset" 339
-"../../../Engine/Content/EngineMaterials/DefaultBloomKernel.uasset" 340
-"../../../Engine/Content/EngineMaterials/DefaultBokeh.uasset" 341
-"../../../Engine/Content/EngineMaterials/DefaultDiffuse.uasset" 342
-"../../../Engine/Content/EngineMaterials/DefaultDeferredDecalMaterial.uasset" 343
-"../../../Engine/Content/EngineMaterials/DefaultLightFunctionMaterial.uasset" 344
-"../../../Engine/Content/EngineMaterials/DefaultPhysicalMaterial.uasset" 345
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.uasset" 346
-"../../../Engine/Content/EngineMaterials/DefaultPostProcessMaterial.uasset" 347
-"../../../Engine/Content/EngineFonts/RobotoDistanceField.uasset" 348
-"../../../Engine/Content/EngineMaterials/DefaultTextMaterialOpaque.uasset" 349
-"../../../Engine/Content/EngineMaterials/DefaultWhiteGrid.uasset" 350
-"../../../Engine/Content/EngineMaterials/DefaultWhiteGrid_Low.uasset" 351
-"../../../Engine/Content/EngineMaterials/EmissiveMeshMaterial.uasset" 352
-"../../../Engine/Content/EngineMaterials/GizmoMaterial.uasset" 353
-"../../../Engine/Content/EngineMaterials/Good64x64TilingNoiseHighFreq.uasset" 354
-"../../../Engine/Content/EngineMaterials/MiniFont.uasset" 355
-"../../../Engine/Content/EngineMaterials/InvalidLightmapSettings.uasset" 356
-"../../../Engine/Content/EngineMaterials/M_InvalidLightmapSettings.uasset" 357
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/CameraOffset.uasset" 358
-"../../../Engine/Content/EngineMaterials/PhAT_JointLimitMaterial.uasset" 359
-"../../../Engine/Content/EngineMaterials/PreintegratedSkinBRDF.uasset" 360
-"../../../Engine/Content/EngineMaterials/RemoveSurfaceMaterial.uasset" 361
-"../../../Engine/Content/EngineMaterials/WeightMapPlaceholderTexture.uasset" 362
-"../../../Engine/Content/EngineResources/WhiteSquareTexture.uasset" 363
-"../../../Engine/Content/EngineMaterials/Widget3DPassThrough.uasset" 364
-"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Masked.uasset" 365
-"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Opaque.uasset" 366
-"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Masked_OneSided.uasset" 367
-"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Opaque_OneSided.uasset" 368
-"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Translucent.uasset" 369
-"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Translucent_OneSided.uasset" 370
-"../../../Engine/Content/EngineMeshes/Cylinder.uasset" 371
-"../../../Engine/Content/EngineMeshes/Sphere.uasset" 372
-"../../../Engine/Content/EngineResources/Black.uasset" 373
-"../../../Engine/Content/EngineResources/DefaultTexture.uasset" 374
-"../../../Engine/Content/EngineResources/DefaultTextureCube.uasset" 375
-"../../../Engine/Content/EngineResources/DefaultVolumeTexture2D.uasset" 376
-"../../../Engine/Content/EngineResources/DefaultVolumeTexture.uasset" 377
-"../../../Engine/Content/EngineResources/GradientTexture0.uasset" 378
-"../../../Engine/Content/EngineSounds/Master.uasset" 379
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec.uasset" 380
-"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness.uasset" 381
-"../../../Engine/Content/Maps/Templates/Thumbnails/Default.uasset" 382
-"../../../Engine/Content/Maps/Templates/Thumbnails/TimeOfDay.uasset" 383
-"../../../Engine/Content/Maps/Templates/Thumbnails/VR-Basic.uasset" 384
-"../../../Engine/Content/MobileResources/T_MobileControls_texture.uasset" 385
-"../../../Engine/Content/MobileResources/T_MobileMenu2.uasset" 386
-"../../../Engine/Content/MobileResources/HUD/AnalogHat.uasset" 387
-"../../../Engine/Content/MobileResources/HUD/VirtualJoystick_Background.uasset" 388
-"../../../Engine/Content/MobileResources/HUD/VirtualJoystick_Thumb.uasset" 389
-"../../../Engine/Content/MobileResources/HUD/DefaultVirtualJoysticks.uasset" 390
-"../../../Engine/Content/MobileResources/HUD/LeftVirtualJoystickOnly.uasset" 391
-"../../../Engine/Content/MobileResources/HUD/MobileHUDButton1_off.uasset" 392
-"../../../Engine/Content/MobileResources/HUD/MobileHUDButton1_on.uasset" 393
-"../../../Engine/Content/MobileResources/HUD/MobileHUDButton2_off.uasset" 394
-"../../../Engine/Content/MobileResources/HUD/MobileHUDButton2_on.uasset" 395
-"../../../Engine/Content/MobileResources/HUD/MobileHUDButton3.uasset" 396
-"../../../Engine/Content/MobileResources/HUD/MobileHUDButtonFire.uasset" 397
-"../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionPad.uasset" 398
-"../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionPad2.uasset" 399
-"../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionPad3.uasset" 400
-"../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionStick.uasset" 401
-"../../../Engine/Content/MobileResources/HUD/T_Castle_ThumbstickInner.uasset" 402
-"../../../Engine/Content/MobileResources/HUD/T_Castle_ThumbstickOutter.uasset" 403
-"../../../Engine/Content/Tutorial/ContentIntroCurve.uasset" 404
-"../../../Engine/Content/Tutorial/Basics/LevelEditorAttract.uasset" 405
-"../../../Engine/Content/VREditor/LaserPointer/VR_LaserPower_01.uasset" 406
-"../../../Engine/Content/VREditor/TransformGizmo/TransformGizmoMaterial.uasset" 407
-"../../../Engine/Content/VREditor/TransformGizmo/TranslucentTransformGizmoMaterial.uasset" 408
-"../../../Engine/Content/VREditor/TransformGizmo/BoundingBoxCorner.uasset" 409
-"../../../Engine/Content/VREditor/TransformGizmo/BoundingBoxEdge.uasset" 410
-"../../../Engine/Content/VREditor/TransformGizmo/PlaneTranslationHandle.uasset" 411
-"../../../Engine/Content/VREditor/TransformGizmo/Main.uasset" 412
-"../../../Engine/Content/VREditor/TransformGizmo/Xray.uasset" 413
-"../../../Engine/Content/VREditor/TransformGizmo/SM_Sequencer_Key.uasset" 414
-"../../../Engine/Content/VREditor/TransformGizmo/SM_Sequencer_Node.uasset" 415
-"../../Plugins/2D/Paper2D/Content/PlaceholderTextures/DummySpriteTexture.uasset" 416
-"../../Plugins/2D/Paper2D/Content/DummySprite.uasset" 417
-"../../Plugins/2D/Paper2D/Content/DefaultPaperTerrainMaterial.uasset" 418
-"../../Plugins/2D/Paper2D/Content/DefaultSpriteMaterial.uasset" 419
-"../../Plugins/2D/Paper2D/Content/MaskedUnlitSpriteMaterial.uasset" 420
-"../../Plugins/2D/Paper2D/Content/OpaqueUnlitSpriteMaterial.uasset" 421
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraBooleanLogicOps.uasset" 422
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraCoordinateSpace.uasset" 423
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraExpansionMode.uasset" 424
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraOrientationAxis.uasset" 425
-"../../Plugins/FX/Niagara/Content/Enums/ENiagaraRandomnessMode.uasset" 426
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat4Components.uasset" 427
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat2.uasset" 428
-"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3.uasset" 429
-"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/OculusMR_ChromaKey.uasset" 430
-"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/OculusMR_ChromaKey_Lit.uasset" 431
-"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/OculusMR_OpaqueColoredMaterial.uasset" 432
-"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/OculusMR_WhiteMaterial.uasset" 433
-"../../../Engine/Content/EditorBlueprintResources/StandardMacros.uasset" 434
-"../../../Engine/Content/EngineSky/C_Sky_Cloud_Color.uasset" 435
-"../../../Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset" 436
-"../../../Engine/Content/EngineSky/C_Sky_Zenith_Color.uasset" 437
-"../../../Engine/Content/EngineSky/T_Sky_Blue.uasset" 438
-"../../../Engine/Content/EngineSky/T_Sky_Clouds_M.uasset" 439
-"../../../Engine/Content/EngineSky/T_Sky_Stars.uasset" 440
-"../../../Engine/Content/EngineSky/M_Sky_Panning_Clouds2.uasset" 441
-"../../../Engine/Content/EngineSky/SM_SkySphere.uasset" 442
-"../../../Engine/Content/EngineSky/BP_Sky_Sphere.uasset" 443
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/DevMap_BuiltData.uasset" 444
-"../../../Engine/Content/MapTemplates/SM_Template_Map_Floor.uasset" 445
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/DevMap.umap" 446
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Crouch_Idle_Rifle_Hip.uasset" 447
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Crouch_Idle_Rifle_Ironsights.uasset" 448
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Crouch_Walk_Fwd_Rifle_Ironsights.uasset" 449
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Equip_Pistol_Standing.uasset" 450
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Fire_Rifle_Ironsights.uasset" 451
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Hit_React_1.uasset" 452
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Hit_React_2.uasset" 453
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Hit_React_3.uasset" 454
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Reload_Rifle_Hip.uasset" 455
-"../../../Engine/Content/TemplateResources/M_Template_Master.uasset" 456
-"../../../Engine/Content/TemplateResources/MI_Template_BaseGray_03_Metal.uasset" 457
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Showcase.umap" 458
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/Meshes/CubeMesh.uasset" 459
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/BP_GravLift.uasset" 460
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/Meshes/CubeMesh_DM.uasset" 461
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/Meshes/StaticMesh.uasset" 462
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/Meshes/StaticMesh_DM.uasset" 463
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/RDS/M_RDS_Glass.uasset" 464
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/ArenaLevel/ArenaLevel.umap" 465
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/EndScreen/EndScreenLoss_BuiltData.uasset" 466
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/EndScreen/EndScreenLoss.umap" 467
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/EndScreen/EndScreenWin.umap" 468
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Accessories/M_Scope_25x56_Lens_NoAlpha.uasset" 469
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Accessories/SM_Scope_25x56_Y.uasset" 470
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Accessories/T_Suppressor5_ALB.uasset" 471
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Accessories/T_Suppressor5_M_MSK.uasset" 472
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Accessories/T_Suppressor5_NRM.uasset" 473
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Accessories/M_Suppressor5.uasset" 474
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Accessories/SM_Suppressor5.uasset" 475
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Accessories/T_Tc4_ALB.uasset" 476
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Accessories/T_Tc4_M_MSK.uasset" 477
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Accessories/T_Tc4_NRM.uasset" 478
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Accessories/M_Tc4_Sight.uasset" 479
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Accessories/SM_T4_Sight.uasset" 480
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Accessories/SM_Vertgrip.uasset" 481
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_12Gauge_ALB.uasset" 482
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_12Gauge_M_MSK.uasset" 483
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_12Gauge_NRM.uasset" 484
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Ammunition/M_Ammo_12gauge.uasset" 485
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_12Gauge.uasset" 486
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_12Gauge_Empty.uasset" 487
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_40mm_Grenade_ALB.uasset" 488
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_40mm_Grenade_M_MSK.uasset" 489
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_40mm_Grenade_NRM.uasset" 490
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Ammunition/M_40mm_Grenade.uasset" 491
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_40mm_G.uasset" 492
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_40mm_G_Empty.uasset" 493
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_45ap_ALB.uasset" 494
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_45ap_M_MSK.uasset" 495
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_45ap_NRM.uasset" 496
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Ammunition/M_45ap.uasset" 497
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_45ap.uasset" 498
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_45ap_Empty.uasset" 499
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_545x39.uasset" 500
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_545x39_Empty.uasset" 501
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_556x45.uasset" 502
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_556x45_Empty.uasset" 503
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_762x39.uasset" 504
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_762x39_Empty.uasset" 505
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_762x51.uasset" 506
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_762x51_Empty.uasset" 507
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_9mm.uasset" 508
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_9mm_Empty.uasset" 509
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_9x18_ALB.uasset" 510
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_9x18_M_MSK.uasset" 511
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_9x18_NRM.uasset" 512
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Ammunition/M_9x18.uasset" 513
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_9x18.uasset" 514
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_9x18_Empty.uasset" 515
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/AR4/SK_AR4_Physics.uasset" 516
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/AR4/SK_AR4_Skeleton.uasset" 517
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/AR4/SK_AR4.uasset" 518
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/AR4/SM_AR4_Mag.uasset" 519
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/AR4/SM_AR4_Mag_Empty.uasset" 520
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/G67_Grenade/SK_G67_X_Physics.uasset" 521
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/G67_Grenade/SK_G67_X_Skeleton.uasset" 522
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/G67_Grenade/SK_G67_X.uasset" 523
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ka47/SK_KA47_Physics.uasset" 524
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ka47/SK_KA47_Skeleton.uasset" 525
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ka47/SK_KA47.uasset" 526
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ka47/SM_KA47_Mag.uasset" 527
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ka47/SM_KA47_Mag_Empty.uasset" 528
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA74U/SK_KA74U_Y_Physics.uasset" 529
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA74U/SK_KA74U_Y_Skeleton.uasset" 530
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA74U/SK_KA74U_Y.uasset" 531
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA74U/SM_KA74U_Mag_Empty_X.uasset" 532
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA74U/SM_KA74U_Mag_X.uasset" 533
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA_Val/SK_KA_Val_Y_Physics.uasset" 534
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA_Val/SK_KA_Val_Y_Skeleton.uasset" 535
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA_Val/SK_KA_Val_Y.uasset" 536
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA_Val/SM_KA_Val_MAG_Loaded_Y.uasset" 537
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA_Val/SM_KA_Val_Mag_Y.uasset" 538
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/M9_Knife/SK_M9_Knife_X_Physics.uasset" 539
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/M9_Knife/SK_M9_Knife_X_Skeleton.uasset" 540
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/M9_Knife/SK_M9_Knife_X.uasset" 541
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SK_SMG11_Nostock_Y_Physics.uasset" 542
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SK_SMG11_Nostock_Y_Skeleton.uasset" 543
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SK_SMG11_Nostock_Y.uasset" 544
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SK_SMG11_Y_Physics.uasset" 545
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SK_SMG11_Y_Skeleton.uasset" 546
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SK_SMG11_Y.uasset" 547
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SM_SMG11_Mag_Empty_X.uasset" 548
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SM_SMG11_Mag_X.uasset" 549
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Maps/Weapons_Showcase.umap" 550
-"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/StartMenu/StartMenu.umap" 551
-"../../../Engine/Content/Maps/Entry_BuiltData.uasset" 552
-"../../../Engine/Content/Maps/Entry.umap" 553
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/ArenaLevel/WBP_BallReset.uasset" 6
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/SoundsAndMusic/37155__volivieri__soccer-ball-hit-ground-02.uasset" 7
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/ArenaLevel/BP_Ball.uasset" 8
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/BP_Ball.uasset" 9
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Mesh/UE4_Mannequin_Skeleton.uasset" 10
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Idle_Rifle_Ironsights.uasset" 11
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Jog_Bwd_Rifle.uasset" 12
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Jog_Fwd_Rifle.uasset" 13
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Jog_Lt_Rifle.uasset" 14
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Jog_Rt_Rifle.uasset" 15
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Walk_Bwd_Rifle_Ironsights.uasset" 16
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Walk_Fwd_Rifle_Ironsights.uasset" 17
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Walk_Lt_Rifle_Ironsights.uasset" 18
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Walk_Rt_Rifle_Ironsights.uasset" 19
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/BS_Ironsights.uasset" 20
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/ABP_PlayerAnimation.uasset" 21
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Idle_Rifle_Hip_Break1.uasset" 22
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Idle_Rifle_Hip_Break2.uasset" 23
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/BB_EnemyAI.uasset" 24
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/SoundsAndMusic/37236__shades__gun-pistol-one-shot.uasset" 25
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/BT_EnemyAI.uasset" 26
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/BP_EnemyAIController.uasset" 27
+"../../../Engine/Content/Functions/MaterialLayerFunctions/MatLayerBlend_AO.uasset" 28
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BlendAngleCorrectedNormals.uasset" 29
+"../../../Engine/Content/Functions/MaterialLayerFunctions/MatLayerBlend_NormalBlend.uasset" 30
+"../../../Engine/Content/Functions/MaterialLayerFunctions/MatLayerBlend_Simple.uasset" 31
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Materials/MaterialLayers/T_ML_Rubber_Blue_01_D.uasset" 32
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Materials/MaterialLayers/T_ML_Rubber_Blue_01_N.uasset" 33
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Materials/MaterialLayers/ML_GlossyBlack_Latex_UE4.uasset" 34
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Materials/MaterialLayers/ML_Plastic_Shiny_Beige.uasset" 35
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Textures/UE4_LOGO_CARD.uasset" 36
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Materials/MaterialLayers/ML_Plastic_Shiny_Beige_LOGO.uasset" 37
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Materials/MaterialLayers/T_ML_Aluminum01.uasset" 38
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Materials/MaterialLayers/T_ML_Aluminum01_N.uasset" 39
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Materials/MaterialLayers/ML_SoftMetal_UE4.uasset" 40
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Textures/UE4_Mannequin__normals.uasset" 41
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Textures/UE4_Mannequin_MAT_MASKA.uasset" 42
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Textures/UE4_Mannequin_occlusion_Mobile.uasset" 43
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Materials/M_UE4Man_Body.uasset" 44
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Materials/MI_EnemyArmour.uasset" 45
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Textures/UE4Man_Logo_N.uasset" 46
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Materials/M_UE4Man_ChestLogo.uasset" 47
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Mesh/SK_Mannequin_PhysicsAsset.uasset" 48
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/UE4_Mannequin/Mesh/SK_Mannequin.uasset" 49
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/BP_EnemyCharacter.uasset" 50
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/Map_RT.uasset" 51
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/BP_PlayerCharacterF.uasset" 52
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/SoundsAndMusic/bensound-thelounge.uasset" 53
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/EndScreen/BP_EndLevelGameMode.uasset" 54
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/BP_EndLevelGameMode.uasset" 55
+"../../../Engine/Content/BasicShapes/BasicShapeMaterial.uasset" 56
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/Meshes/SphereMesh.uasset" 57
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/BP_DamagePointVisualiser.uasset" 58
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/ArenaLevel/WBP_NoAmmo.uasset" 59
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/MaterialsAndTextures/T_Crosshair.uasset" 60
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/ArenaLevel/WBP_PlayerHUD.uasset" 61
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/SoundsAndMusic/15545__lagthenoggin__reload.uasset" 62
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/Map_MTL.uasset" 63
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/WBP_MiniMap.uasset" 64
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/BP_CustomPlayerController.uasset" 65
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/ArenaLevel/WBP_BlueScored.uasset" 66
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/ArenaLevel/WBP_RedScored.uasset" 67
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/ArenaLevel/WBP_Timer.uasset" 68
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/ArenaLevel/WBP_WarmupTimer.uasset" 69
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/SoundsAndMusic/bensound-hipjazz.uasset" 70
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/ArenaLevel/BP_GameDev1AssGameModeBase.uasset" 71
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/BP_GameDev1AssGameModeBase.uasset" 72
+"../../../Engine/Content/EngineMaterials/WorldGridMaterial.uasset" 73
+"../../../Engine/Content/BasicShapes/Cube.uasset" 74
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/ArenaLevel/BP_GoalTrigger.uasset" 75
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/BP_GoalTrigger.uasset" 76
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/BP_PlayerCharacterFix.uasset" 77
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/BP_PlayerCharacter.uasset" 78
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/StartMenu/BP_MainMenuController.uasset" 79
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/StartMenu/WBP_StartMenu.uasset" 80
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/StartMenu/BP_StartMenuGameMode.uasset" 81
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/BP_StartMenuGameMode.uasset" 82
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/EndScreen/EndScreen.uasset" 83
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/EndScreen.uasset" 84
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/EndScreen/EndScreenWin_BuiltData.uasset" 85
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/EndScreen/EndScreen_BuiltData.uasset" 86
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/EndScreen_BuiltData.uasset" 87
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/MI_Ball.uasset" 88
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/MaterialsAndTextures/MI_EnemyGridMaterial.uasset" 89
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/MI_EnemyGridMaterial.uasset" 90
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient.uasset" 91
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/ImageAdjustment/3ColorBlend.uasset" 92
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/MaterialsAndTextures/MI_PlayerGridMaterial.uasset" 93
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/MI_PlayerGridMaterial.uasset" 94
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/StartMenu.uasset" 95
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/StartMenu/StartMenu_BuiltData.uasset" 96
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/StartMenu_BuiltData.uasset" 97
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/ArenaLevel.uasset" 98
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/TestLayoutLevel.uasset" 99
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/ArenaLevel/ArenaLevel_BuiltData.uasset" 100
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/TestLayoutLevel_BuiltData.uasset" 101
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/WBP_PlayerHUD.uasset" 102
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Aim_Space_Hip.uasset" 103
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Aim_Space_Ironsights.uasset" 104
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Crouch_to_Stand_Rifle_Hip.uasset" 105
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Crouch_to_Stand_Rifle_Ironsights.uasset" 106
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Crouch_Walk_Bwd_Rifle_Ironsights.uasset" 107
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Crouch_Walk_Lt_Rifle_Ironsights.uasset" 108
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Crouch_Walk_Rt_Rifle_Ironsights.uasset" 109
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Death_1.uasset" 110
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Death_2.uasset" 111
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Death_3.uasset" 112
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Death_Ironsights_1.uasset" 113
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Death_Ironsights_2.uasset" 114
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Equip_Rifle_Standing.uasset" 115
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Fire_Rifle_Hip.uasset" 116
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Fire_Shotgun_Hip.uasset" 117
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Fire_Shotgun_Ironsights.uasset" 118
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Hit_React_4.uasset" 119
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Idle_Pistol.uasset" 120
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Jump_From_Stand_Ironsights.uasset" 121
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Prone_Death_1.uasset" 122
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Prone_Death_2.uasset" 123
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Prone_Fire_1.uasset" 124
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Prone_Fire_2.uasset" 125
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Prone_Idle.uasset" 126
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Prone_Reload_Rifle.uasset" 127
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Prone_Reload_Shotgun.uasset" 128
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Prone_To_Stand.uasset" 129
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Reload_Pistol.uasset" 130
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Reload_Rifle_Ironsights.uasset" 131
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Reload_Shotgun_Hip.uasset" 132
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Reload_Shotgun_Ironsights.uasset" 133
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Sprint_Fwd_Rifle.uasset" 134
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Stand_to_Crouch_Rifle_Hip.uasset" 135
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Stand_to_Crouch_Rifle_Ironsights.uasset" 136
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Stand_To_Prone.uasset" 137
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/KA74U/T_KA74U_ALB.uasset" 138
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/KA74U/T_KA74U_M_MSK.uasset" 139
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/KA74U/T_KA74U_NRM.uasset" 140
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Patterns/T_Stripes__Pattern.uasset" 141
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Master_Material/M_Weapon_Master_USE.uasset" 142
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Accessories/T_V_Grip_ALB.uasset" 143
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Accessories/T_V_Grip_M_MSK.uasset" 144
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Accessories/T_V_Grip_NRM.uasset" 145
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Accessories/M_V_Grip.uasset" 146
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Accessories/M_V_Grip_Green.uasset" 147
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/AR4/T_AR4_ALB.uasset" 148
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/AR4/T_AR4_M_MSK.uasset" 149
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/AR4/T_AR4_NRM.uasset" 150
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Patterns/T_Desert_Marpat_Pattern.uasset" 151
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/AR4/M_AR4_Pattern.uasset" 152
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/KA47/T_KA47_Gold_ALB.uasset" 153
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/KA47/T_KA47_Gold_M_MSK.uasset" 154
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/KA47/T_KA47_NRM.uasset" 155
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Ka47/M_KA47_Gold.uasset" 156
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/KA47/T_KA47_ALB.uasset" 157
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/KA47/T_KA47_M_MSK.uasset" 158
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Ka47/M_KA47.uasset" 159
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Ka47/M_KA47_Pattern.uasset" 160
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/KA74U/M_KA74U.uasset" 161
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/KA74U/T_KA74U_Gold_ALB.uasset" 162
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/KA74U/T_KA74U_Gold_M_MSK.uasset" 163
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/KA74U/M_KA74U_Gold.uasset" 164
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Patterns/T_LeafSpray_Pattern.uasset" 165
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/KA74U/M_KA74U_LeafSpray.uasset" 166
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/KA_Val/T_KA_Val_ALB.uasset" 167
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/KA_Val/T_KA_Val_M_MSK.uasset" 168
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/KA_Val/T_KA_Val_NRM.uasset" 169
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/KA_Val/M_KA_Val.uasset" 170
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/KA_Val/T_KA_Val_Black_ALB.uasset" 171
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/KA_Val/M_KA_Val_Black.uasset" 172
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Patterns/T_Wood_Marpat_Pattern.uasset" 173
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/KA_Val/M_KA_Val_Black_Camo.uasset" 174
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/KA_Val/M_KA_Val_Black_Striped.uasset" 175
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/RDS/T_RDS_01.uasset" 176
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Master_Material/M_RDS_Master.uasset" 177
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/RDS/M_RDS_01.uasset" 178
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/RDS/T_RDS_02.uasset" 179
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/RDS/M_RDS_02.uasset" 180
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/RDS/T_RDS_03.uasset" 181
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/RDS/M_RDS_03.uasset" 182
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/SMG11/T_SMG11_ALB.uasset" 183
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/SMG11/T_SMG11_M_MSK.uasset" 184
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/SMG11/T_SMG11_NRM.uasset" 185
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/SMG11/M_SMG11.uasset" 186
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Patterns/T_Urban_Marpat_Pattern.uasset" 187
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/SMG11/M_SMG11_Camo.uasset" 188
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/SMG11/M_SMG11_Color.uasset" 189
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Accessories/T_Scope_25x56_ALB.uasset" 190
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Accessories/T_Scope_25x56_M_MSK.uasset" 191
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Accessories/T_Scope_25x56_NRM.uasset" 192
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Accessories/M_Scope_25x56.uasset" 193
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Accessories/T_Scope_25x56_Lens_ALB.uasset" 194
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Accessories/T_Scope_25x56_Lens_M_MSK.uasset" 195
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Master_Material/M_Scope_Lens_MASTER.uasset" 196
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Accessories/M_Scope_25x56_Lens.uasset" 197
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Accessories/SM_Scope_25x56_X.uasset" 198
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_762x39_ALB.uasset" 199
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_762x39_M_MSK.uasset" 200
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_762x39_NRM.uasset" 201
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Ammunition/M_762x39_Empty.uasset" 202
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/AR4/M_AR4.uasset" 203
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/AR4/SK_AR4_X_Physics.uasset" 204
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/AR4/SK_AR4_X_Skeleton.uasset" 205
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/AR4/SK_AR4_X.uasset" 206
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/AR4/SM_AR4.uasset" 207
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/AR4/SM_AR4_X.uasset" 208
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/G67_Grenade/T_G67_ALB.uasset" 209
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/G67_Grenade/T_G67_M_MSK.uasset" 210
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/G67_Grenade/T_G67_NRM.uasset" 211
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/G67_Grenade/M_G67.uasset" 212
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/G67_Grenade/SK_G67_Physics.uasset" 213
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/G67_Grenade/SK_G67_Skeleton.uasset" 214
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/G67_Grenade/SK_G67.uasset" 215
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/G67_Grenade/SM_G67.uasset" 216
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/G67_Grenade/SM_G67_Thrown.uasset" 217
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/G67_Grenade/SM_G67_X.uasset" 218
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ka47/SK_KA47_X_Physics.uasset" 219
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ka47/SK_KA47_X_Skeleton.uasset" 220
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ka47/SK_KA47_X.uasset" 221
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ka47/SM_KA47.uasset" 222
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ka47/SM_KA47_X.uasset" 223
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA74U/SK_KA74U_X_Physics.uasset" 224
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA74U/SK_KA74U_X_Skeleton.uasset" 225
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA74U/SK_KA74U_X.uasset" 226
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA74U/SM_KA74U_Mag_Empty_Y.uasset" 227
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA74U/SM_KA74U_Mag_Y.uasset" 228
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA74U/SM_KA74U_X.uasset" 229
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA74U/SM_KA74U_Y.uasset" 230
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA_Val/SK_KA_Val_X_Physics.uasset" 231
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA_Val/SK_KA_Val_X_Skeleton.uasset" 232
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA_Val/SK_KA_Val_X.uasset" 233
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA_Val/SM_KA_Val_Mag_X.uasset" 234
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA_Val/SM_KA_Val_X.uasset" 235
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA_Val/SM_KA_Val_Y.uasset" 236
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/M9_Knife/T_M9_ALB.uasset" 237
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/M9_Knife/T_M9_M_MSK.uasset" 238
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/M9_Knife/T_M9_NRM.uasset" 239
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/M9_Knife/M_M9_Knife.uasset" 240
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/M9_Knife/SK_M9_Knife_Physics.uasset" 241
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/M9_Knife/SK_M9_Knife_Skeleton.uasset" 242
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/M9_Knife/SK_M9_Knife.uasset" 243
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/M9_Knife/SM_M9_Knife.uasset" 244
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/M9_Knife/SM_M9_Knife_X.uasset" 245
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_9mm_ALB.uasset" 246
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_9mm_M_MSK.uasset" 247
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_9mm_NRM.uasset" 248
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Ammunition/M_9mm.uasset" 249
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/SMG11/T_SMG11_Rem_ALB.uasset" 250
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/SMG11/T_SMG11_Rem_M_MSK.uasset" 251
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/SMG11/T_SMG11_Rem_NRM.uasset" 252
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/SMG11/M_SMG11_Rem.uasset" 253
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SK_SMG11_Nostock_X_Physics.uasset" 254
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SK_SMG11_Nostock_X_Skeleton.uasset" 255
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SK_SMG11_Nostock_X.uasset" 256
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SK_SMG11_X_Physics.uasset" 257
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SK_SMG11_X_Skeleton.uasset" 258
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SK_SMG11_X.uasset" 259
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SM_SMG11_Mag_Empty_Y.uasset" 260
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SM_SMG11_Nostock_X.uasset" 261
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SM_SMG11_Nostock_Y.uasset" 262
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SM_SMG11_X.uasset" 263
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SM_SMG11_Y.uasset" 264
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Patterns/T_80s_Pattern.uasset" 265
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Patterns/T_Chochip_Pattern.uasset" 266
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Patterns/T_Cracks_Pattern.uasset" 267
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Patterns/T_Hexagon_Glow_Pattern.uasset" 268
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Patterns/T_Hexagon_Pattern.uasset" 269
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Patterns/T_Ink_Pattern.uasset" 270
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Patterns/T_Net01_Pattern.uasset" 271
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Patterns/T_W90K_Pattern.uasset" 272
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Patterns/T_W90_Pattern.uasset" 273
+"../../../Engine/Content/Animation/DefaultAnimBoneCompressionSettings.uasset" 274
+"../../../Engine/Content/Animation/DefaultAnimCurveCompressionSettings.uasset" 275
+"../../../Engine/Content/ArtTools/RenderToTexture/Meshes/S_1_Unit_Plane.uasset" 276
+"../../../Engine/Content/BasicShapes/Cone.uasset" 277
+"../../../Engine/Content/BasicShapes/Cylinder.uasset" 278
+"../../../Engine/Content/BasicShapes/Plane.uasset" 279
+"../../../Engine/Content/EditorLandscapeResources/DataLayer.uasset" 280
+"../../../Engine/Content/EditorMaterials/MAT_Groups_Toggle.uasset" 281
+"../../../Engine/Content/EditorMaterials/MAT_Groups_Visibility.uasset" 282
+"../../../Engine/Content/EditorMaterials/PreviewShadowIndicator.uasset" 283
+"../../../Engine/Content/EditorMaterials/PreviewShadowIndicatorMaterial.uasset" 284
+"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_ColorTrack.uasset" 285
+"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Anim.uasset" 286
+"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_AudioMaster.uasset" 287
+"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Director.uasset" 288
+"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Event.uasset" 289
+"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Fade.uasset" 290
+"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Float.uasset" 291
+"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Move.uasset" 292
+"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Slomo.uasset" 293
+"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Sound.uasset" 294
+"../../../Engine/Content/EditorMaterials/MatineeGroups/MAT_Groups_Vector.uasset" 295
+"../../../Engine/Content/EditorMaterials/ParticleSystems/PSysThumbnail_NoImage.uasset" 296
+"../../../Engine/Content/EditorMaterials/ParticleSystems/PSysThumbnail_OOD.uasset" 297
+"../../../Engine/Content/EditorMaterials/Camera/CineMat.uasset" 298
+"../../../Engine/Content/EditorMaterials/Camera/MI_CineMat_Rig.uasset" 299
+"../../../Engine/Content/EditorMeshes/Camera/SM_CraneRig_Arm.uasset" 300
+"../../../Engine/Content/EditorMeshes/Camera/SM_CraneRig_Base.uasset" 301
+"../../../Engine/Content/EditorMeshes/Camera/SM_CraneRig_Body.uasset" 302
+"../../../Engine/Content/EditorMeshes/Camera/SM_CraneRig_Mount.uasset" 303
+"../../../Engine/Content/EditorMeshes/Camera/SM_RailRig_Mount.uasset" 304
+"../../../Engine/Content/EditorMeshes/Camera/SM_RailRig_Track.uasset" 305
+"../../../Engine/Content/EditorResources/BSPVertex.uasset" 306
+"../../../Engine/Content/EditorResources/EmptyActor.uasset" 307
+"../../../Engine/Content/EditorResources/S_Actor.uasset" 308
+"../../../Engine/Content/EditorResources/S_Note.uasset" 309
+"../../../Engine/Content/EditorResources/S_Solver.uasset" 310
+"../../../Engine/Content/EditorResources/S_Trigger.uasset" 311
+"../../../Engine/Content/EditorResources/LightIcons/S_LightError.uasset" 312
+"../../../Engine/Content/EditorResources/SequenceRecorder/Countdown.uasset" 313
+"../../../Engine/Content/EditorResources/SequenceRecorder/RecordingIndicator.uasset" 314
+"../../../Engine/Content/EditorSounds/Notifications/CompileFailed.uasset" 315
+"../../../Engine/Content/EditorSounds/Notifications/CompileFailed_Cue.uasset" 316
+"../../../Engine/Content/EditorSounds/Notifications/CompileSuccess.uasset" 317
+"../../../Engine/Content/EditorSounds/Notifications/CompileStart_Cue.uasset" 318
+"../../../Engine/Content/EditorSounds/Notifications/CompileSuccess_Cue.uasset" 319
+"../../../Engine/Content/EngineDamageTypes/DmgTypeBP_Environmental.uasset" 320
+"../../../Engine/Content/EngineDebugMaterials/DebugEditorMaterial.uasset" 321
+"../../../Engine/Content/EngineDebugMaterials/DebugMeshMaterial.uasset" 322
+"../../../Engine/Content/EngineDebugMaterials/M_SimpleUnlitTranslucent.uasset" 323
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/CameraDirectionVector.uasset" 324
+"../../../Engine/Content/EngineDebugMaterials/VolumeToRender.uasset" 325
+"../../../Engine/Content/EngineDebugMaterials/M_VolumeRenderSphereTracePP.uasset" 326
+"../../../Engine/Content/EngineDebugMaterials/WireframeMaterial.uasset" 327
+"../../../Engine/Content/EngineFonts/Faces/DroidSansFallback.uasset" 328
+"../../../Engine/Content/EngineFonts/Faces/RobotoBold.uasset" 329
+"../../../Engine/Content/EngineFonts/Faces/RobotoBoldItalic.uasset" 330
+"../../../Engine/Content/EngineFonts/Faces/RobotoItalic.uasset" 331
+"../../../Engine/Content/EngineFonts/Faces/RobotoLight.uasset" 332
+"../../../Engine/Content/EngineFonts/Faces/RobotoRegular.uasset" 333
+"../../../Engine/Content/EngineFonts/Roboto.uasset" 334
+"../../../Engine/Content/EngineMaterials/BaseFlattenDiffuseMap.uasset" 335
+"../../../Engine/Content/EngineMaterials/BaseFlattenEmissiveMap.uasset" 336
+"../../../Engine/Content/EngineMaterials/BaseFlattenGrayscaleMap.uasset" 337
+"../../../Engine/Content/EngineMaterials/BaseFlattenNormalMap.uasset" 338
+"../../../Engine/Content/EngineMaterials/BaseFlattenMaterial.uasset" 339
+"../../../Engine/Content/EngineMaterials/BlueNoise.uasset" 340
+"../../../Engine/Content/EngineMaterials/DefaultBloomKernel.uasset" 341
+"../../../Engine/Content/EngineMaterials/DefaultBokeh.uasset" 342
+"../../../Engine/Content/EngineMaterials/DefaultDiffuse.uasset" 343
+"../../../Engine/Content/EngineMaterials/DefaultDeferredDecalMaterial.uasset" 344
+"../../../Engine/Content/EngineMaterials/DefaultLightFunctionMaterial.uasset" 345
+"../../../Engine/Content/EngineMaterials/DefaultPhysicalMaterial.uasset" 346
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.uasset" 347
+"../../../Engine/Content/EngineMaterials/DefaultPostProcessMaterial.uasset" 348
+"../../../Engine/Content/EngineFonts/RobotoDistanceField.uasset" 349
+"../../../Engine/Content/EngineMaterials/DefaultTextMaterialOpaque.uasset" 350
+"../../../Engine/Content/EngineMaterials/DefaultWhiteGrid.uasset" 351
+"../../../Engine/Content/EngineMaterials/DefaultWhiteGrid_Low.uasset" 352
+"../../../Engine/Content/EngineMaterials/EmissiveMeshMaterial.uasset" 353
+"../../../Engine/Content/EngineMaterials/GizmoMaterial.uasset" 354
+"../../../Engine/Content/EngineMaterials/Good64x64TilingNoiseHighFreq.uasset" 355
+"../../../Engine/Content/EngineMaterials/MiniFont.uasset" 356
+"../../../Engine/Content/EngineMaterials/InvalidLightmapSettings.uasset" 357
+"../../../Engine/Content/EngineMaterials/M_InvalidLightmapSettings.uasset" 358
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/CameraOffset.uasset" 359
+"../../../Engine/Content/EngineMaterials/PhAT_JointLimitMaterial.uasset" 360
+"../../../Engine/Content/EngineMaterials/PreintegratedSkinBRDF.uasset" 361
+"../../../Engine/Content/EngineMaterials/RemoveSurfaceMaterial.uasset" 362
+"../../../Engine/Content/EngineMaterials/WeightMapPlaceholderTexture.uasset" 363
+"../../../Engine/Content/EngineResources/WhiteSquareTexture.uasset" 364
+"../../../Engine/Content/EngineMaterials/Widget3DPassThrough.uasset" 365
+"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Masked.uasset" 366
+"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Opaque.uasset" 367
+"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Masked_OneSided.uasset" 368
+"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Opaque_OneSided.uasset" 369
+"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Translucent.uasset" 370
+"../../../Engine/Content/EngineMaterials/Widget3DPassThrough_Translucent_OneSided.uasset" 371
+"../../../Engine/Content/EngineMeshes/Cylinder.uasset" 372
+"../../../Engine/Content/EngineMeshes/Sphere.uasset" 373
+"../../../Engine/Content/EngineResources/Black.uasset" 374
+"../../../Engine/Content/EngineResources/DefaultTexture.uasset" 375
+"../../../Engine/Content/EngineResources/DefaultTextureCube.uasset" 376
+"../../../Engine/Content/EngineResources/DefaultVolumeTexture2D.uasset" 377
+"../../../Engine/Content/EngineResources/DefaultVolumeTexture.uasset" 378
+"../../../Engine/Content/EngineResources/GradientTexture0.uasset" 379
+"../../../Engine/Content/EngineSounds/Master.uasset" 380
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Shading/ConvertFromDiffSpec.uasset" 381
+"../../../Engine/Content/Functions/Engine_MaterialFunctions01/Shading/PowerToRoughness.uasset" 382
+"../../../Engine/Content/Maps/Templates/Thumbnails/Default.uasset" 383
+"../../../Engine/Content/Maps/Templates/Thumbnails/TimeOfDay.uasset" 384
+"../../../Engine/Content/Maps/Templates/Thumbnails/VR-Basic.uasset" 385
+"../../../Engine/Content/MobileResources/T_MobileControls_texture.uasset" 386
+"../../../Engine/Content/MobileResources/T_MobileMenu2.uasset" 387
+"../../../Engine/Content/MobileResources/HUD/AnalogHat.uasset" 388
+"../../../Engine/Content/MobileResources/HUD/VirtualJoystick_Background.uasset" 389
+"../../../Engine/Content/MobileResources/HUD/VirtualJoystick_Thumb.uasset" 390
+"../../../Engine/Content/MobileResources/HUD/DefaultVirtualJoysticks.uasset" 391
+"../../../Engine/Content/MobileResources/HUD/LeftVirtualJoystickOnly.uasset" 392
+"../../../Engine/Content/MobileResources/HUD/MobileHUDButton1_off.uasset" 393
+"../../../Engine/Content/MobileResources/HUD/MobileHUDButton1_on.uasset" 394
+"../../../Engine/Content/MobileResources/HUD/MobileHUDButton2_off.uasset" 395
+"../../../Engine/Content/MobileResources/HUD/MobileHUDButton2_on.uasset" 396
+"../../../Engine/Content/MobileResources/HUD/MobileHUDButton3.uasset" 397
+"../../../Engine/Content/MobileResources/HUD/MobileHUDButtonFire.uasset" 398
+"../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionPad.uasset" 399
+"../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionPad2.uasset" 400
+"../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionPad3.uasset" 401
+"../../../Engine/Content/MobileResources/HUD/MobileHUDDirectionStick.uasset" 402
+"../../../Engine/Content/MobileResources/HUD/T_Castle_ThumbstickInner.uasset" 403
+"../../../Engine/Content/MobileResources/HUD/T_Castle_ThumbstickOutter.uasset" 404
+"../../../Engine/Content/Tutorial/ContentIntroCurve.uasset" 405
+"../../../Engine/Content/Tutorial/Basics/LevelEditorAttract.uasset" 406
+"../../../Engine/Content/VREditor/LaserPointer/VR_LaserPower_01.uasset" 407
+"../../../Engine/Content/VREditor/TransformGizmo/TransformGizmoMaterial.uasset" 408
+"../../../Engine/Content/VREditor/TransformGizmo/TranslucentTransformGizmoMaterial.uasset" 409
+"../../../Engine/Content/VREditor/TransformGizmo/BoundingBoxCorner.uasset" 410
+"../../../Engine/Content/VREditor/TransformGizmo/BoundingBoxEdge.uasset" 411
+"../../../Engine/Content/VREditor/TransformGizmo/PlaneTranslationHandle.uasset" 412
+"../../../Engine/Content/VREditor/TransformGizmo/Main.uasset" 413
+"../../../Engine/Content/VREditor/TransformGizmo/Xray.uasset" 414
+"../../../Engine/Content/VREditor/TransformGizmo/SM_Sequencer_Key.uasset" 415
+"../../../Engine/Content/VREditor/TransformGizmo/SM_Sequencer_Node.uasset" 416
+"../../Plugins/2D/Paper2D/Content/PlaceholderTextures/DummySpriteTexture.uasset" 417
+"../../Plugins/2D/Paper2D/Content/DummySprite.uasset" 418
+"../../Plugins/2D/Paper2D/Content/DefaultPaperTerrainMaterial.uasset" 419
+"../../Plugins/2D/Paper2D/Content/DefaultSpriteMaterial.uasset" 420
+"../../Plugins/2D/Paper2D/Content/MaskedUnlitSpriteMaterial.uasset" 421
+"../../Plugins/2D/Paper2D/Content/OpaqueUnlitSpriteMaterial.uasset" 422
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraBooleanLogicOps.uasset" 423
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraCoordinateSpace.uasset" 424
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraExpansionMode.uasset" 425
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraOrientationAxis.uasset" 426
+"../../Plugins/FX/Niagara/Content/Enums/ENiagaraRandomnessMode.uasset" 427
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat4Components.uasset" 428
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat2.uasset" 429
+"../../../Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3.uasset" 430
+"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/OculusMR_ChromaKey.uasset" 431
+"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/OculusMR_ChromaKey_Lit.uasset" 432
+"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/OculusMR_OpaqueColoredMaterial.uasset" 433
+"../../Plugins/Runtime/Oculus/OculusVR/Content/Materials/OculusMR_WhiteMaterial.uasset" 434
+"../../../Engine/Content/EditorBlueprintResources/StandardMacros.uasset" 435
+"../../../Engine/Content/EngineSky/C_Sky_Cloud_Color.uasset" 436
+"../../../Engine/Content/EngineSky/C_Sky_Horizon_Color.uasset" 437
+"../../../Engine/Content/EngineSky/C_Sky_Zenith_Color.uasset" 438
+"../../../Engine/Content/EngineSky/T_Sky_Blue.uasset" 439
+"../../../Engine/Content/EngineSky/T_Sky_Clouds_M.uasset" 440
+"../../../Engine/Content/EngineSky/T_Sky_Stars.uasset" 441
+"../../../Engine/Content/EngineSky/M_Sky_Panning_Clouds2.uasset" 442
+"../../../Engine/Content/EngineSky/SM_SkySphere.uasset" 443
+"../../../Engine/Content/EngineSky/BP_Sky_Sphere.uasset" 444
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/DevMap_BuiltData.uasset" 445
+"../../../Engine/Content/MapTemplates/SM_Template_Map_Floor.uasset" 446
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/DevMap.umap" 447
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Crouch_Idle_Rifle_Hip.uasset" 448
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Crouch_Idle_Rifle_Ironsights.uasset" 449
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Crouch_Walk_Fwd_Rifle_Ironsights.uasset" 450
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Equip_Pistol_Standing.uasset" 451
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Fire_Rifle_Ironsights.uasset" 452
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Hit_React_1.uasset" 453
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Hit_React_2.uasset" 454
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Hit_React_3.uasset" 455
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Reload_Rifle_Hip.uasset" 456
+"../../../Engine/Content/TemplateResources/M_Template_Master.uasset" 457
+"../../../Engine/Content/TemplateResources/MI_Template_BaseGray_03_Metal.uasset" 458
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/AnimStarterPack/Showcase.umap" 459
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/Meshes/CubeMesh.uasset" 460
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/BP_GravLift.uasset" 461
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/Meshes/CubeMesh_DM.uasset" 462
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/Meshes/StaticMesh.uasset" 463
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/Meshes/StaticMesh_DM.uasset" 464
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/RDS/M_RDS_Glass.uasset" 465
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/ArenaLevel/ArenaLevel.umap" 466
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/EndScreen/EndScreenLoss_BuiltData.uasset" 467
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/EndScreen/EndScreenLoss.umap" 468
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/EndScreen/EndScreenWin.umap" 469
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Accessories/M_Scope_25x56_Lens_NoAlpha.uasset" 470
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Accessories/SM_Scope_25x56_Y.uasset" 471
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Accessories/T_Suppressor5_ALB.uasset" 472
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Accessories/T_Suppressor5_M_MSK.uasset" 473
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Accessories/T_Suppressor5_NRM.uasset" 474
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Accessories/M_Suppressor5.uasset" 475
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Accessories/SM_Suppressor5.uasset" 476
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Accessories/T_Tc4_ALB.uasset" 477
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Accessories/T_Tc4_M_MSK.uasset" 478
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Accessories/T_Tc4_NRM.uasset" 479
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Accessories/M_Tc4_Sight.uasset" 480
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Accessories/SM_T4_Sight.uasset" 481
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Accessories/SM_Vertgrip.uasset" 482
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_12Gauge_ALB.uasset" 483
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_12Gauge_M_MSK.uasset" 484
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_12Gauge_NRM.uasset" 485
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Ammunition/M_Ammo_12gauge.uasset" 486
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_12Gauge.uasset" 487
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_12Gauge_Empty.uasset" 488
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_40mm_Grenade_ALB.uasset" 489
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_40mm_Grenade_M_MSK.uasset" 490
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_40mm_Grenade_NRM.uasset" 491
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Ammunition/M_40mm_Grenade.uasset" 492
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_40mm_G.uasset" 493
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_40mm_G_Empty.uasset" 494
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_45ap_ALB.uasset" 495
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_45ap_M_MSK.uasset" 496
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_45ap_NRM.uasset" 497
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Ammunition/M_45ap.uasset" 498
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_45ap.uasset" 499
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_45ap_Empty.uasset" 500
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_545x39.uasset" 501
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_545x39_Empty.uasset" 502
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_556x45.uasset" 503
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_556x45_Empty.uasset" 504
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_762x39.uasset" 505
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_762x39_Empty.uasset" 506
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_762x51.uasset" 507
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_762x51_Empty.uasset" 508
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_9mm.uasset" 509
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_9mm_Empty.uasset" 510
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_9x18_ALB.uasset" 511
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_9x18_M_MSK.uasset" 512
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Textures/Ammunition/T_9x18_NRM.uasset" 513
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Materials/Ammunition/M_9x18.uasset" 514
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_9x18.uasset" 515
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ammunition/SM_Shell_9x18_Empty.uasset" 516
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/AR4/SK_AR4_Physics.uasset" 517
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/AR4/SK_AR4_Skeleton.uasset" 518
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/AR4/SK_AR4.uasset" 519
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/AR4/SM_AR4_Mag.uasset" 520
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/AR4/SM_AR4_Mag_Empty.uasset" 521
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/G67_Grenade/SK_G67_X_Physics.uasset" 522
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/G67_Grenade/SK_G67_X_Skeleton.uasset" 523
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/G67_Grenade/SK_G67_X.uasset" 524
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ka47/SK_KA47_Physics.uasset" 525
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ka47/SK_KA47_Skeleton.uasset" 526
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ka47/SK_KA47.uasset" 527
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ka47/SM_KA47_Mag.uasset" 528
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/Ka47/SM_KA47_Mag_Empty.uasset" 529
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA74U/SK_KA74U_Y_Physics.uasset" 530
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA74U/SK_KA74U_Y_Skeleton.uasset" 531
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA74U/SK_KA74U_Y.uasset" 532
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA74U/SM_KA74U_Mag_Empty_X.uasset" 533
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA74U/SM_KA74U_Mag_X.uasset" 534
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA_Val/SK_KA_Val_Y_Physics.uasset" 535
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA_Val/SK_KA_Val_Y_Skeleton.uasset" 536
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA_Val/SK_KA_Val_Y.uasset" 537
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA_Val/SM_KA_Val_MAG_Loaded_Y.uasset" 538
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/KA_Val/SM_KA_Val_Mag_Y.uasset" 539
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/M9_Knife/SK_M9_Knife_X_Physics.uasset" 540
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/M9_Knife/SK_M9_Knife_X_Skeleton.uasset" 541
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/M9_Knife/SK_M9_Knife_X.uasset" 542
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SK_SMG11_Nostock_Y_Physics.uasset" 543
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SK_SMG11_Nostock_Y_Skeleton.uasset" 544
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SK_SMG11_Nostock_Y.uasset" 545
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SK_SMG11_Y_Physics.uasset" 546
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SK_SMG11_Y_Skeleton.uasset" 547
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SK_SMG11_Y.uasset" 548
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SM_SMG11_Mag_Empty_X.uasset" 549
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Weapons/Meshes/SMG11/SM_SMG11_Mag_X.uasset" 550
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/FPS_Weapon_Bundle/Maps/Weapons_Showcase.umap" 551
+"../../../../../../Users/jamie/Documents/Unreal Projects/GameDev1Ass/Content/StartMenu/StartMenu.umap" 552
+"../../../Engine/Content/Maps/Entry_BuiltData.uasset" 553
+"../../../Engine/Content/Maps/Entry.umap" 554

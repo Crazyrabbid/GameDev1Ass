@@ -32,6 +32,10 @@ public:
 	UFUNCTION()
 		bool GetPlayerDead();
 	UFUNCTION()
+		bool GetBallHeld();
+	UFUNCTION()
+		void SetBallHeld(bool BallHeld);
+	UFUNCTION()
 		void BeginPlayerRespawnProcess();
 	UFUNCTION()
 		void BeginEnemyRespawnProcess(AActor* Spawn);
@@ -111,5 +115,6 @@ private:
 
 	UPROPERTY() bool bPlayAllowed = false;
 	UPROPERTY() bool bPlayerDead = false;
+	UPROPERTY() bool bBallHeld = false;
 
 };

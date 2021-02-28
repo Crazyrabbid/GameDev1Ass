@@ -12,15 +12,17 @@ void UBTService_UpdateDistanceToBall::TickNode(UBehaviorTreeComponent& OwnerComp
 
 	if (GetWorld()->GetName() == (TEXT("ArenaLevel")) || GetWorld()->GetName() == (TEXT("DevMap"))) {
 		GameModeRef = Cast<AGameDev1AssGameModeBase>(UGameplayStatics::GetGameMode(GetWorld()));
-		AAIController* EnemyAIController = OwnerComp.GetAIOwner();
-		AActor* AIActor = OwnerComp.GetAIOwner()->GetPawn();
-		ABall* BallPawn = GameModeRef->inPlayBall;
-		float Distance = sqrt(FVector::DotProduct(AIActor->GetActorLocation(), BallPawn->GetActorLocation()));
-		if (Distance < 300.0f) {
-			OwnerComp.GetBlackboardComponent()->SetValueAsBool(GetSelectedBlackboardKey(), true);
-		} 
-		else {
-			OwnerComp.GetBlackboardComponent()->ClearValue(GetSelectedBlackboardKey());
+		if (GameModeRef->GetBallHeld() == false) {
+			AAIController* EnemyAIController = OwnerComp.GetAIOwner();
+			AActor* AIActor = OwnerComp.GetAIOwner()->GetPawn();
+			ABall* BallPawn = GameModeRef->inPlayBall;
+			float Distance = sqrt(FVector::DotProduct(AIActor->GetActorLocation(), BallPawn->GetActorLocation()));
+			if (Distance < 100.0f) {
+				OwnerComp.GetBlackboardComponent()->SetValueAsBool(GetSelectedBlackboardKey(), true);
+			}
+			else {
+				OwnerComp.GetBlackboardComponent()->ClearValue(GetSelectedBlackboardKey());
+			}
 		}
 	}
 }

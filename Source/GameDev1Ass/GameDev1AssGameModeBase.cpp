@@ -49,6 +49,16 @@ bool AGameDev1AssGameModeBase::GetPlayerDead()
 	return bPlayerDead;
 }
 
+bool AGameDev1AssGameModeBase::GetBallHeld()
+{
+	return bBallHeld;
+}
+
+void AGameDev1AssGameModeBase::SetBallHeld(bool BallHeld)
+{
+	bBallHeld = BallHeld;
+}
+
 void AGameDev1AssGameModeBase::BeginPlayerRespawnProcess()
 {
 	bPlayerDead = true;
@@ -162,6 +172,7 @@ void AGameDev1AssGameModeBase::RoundReset() {
 	UE_LOG(LogTemp, Warning, TEXT("RoundResetCalled"));
 	RoundBeginSpawning();
 	PlayerControllerRef->RecastPlayerCharacter();
+	PlayerControllerRef->ResetHealth();
 
 	if (WarmUpCountdownCount->GetIsEnabled()) WarmUpCountdownCount->RemoveFromViewport();
 

@@ -13,7 +13,7 @@ void UBTService_UpdateBallPosition::TickNode(UBehaviorTreeComponent& OwnerComp, 
 		GameModeRef = Cast<AGameDev1AssGameModeBase>(UGameplayStatics::GetGameMode(GetWorld()));
 		ABall* BallPawn = GameModeRef->inPlayBall;
 
-		if (BallPawn) {
+		if (BallPawn && GameModeRef->inPlayBall != nullptr) {
 			OwnerComp.GetBlackboardComponent()->SetValueAsVector(GetSelectedBlackboardKey(), BallPawn->GetActorLocation());
 		}
 		else {

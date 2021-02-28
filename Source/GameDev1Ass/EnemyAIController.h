@@ -4,8 +4,10 @@
 
 #include "CoreMinimal.h"
 #include "AIController.h"
+#include "Ball.h"
 #include "EnemyAIController.generated.h"
 
+class AGameDev1AssGameModeBase;
 
 UCLASS()
 class GAMEDEV1ASS_API AEnemyAIController : public AAIController
@@ -20,9 +22,14 @@ private:
 		TArray<AActor*> Waypoints;
 	UPROPERTY(EditAnywhere)
 		UBehaviorTree* BT_EnemyAI;
+	UPROPERTY()
+		AGameDev1AssGameModeBase* GameModeRef;
 public:
 	UPROPERTY()
 		AActor* LookOutPoint;
 	UPROPERTY()
 		AActor* HomePoint;
+	UPROPERTY()
+		AActor* ScorePoint;
+
 };

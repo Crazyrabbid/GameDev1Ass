@@ -45,6 +45,7 @@ void AEnemyCharacter::PickUpBall()
 {
 	bBallHeld = true;
 	GameModeRef->DeleteBall();
+	GameModeRef->SetBallHeld(true);
 }
 
 bool AEnemyCharacter::BallHeld()
@@ -64,6 +65,7 @@ void AEnemyCharacter::BallDropped()
 		if (GameModeRef) {
 			UE_LOG(LogTemp, Warning, TEXT("inPlayBall Assigned"));
 			GameModeRef->inPlayBall = TempBall;
+			GameModeRef->SetBallHeld(false);
 		}
 	}
 }

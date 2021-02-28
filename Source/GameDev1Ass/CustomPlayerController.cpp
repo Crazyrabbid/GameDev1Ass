@@ -52,6 +52,7 @@ void ACustomPlayerController::Fire() {
 		if (bBallHeld) {
 			UE_LOG(LogTemp, Warning, TEXT("Ball Held"));
 			if (playerCharacter) playerCharacter->Fire();
+			GameModeRef->SetBallHeld(false);
 			bBallHeld = false;
 		}
 		else {
@@ -116,6 +117,7 @@ void ACustomPlayerController::Catch() {
 				bBallHeld = true;
 				UE_LOG(LogTemp, Warning, TEXT("Ball Held value %s"), bBallHeld ? TEXT("true") : TEXT("false"));
 				GameModeRef->DeleteBall();
+				GameModeRef->SetBallHeld(true);
 			}
 		}
 	}
@@ -222,6 +224,7 @@ float ACustomPlayerController::TakeDamage(float DamageAmount, struct FDamageEven
 		GameModeRef->BeginPlayerRespawnProcess();
 		if (bBallHeld) {
 			playerCharacter->BallDropped();
+			GameModeRef->SetBallHeld(false);
 			bBallHeld = false;
 		}
 		playerCharacter->Destroy();
