@@ -8,6 +8,8 @@ ADamagePointVisualiser::ADamagePointVisualiser()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = false;
+
+	//Establishes object and sets to remove very shortly.
 	DamageVisualiserMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("GunDamageMesh"));
 	SetRootComponent(DamageVisualiserMesh);
 	DamageVisualiserMesh->SetNotifyRigidBodyCollision(false);

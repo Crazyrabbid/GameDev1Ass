@@ -17,8 +17,9 @@ class GAMEDEV1ASS_API UBTService_UpdateBallPosition : public UBTService_Blackboa
 	GENERATED_BODY()
 	
 protected:
+	//Updates Ball position to ensure Eneemy keep following if within lineOfSight.
 	virtual void TickNode(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds) override;
 private:
 	UPROPERTY()
-		AGameDev1AssGameModeBase* GameModeRef;
+		AGameDev1AssGameModeBase* GameModeRef;		//Used to retrieve Ball within play.
 };

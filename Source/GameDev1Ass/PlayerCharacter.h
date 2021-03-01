@@ -20,36 +20,24 @@ class GAMEDEV1ASS_API APlayerCharacter : public ACharacter
 public:
 	// Sets default values for this character's properties
 	APlayerCharacter();
-	//UPROPERTY(EditAnywhere) UCustomMovementComponent* CustomCharacterMovement;
+
 
 protected:
-	// Called when the game starts or when spawned
-	//virtual void BeginPlay() override;
+
 
 public:	
-	// Called every frame
-	//virtual void Tick(float DeltaTime) override;
-
-	// Called to bind functionality to input
-	//virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-	void Fire();
-	void BallDropped();
+	void Fire();				//Spawns a Ball and informs GameMode of Ball creation.
+	void BallDropped();			//Spawns a ball pointed down up death.
 
 private:
+	//Sends damage notification through to controller to handle.
 	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
 
-	UPROPERTY(EditAnywhere) UCameraComponent* Camera;
-	UPROPERTY(EditAnywhere) USceneCaptureComponent2D* MapCapture;
-	UPROPERTY(EditAnywhere) USpringArmComponent* SpringArm;
-	UPROPERTY(EditAnywhere) USpringArmComponent* MapArm;
-	UPROPERTY(EditAnywhere) USceneComponent* ProjectileSpawnPoint;
-	UPROPERTY(EditAnywhere) TSubclassOf<ABall> BallClass;
-	UPROPERTY() AGameDev1AssGameModeBase* GameModeRef;
- 	/*
-	void MoveForwards(float axisAmount);
-	void JumpCharacter();
-	void Strafe(float axisAmount);
-	void Turn(float axisAmount);
-	void Pitch(float axisAmount);
-	*/
+	UPROPERTY(EditAnywhere) UCameraComponent* Camera;					 //Camera used as main viewpoint for player.
+	UPROPERTY(EditAnywhere) USceneCaptureComponent2D* MapCapture;		 //Camera used as orthographic mini map for player to see.
+	UPROPERTY(EditAnywhere) USpringArmComponent* SpringArm;				 //Spring arm to regulate and distance Main camera for a consistant experience.
+	UPROPERTY(EditAnywhere) USpringArmComponent* MapArm;				 //Spring arm to regulate and distance mini map camera for a consistant experience.
+	UPROPERTY(EditAnywhere) USceneComponent* ProjectileSpawnPoint;		 //Used to store relative location to spawn and fire ball from.
+	UPROPERTY(EditAnywhere) TSubclassOf<ABall> BallClass;				 //Blueprint used as a template to create Ball.
+	UPROPERTY() AGameDev1AssGameModeBase* GameModeRef;					 //Used to inform GameMode of Damage Taken.
 };

@@ -18,6 +18,7 @@ APlayerCharacter::APlayerCharacter()
 
 	AutoPossessPlayer = EAutoReceiveInput::Player0;
 
+	//Generates and sets up springArm to ensure consistent third person camera control.
 	SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("Spring Arm"));
 	SpringArm->SetupAttachment(GetMesh());
 	SpringArm->SetRelativeLocation(FVector(0.0f, 0.0f, 20.0f));
@@ -28,20 +29,24 @@ APlayerCharacter::APlayerCharacter()
 	SpringArm->bEnableCameraLag = true;
 	SpringArm->bEnableCameraRotationLag = true;
 
+	//Creates camera and attaches to Spring arm.
 	Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
 	Camera->SetupAttachment(SpringArm, USpringArmComponent::SocketName);
 	Camera->SetRelativeLocation(FVector(-400.0f, 0.0f, 350.0f));
 	Camera->SetRelativeRotation(FRotator(-20.0f, 0.0f, 0.0f));
 
+	//Creates location to fire Ball from.
 	ProjectileSpawnPoint = CreateDefaultSubobject<USceneComponent>(TEXT("Projectile Spawn Point"));
 	ProjectileSpawnPoint->SetupAttachment(GetMesh());
 	ProjectileSpawnPoint->SetRelativeLocation(FVector(10.0f, 20.0f, 100.0f));
 
+	//Spring arm created and set up to create a consistent mini map camera with.
 	MapArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("Map Arm"));
 	MapArm->SetupAttachment(GetMesh());
 	MapArm->SetRelativeLocation(FVector(0.0f, 0.0f, 20.0f));
 	MapArm->SetRelativeRotation(FRotator(-90.0f, 0.0f, -90.0f));
 
+	//Creates and attaches mini map camera to spring arm.
 	MapCapture = CreateDefaultSubobject<USceneCaptureComponent2D>(TEXT("Map Camera"));
 	MapCapture->SetupAttachment(MapArm);
 
@@ -49,6 +54,8 @@ APlayerCharacter::APlayerCharacter()
 }
 
 void APlayerCharacter::Fire() {
+
+	//Spawns a Ball and informs GameMode of Ball creation.
 	UE_LOG(LogTemp, Warning, TEXT("Fire Activated"));
 	if (BallClass) {
 		UE_LOG(LogTemp, Warning, TEXT("Fire Activated, Ball Class Exists"));
@@ -66,6 +73,7 @@ void APlayerCharacter::Fire() {
 
 void APlayerCharacter::BallDropped()
 {
+	//Spawns a ball pointed down up death.
 	if (BallClass) {
 		UE_LOG(LogTemp, Warning, TEXT("Fire Activated, Ball Class Exists"));
 		FVector SpawnLocation = ProjectileSpawnPoint->GetComponentLocation();
@@ -81,29 +89,7 @@ void APlayerCharacter::BallDropped()
 }
 
 float APlayerCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) {
+	//Sends damage notification through to controller to handle.
 	GetController()->TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 	return DamageAmount;
 }
-/*
-// Called when the game starts or when spawned
-void APlayerCharacter::BeginPlay()
-{
-	Super::BeginPlay();
-	
-}
-
-// Called every frame
-void APlayerCharacter::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-
-}
-
-// Called to bind functionality to input
-void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
-{
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
-	
-
-
-*/

@@ -26,15 +26,18 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 private:
+	//Triggers Point scored dependant on Bool checked.
 	UFUNCTION() void OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+	
+	//Kinda useless but got attachment issues to it.
 	UFUNCTION() void OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 
 	UPROPERTY(EditAnywhere)
-		UStaticMeshComponent* GoalMesh;
+		UStaticMeshComponent* GoalMesh;					  //Visual representation of Goal.
 	UPROPERTY(EditAnywhere)
-		UBoxComponent* CollisionBox;
+		UBoxComponent* CollisionBox;					  //Used to check if Ball has entered the tunnel to trigger goal.
 	UPROPERTY(EditAnywhere)
-		bool playerGoal;
+		bool playerGoal;								  //If ticked, Enemy scored. Else Player Scored.
 	UPROPERTY()
-		AGameDev1AssGameModeBase* GameModeRef;
+		AGameDev1AssGameModeBase* GameModeRef;			  //Used to inform Gamemode that player or enemy has scored.
 };

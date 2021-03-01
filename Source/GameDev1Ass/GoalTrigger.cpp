@@ -9,6 +9,8 @@ AGoalTrigger::AGoalTrigger()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+
+	//Spawns mesh and establishes collision to detect if Ball is within Goal
 	GoalMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Goal Mesh"));
 	SetRootComponent(GoalMesh);
 	CollisionBox = CreateDefaultSubobject<UBoxComponent>(TEXT("Collision Box"));
@@ -28,6 +30,7 @@ void AGoalTrigger::BeginPlay()
 }
 
 void AGoalTrigger::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult) {
+	//Triggers Point scored dependant on Bool checked.
 	if (GameModeRef) {
 		if (OtherActor == GameModeRef->inPlayBall) {
 			if (playerGoal) GameModeRef->EnemyPointScored();
@@ -37,7 +40,7 @@ void AGoalTrigger::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* O
 }
 
 void AGoalTrigger::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex) {
-
+	//Kinda useless but got attachment issues to it.
 }
 
 // Called every frame

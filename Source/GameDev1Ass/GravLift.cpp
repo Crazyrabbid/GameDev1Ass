@@ -10,6 +10,8 @@ AGravLift::AGravLift()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+
+	//Creates mesh and collision to detect if anything has entered the lift area and then creates location to apply force from.
 	GravLiftMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Grav Lift Mesh"));
 	SetRootComponent(GravLiftMesh);
 	CollisionBox = CreateDefaultSubobject<UBoxComponent>(TEXT("Collision Box"));
@@ -40,6 +42,7 @@ void AGravLift::Tick(float DeltaTime)
 
 void AGravLift::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
+	//Applies force to objects that enters and calls function on player to provide similar effect.
 	if (OtherActor->FindComponentByClass(UCharacterMovementComponent::StaticClass())) {
 		if (OtherActor == UGameplayStatics::GetPlayerPawn(GetWorld(), 0)) {
 			if(playerController) playerController->GravLift(ForceOriginPoint->GetForwardVector() * forceStrength, false, true);

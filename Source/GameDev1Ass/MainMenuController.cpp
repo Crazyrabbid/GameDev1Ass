@@ -6,6 +6,7 @@
 void AMainMenuController::BeginPlay() {
 	Super::BeginPlay();
 
+	//Ensures player can interact with Main Menu.
 	bShowMouseCursor = true;
 	bEnableClickEvents = true;
 	bEnableMouseOverEvents = true;

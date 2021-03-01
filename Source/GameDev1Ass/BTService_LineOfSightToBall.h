@@ -17,8 +17,10 @@ class GAMEDEV1ASS_API UBTService_LineOfSightToBall : public UBTService_Blackboar
 	GENERATED_BODY()
 	
 protected:
+	//Checks if Enemy can see Ball.
 	virtual void TickNode(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds) override;
 private:
+
 	UPROPERTY()
-		AGameDev1AssGameModeBase* GameModeRef;
+		AGameDev1AssGameModeBase* GameModeRef;	  //Used to grab a reference to the Ball that is used within the game.
 };

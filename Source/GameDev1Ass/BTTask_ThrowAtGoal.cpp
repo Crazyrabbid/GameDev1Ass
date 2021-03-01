@@ -7,11 +7,13 @@
 EBTNodeResult::Type UBTTask_ThrowAtGoal::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) {
 	Super::ExecuteTask(OwnerComp, NodeMemory);
 
+	//Grabs Ball and Enemy so Enemy can throw Ball into goal.
 	GameModeRef = Cast<AGameDev1AssGameModeBase>(UGameplayStatics::GetGameMode(GetWorld()));
 	ABall* BallPawn = GameModeRef->inPlayBall;
 	AAIController* EnemyAIController = OwnerComp.GetAIOwner();
 	AActor* AIActor = OwnerComp.GetAIOwner()->GetPawn();
 
+	//Spawns Ball which gets thrown into Goal for Enemy to score.
 	if (BallClass) {
 		UE_LOG(LogTemp, Warning, TEXT("Fire Activated, Ball Class Exists"));
 		FVector SpawnLocation = AIActor->GetActorLocation();

@@ -15,5 +15,6 @@ class GAMEDEV1ASS_API UBTTask_FindRandomPosition : public UBTTask_BlackboardBase
 	GENERATED_BODY()
 	
 protected:
+	//Obtains random location within playable area to ensure Enemies have a higher chance of finding player or Ball.
 	virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
 };

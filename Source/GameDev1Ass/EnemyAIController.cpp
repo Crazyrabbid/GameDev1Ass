@@ -10,11 +10,13 @@
 void AEnemyAIController::OnPossess(APawn* InPawn){
 	Super::OnPossess(InPawn);
 
+	//Grabs References to Player and Ball
 	APawn* PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
 	GameModeRef = Cast<AGameDev1AssGameModeBase>(UGameplayStatics::GetGameMode(GetWorld()));
 	ABall* BallPawn = NULL;
 	if(GameModeRef) BallPawn = GameModeRef->inPlayBall;
 
+	//Grabs References to important locations within map.
 	UGameplayStatics::GetAllActorsOfClass(GetWorld(), ATargetPoint::StaticClass(), Waypoints);
 	for (AActor* Waypoint : Waypoints) {
 		if (Waypoint->ActorHasTag(TEXT("LookOut"))) LookOutPoint = Waypoint; 
@@ -22,6 +24,7 @@ void AEnemyAIController::OnPossess(APawn* InPawn){
 		else if (Waypoint->ActorHasTag(TEXT("AIScorePosition"))) ScorePoint = Waypoint;
 	}
 	
+	//Fills in Blackboard locations using references Gathered.
 	if(BT_EnemyAI != NULL) RunBehaviorTree(BT_EnemyAI);
 	if (HomePoint != NULL) GetBlackboardComponent()->SetValueAsVector(TEXT("HomePosition"), HomePoint->GetActorLocation());
 	if (LookOutPoint != NULL) GetBlackboardComponent()->SetValueAsVector(TEXT("LookOutPosition"), LookOutPoint->GetActorLocation());

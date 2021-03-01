@@ -16,9 +16,10 @@ class GAMEDEV1ASS_API UBTService_UpdatePlayAllowed : public UBTService_Blackboar
 	GENERATED_BODY()
 
 protected:
+	//Grabs if Enemies can move from AGameDevAss1GameMode class.
 	virtual void TickNode(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds) override;
 private:
 	UPROPERTY()
-		AGameDev1AssGameModeBase* GameModeRef;
+		AGameDev1AssGameModeBase* GameModeRef;	
 };
 

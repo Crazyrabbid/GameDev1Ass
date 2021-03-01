@@ -9,6 +9,7 @@
  EBTNodeResult::Type UBTTask_FindRandomPosition::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory){
 	 Super::ExecuteTask(OwnerComp, NodeMemory);
 
+	 //Ensures function only works when EnemyAiController is active.
 	 if (OwnerComp.GetAIOwner() == nullptr) {
 		 return EBTNodeResult::Failed;
 	 }
@@ -18,6 +19,7 @@
 	 float RandomRadius = 2000.0f;
 	 FNavLocation RandomLocation;
 
+	 //Obtains random location within playable area to ensure Enemies have a higher chance of finding player or Ball.
 	 UNavigationSystemV1* NavSys = FNavigationSystem::GetCurrent<UNavigationSystemV1>(this);
 	 NavSys->GetRandomReachablePointInRadius(AIActor->GetActorLocation(), RandomRadius, RandomLocation);
 

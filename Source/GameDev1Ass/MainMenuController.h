@@ -15,5 +15,7 @@ class GAMEDEV1ASS_API AMainMenuController : public APlayerController
 	GENERATED_BODY()
 	
 protected:
+
+	//Ensures player can interact with Main Menu.
 	virtual void BeginPlay() override;
 };

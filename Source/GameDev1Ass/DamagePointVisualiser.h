@@ -21,5 +21,5 @@ protected:
 
 private:
 	UPROPERTY(EditAnywhere)
-		UStaticMeshComponent* DamageVisualiserMesh;
+		UStaticMeshComponent* DamageVisualiserMesh;		 //Visual for Player to know where bullet hit.
 };

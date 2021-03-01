@@ -15,5 +15,6 @@ class GAMEDEV1ASS_API UBTService_UpdatePlayerPosition : public UBTService_Blackb
 	GENERATED_BODY()
 	
 protected:
+	//Used to ensure Enemy chases Player when seen.
 	virtual void TickNode(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds) override;
 };

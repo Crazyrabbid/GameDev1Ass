@@ -13,6 +13,7 @@ void AGameDev1AssGameModeBase::BeginPlay() {
 }
 
 void AGameDev1AssGameModeBase::PlayerPointScored() {
+	//Increases Players score. Spawns UI notice and either resets round or continues to end screen if over score threshold.
 	UE_LOG(LogTemp, Warning, TEXT("PlayerPointScored"));
 	playerTeamScore++;
 	BlueTeamScoredCount = CreateWidget(GetWorld(), BlueTeamScoredClass);
@@ -22,6 +23,7 @@ void AGameDev1AssGameModeBase::PlayerPointScored() {
 }
 
 void AGameDev1AssGameModeBase::EnemyPointScored() {
+	//Increases Enemy score. Spawns UI notice and either resets round or continues to end screen if over score threshold.
 	UE_LOG(LogTemp, Warning, TEXT("EnemyPointScored"));
 	enemyTeamScore++;
 	RedTeamScoredCount = CreateWidget(GetWorld(), RedTeamScoredClass);
@@ -31,6 +33,7 @@ void AGameDev1AssGameModeBase::EnemyPointScored() {
 }
 
 void AGameDev1AssGameModeBase::DeleteBall() {
+	//Removes Ball and removes reference to avoid Crash.
 	UE_LOG(LogTemp, Warning, TEXT("DeleteBallCalled "));
 	if (inPlayBall) {
 		UE_LOG(LogTemp, Warning, TEXT("DeleteBallCalled inPlayBallNotNull"));
@@ -41,26 +44,31 @@ void AGameDev1AssGameModeBase::DeleteBall() {
 
 bool AGameDev1AssGameModeBase::GetPlayAllowed()
 {
+	//Used to control if Enemy and Player can move or act.
 	return bPlayAllowed;
 }
 
 bool AGameDev1AssGameModeBase::GetPlayerDead()
 {
+	//Used to stop Player Controller trying to commit actions while Player is dead.
 	return bPlayerDead;
 }
 
 bool AGameDev1AssGameModeBase::GetBallHeld()
 {
+	//Used to stop crash upon Enemy trying to read Ball location when not spawned.
 	return bBallHeld;
 }
 
 void AGameDev1AssGameModeBase::SetBallHeld(bool BallHeld)
 {
+	//Allows Enemy or Player to update if they have the Ball.
 	bBallHeld = BallHeld;
 }
 
 void AGameDev1AssGameModeBase::BeginPlayerRespawnProcess()
 {
+	//Begins timer for Player respawn and initiates visual countdown.
 	bPlayerDead = true;
 	GetWorld()->GetTimerManager().SetTimer(PlayerRespawnTimer, this, &AGameDev1AssGameModeBase::PlayerRespawnTimeUp, PlayerRespawnDuration, false);
 	WarmUpCountdownCount = CreateWidget(GetWorld(), WarmUpCountdownClass);
@@ -69,12 +77,14 @@ void AGameDev1AssGameModeBase::BeginPlayerRespawnProcess()
 
 void AGameDev1AssGameModeBase::BeginEnemyRespawnProcess(AActor* Spawn)
 {
+	//Begins timer for Enemy Respawn.
 	GetWorld()->GetTimerManager().SetTimer(EnemyRespawnTimer, this, &AGameDev1AssGameModeBase::EnemyRespawnTimeUp, EnemyRespawnDuration, false);
 	TempEnemySpawns.Emplace(Spawn);
 }
 
 void AGameDev1AssGameModeBase::PlayerRespawnTimeUp()
 {
+	//Spawns Player in original location and Resets health and ammo.
 	FVector SpawnLocation = PlayerSpawn->GetActorLocation();
 	FRotator SpawnRotation = PlayerSpawn->GetActorRotation();
 	APlayerCharacter* TempPlayer = GetWorld()->SpawnActor<APlayerCharacter>(PlayerClass, SpawnLocation, SpawnRotation);
@@ -86,6 +96,7 @@ void AGameDev1AssGameModeBase::PlayerRespawnTimeUp()
 
 void AGameDev1AssGameModeBase::EnemyRespawnTimeUp()
 {
+	//Spawns Enemy(s) in original location(s).
 	FVector SpawnLocation = TempEnemySpawns.Top()->GetActorLocation();
 	FRotator SpawnRotation = TempEnemySpawns.Top()->GetActorRotation();
 	AEnemyCharacter* TempEnemy = GetWorld()->SpawnActor<AEnemyCharacter>(EnemyClass, SpawnLocation, SpawnRotation);
@@ -100,6 +111,8 @@ void AGameDev1AssGameModeBase::StartGame()
 	UE_LOG(LogTemp, Warning, TEXT("StartGameCalled"));
 	UGameplayStatics::PlaySound2D(GetWorld(), GameBackgroundMusic, BackgroundMusicVolume, 1.0f, 0.0f);
 	PlayerControllerRef = Cast<ACustomPlayerController>(UGameplayStatics::GetPlayerController(GetWorld(), 0));
+
+	//Grabs locations of spawns to feed to RoundBeginSpawning.
 	if (BallClass && EnemyClass && PlayerClass) {
 		UE_LOG(LogTemp, Warning, TEXT("Ball Class Exist"));
 		UGameplayStatics::GetAllActorsOfClass(GetWorld(), ATargetPoint::StaticClass(), Targets);
@@ -116,6 +129,8 @@ void AGameDev1AssGameModeBase::StartGame()
 		}
 		RoundBeginSpawning();
 	}
+
+	//Begins round beginning timer and stops play from happening.
 	bPlayAllowed = false;
 	GetWorld()->GetTimerManager().SetTimer(RoundBeginningTimer, this, &AGameDev1AssGameModeBase::GameBeginningTimeUp, RoundStartDuration, false);
 	WarmUpCountdownCount = CreateWidget(GetWorld(), WarmUpCountdownClass);
@@ -124,6 +139,7 @@ void AGameDev1AssGameModeBase::StartGame()
 
 void AGameDev1AssGameModeBase::RoundBeginSpawning()
 {
+	//Spawns ball faced up in location specified and informs GameMode.
 	if (BallSpawn) {
 		FVector SpawnLocation = BallSpawn->GetActorLocation();
 		FRotator SpawnRotation = FRotator(90.0f,0.0f,0.0f);
@@ -131,7 +147,8 @@ void AGameDev1AssGameModeBase::RoundBeginSpawning()
 		TempBall->SetOwner(this);
 		inPlayBall = TempBall;
 	}
-	
+
+	//Spawns amount of Enemies equal to Target Points tags in locations specified.
 	if (EnemySpawns.Num() != 0) {
 		for (AActor* SpawnPoint : EnemySpawns) {
 			FVector SpawnLocation = SpawnPoint->GetActorLocation();
@@ -140,7 +157,7 @@ void AGameDev1AssGameModeBase::RoundBeginSpawning()
 			TempEnemy->SetSpawnLocationActor(SpawnPoint);
 		}
 	}
-
+	//Spawns Player in location specified.
 	if (PlayerSpawn) {
 		FVector SpawnLocation = PlayerSpawn->GetActorLocation();
 		FRotator SpawnRotation = PlayerSpawn->GetActorRotation();
@@ -151,6 +168,7 @@ void AGameDev1AssGameModeBase::RoundBeginSpawning()
 
 void AGameDev1AssGameModeBase::RoundEndRemovals()
 {
+	//Removes Ball, All Players and Enemies for clean refresh.
 	DeleteBall();
 	UGameplayStatics::GetAllActorsOfClass(GetWorld(), APlayerCharacter::StaticClass(), Targets);
 	for (AActor* player : Targets) {
@@ -163,6 +181,8 @@ void AGameDev1AssGameModeBase::RoundEndRemovals()
 }
 
 void AGameDev1AssGameModeBase::RoundReset() {
+
+	//Cancels or pauses all timers before clearing all actors, respawning them and beginning round start timer.
 	GetWorld()->GetTimerManager().PauseTimer(EndMatchTimer);
 	if (GetWorld()->GetTimerManager().IsTimerActive(PlayerRespawnTimer))GetWorld()->GetTimerManager().ClearTimer(PlayerRespawnTimer);
 	if (GetWorld()->GetTimerManager().IsTimerActive(EnemyRespawnTimer))GetWorld()->GetTimerManager().ClearTimer(EnemyRespawnTimer);
@@ -183,6 +203,7 @@ void AGameDev1AssGameModeBase::RoundReset() {
 
 void AGameDev1AssGameModeBase::TimeUp()
 {
+	//Checks if Player has more score than Enemy and transfers to appropiate victory screen.
 	UE_LOG(LogTemp, Warning, TEXT("TimeUpCalled"));
 	bPlayAllowed = false;
 	if (playerTeamScore > enemyTeamScore) {
@@ -196,6 +217,7 @@ void AGameDev1AssGameModeBase::TimeUp()
 
 void AGameDev1AssGameModeBase::RoundBeginningTimeUp()
 {
+	//Allows Player and Enemy to input actions.
 	GetWorld()->GetTimerManager().UnPauseTimer(EndMatchTimer);
 	bPlayAllowed = true;
 	UE_LOG(LogTemp, Warning, TEXT("Play allowed value %s"), bPlayAllowed ? TEXT("true") : TEXT("false"));
@@ -203,6 +225,7 @@ void AGameDev1AssGameModeBase::RoundBeginningTimeUp()
 
 void AGameDev1AssGameModeBase::GameBeginningTimeUp()
 {
+	//Allows Player and Enemy to input actions.
 	MatchTimerCount = CreateWidget(GetWorld(), MatchTimerClass);
 	bPlayAllowed = true;
 	if (MatchTimerCount) MatchTimerCount->AddToViewport();
@@ -211,6 +234,7 @@ void AGameDev1AssGameModeBase::GameBeginningTimeUp()
 
 FString AGameDev1AssGameModeBase::GetTime()
 {
+	//Used by UI to display acurate time to Player viewport.
 	int timeRemaining = GetWorld()->GetTimerManager().GetTimerRemaining(EndMatchTimer);
 	int minsRemaining = timeRemaining / 60;
 	int secsRemaining = timeRemaining % 60;
@@ -230,6 +254,7 @@ float AGameDev1AssGameModeBase::GetRedScore()
 
 void AGameDev1AssGameModeBase::GameOver(bool win)
 {
+	//Checks win condition and then opens relevant EndScreen.
 	if(GetWorld()->GetTimerManager().TimerExists(EndMatchTimer)) GetWorld()->GetTimerManager().ClearTimer(EndMatchTimer);
 	bPlayAllowed = false;
 	UE_LOG(LogTemp, Warning, TEXT("GameOverCalled"));

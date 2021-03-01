@@ -38,11 +38,13 @@ void AEnemyCharacter::Tick(float DeltaTime)
 
 void AEnemyCharacter::SetSpawnLocationActor(AActor* SpawnLocationActor)
 {
+	//Records spawn location to give to GameMode upon death for respawning.
 	SpawnLocation = SpawnLocationActor;
 }
 
 void AEnemyCharacter::PickUpBall()
 {
+	//Deletes Ball and possesses it.
 	bBallHeld = true;
 	GameModeRef->DeleteBall();
 	GameModeRef->SetBallHeld(true);
@@ -50,11 +52,13 @@ void AEnemyCharacter::PickUpBall()
 
 bool AEnemyCharacter::BallHeld()
 {
+	//Returns Ball Held to allow Enemy to head to Player goal and score.
 	return bBallHeld;
 }
 
 void AEnemyCharacter::BallDropped()
 {
+	//Spawns ball pointed down upon death and notifys.
 	if (BallClass) {
 		UE_LOG(LogTemp, Warning, TEXT("Fire Activated, Ball Class Exists"));
 		FVector BallSpawnLocation = GetActorLocation();
@@ -71,8 +75,10 @@ void AEnemyCharacter::BallDropped()
 }
 
 float AEnemyCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) {
-	health -= DamageAmount;
-	if (health <= 0) {
+	Health -= DamageAmount;
+
+	//Drops Ball and updates Game mode upon death. Also activates respawn timer.
+	if (Health <= 0) {
 		GameModeRef->BeginEnemyRespawnProcess(SpawnLocation);
 		if (bBallHeld) {
 			BallDropped();

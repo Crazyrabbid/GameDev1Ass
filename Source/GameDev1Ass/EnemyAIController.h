@@ -19,17 +19,17 @@ protected:
 
 private:
 	UPROPERTY()
-		TArray<AActor*> Waypoints;
+		TArray<AActor*> Waypoints;						//Stores all TargetPoints from Map to sort through.
 	UPROPERTY(EditAnywhere)
-		UBehaviorTree* BT_EnemyAI;
+		UBehaviorTree* BT_EnemyAI;					    //Behaviour tree for Enemy to run.
 	UPROPERTY()
-		AGameDev1AssGameModeBase* GameModeRef;
+		AGameDev1AssGameModeBase* GameModeRef;			//Used to grab reference to Ball.
 public:
 	UPROPERTY()
-		AActor* LookOutPoint;
+		AActor* LookOutPoint;							//Location for Enemy to navigate to.
 	UPROPERTY()
-		AActor* HomePoint;
+		AActor* HomePoint;								//Location for Enemy to navigate to.
 	UPROPERTY()
-		AActor* ScorePoint;
+		AActor* ScorePoint;								//Location for Enemy to throw ball from.
 
 };

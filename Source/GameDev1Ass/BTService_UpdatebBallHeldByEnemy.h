@@ -15,5 +15,6 @@ class GAMEDEV1ASS_API UBTService_UpdatebBallHeldByEnemy : public UBTService_Blac
 	GENERATED_BODY()
 
 protected:
+	//Checks if Enemy has Ball to allow them to head to player goal and try and score.
 	virtual void TickNode(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds) override;
 };

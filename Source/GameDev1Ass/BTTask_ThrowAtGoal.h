@@ -17,11 +17,12 @@ class GAMEDEV1ASS_API UBTTask_ThrowAtGoal : public UBTTask_RunBehavior
 	GENERATED_BODY()
 	
 protected:
+	//Spawns Ball which gets thrown into Goal for Enemy to score.
 	virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
 
 private:
 	UPROPERTY()
-		AGameDev1AssGameModeBase* GameModeRef;
-	UPROPERTY(EditAnywhere) TSubclassOf<ABall> BallClass;
+		AGameDev1AssGameModeBase* GameModeRef;					  //Reference to GameMode to notify that Ball has been scored.
+	UPROPERTY(EditAnywhere) TSubclassOf<ABall> BallClass;		  //Reference to Ball class to spawn it.
 
 };

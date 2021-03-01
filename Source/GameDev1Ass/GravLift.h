@@ -26,19 +26,21 @@ public:
 	virtual void Tick(float DeltaTime) override;
 	
 	UPROPERTY()
-		ACustomPlayerController* playerController;
+		ACustomPlayerController* playerController;	   //Used to call Player lift function to create a similar effect to impulse.
 private:
-	UFUNCTION() 
+
+	//Applies force to objects that enters and calls function on player to provide similar effect.
+	UFUNCTION()
 		void OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 
 	UPROPERTY(EditAnywhere)
-		UStaticMeshComponent* GravLiftMesh;
+		UStaticMeshComponent* GravLiftMesh;			  
 	UPROPERTY(EditAnywhere)
-		UBoxComponent* CollisionBox;
+		UBoxComponent* CollisionBox;				   
 	UPROPERTY(EditAnywhere)
-		USceneComponent* ForceOriginPoint;
+		USceneComponent* ForceOriginPoint;			   //Position to enact force from.
 	UPROPERTY(EditAnywhere)
-		float forceRadius = 100.0f;
+		float forceRadius = 100.0f;					   //Adjustable area that force should apply
 	UPROPERTY(EditAnywhere)
-		float forceStrength = 100.0f;
+		float forceStrength = 100.0f;				   //Adjustable strength of force applied
 };

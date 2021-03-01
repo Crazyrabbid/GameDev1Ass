@@ -7,6 +7,7 @@
 void AEndLevelGameMode::BeginPlay() {
 	Super::BeginPlay();
 
+	//Recieves Player and Enemy positions to spawn and Begins screen timer.
 	UGameplayStatics::GetAllActorsOfClass(GetWorld(), ATargetPoint::StaticClass(), Targets);
 	for (AActor* Waypoint : Targets) {
 		if (Waypoint->ActorHasTag(TEXT("PlayerWinSpawn"))) {
@@ -31,6 +32,7 @@ void AEndLevelGameMode::BeginPlay() {
 
 void AEndLevelGameMode::SpawnBasedOnVictory()
 {
+	//Spawns Player or Enemy in each position depending on tag.
 	if (GetWorld()->GetName() == (TEXT("EndScreenWin"))) {
 		if (PlayerWinSpawn) {
 			FVector SpawnLocation = PlayerWinSpawn->GetActorLocation();
@@ -65,6 +67,7 @@ void AEndLevelGameMode::SpawnBasedOnVictory()
 
 void AEndLevelGameMode::TimeUp()
 {
+	//Switches screen to main menu.
 	UE_LOG(LogTemp, Warning, TEXT("TimeUpCalled"));
 	if (GetWorld()->GetTimerManager().TimerExists(GameOverTimer)) GetWorld()->GetTimerManager().ClearTimer(GameOverTimer);
 	UGameplayStatics::OpenLevel(GetWorld(), "StartMenu");

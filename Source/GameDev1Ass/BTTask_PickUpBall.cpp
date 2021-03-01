@@ -7,7 +7,11 @@
 
 EBTNodeResult::Type UBTTask_PickUpBall::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) {
 	Super::ExecuteTask(OwnerComp, NodeMemory);
+
+	//Ensures function only runs on level with Ball.
 	if (GetWorld()->GetName() == (TEXT("ArenaLevel"))) {
+
+		//Grabs if Enemy has Ball so they can head to Player goal and score.
 		AEnemyCharacter* EnemyCharacter = Cast<AEnemyCharacter>(OwnerComp.GetAIOwner()->GetCharacter());
 		if (EnemyCharacter) EnemyCharacter->PickUpBall();
 		return EBTNodeResult::Succeeded;
