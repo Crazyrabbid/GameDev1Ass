@@ -106,6 +106,10 @@ private:
 	UFUNCTION()
 		void EnemyRespawnTimeUp();
 
+	//Cleans up unwanted actors.
+	UFUNCTION()
+		void CleanUpTimeUp();
+
 	//Used by UI to display acurate time to Player viewport.
 	UFUNCTION(BlueprintPure)
 		FString GetTime();
@@ -128,6 +132,9 @@ private:
 	UPROPERTY() AActor* PlayerSpawn;					  //Position and Rotation for spawning Player.
 	UPROPERTY() TArray<AActor*> TempEnemySpawns;		  //Stores positions and rotations of all Enemy spawns within Level for flitering.
 	UPROPERTY() TArray<AActor*> EnemySpawns;			  //Position and Rotation for spawning Enemies.
+
+	UPROPERTY() TArray<AActor*> BallCleanup;				  //Stores positions and rotations of all balls within Level for flitering.
+	UPROPERTY() TArray<AActor*> EnemyCleanup;				  //Stores positions and rotations of all enemy within Level for flitering.
 
 	UPROPERTY(EditAnywhere) TSubclassOf<UUserWidget> BlueTeamScoredClass;		  //Blueprint to create and attach Blue Scored Notice to viewport.
 	UPROPERTY() UUserWidget* BlueTeamScoredCount;								  //Monitors UI from Inception and is used as an interface to the UI.
@@ -156,6 +163,8 @@ private:
 	UPROPERTY(EditAnywhere) float PlayerRespawnDuration = 3.0f;				//Adjustable time it takes to respawn player.
 	UPROPERTY() FTimerHandle EnemyRespawnTimer;								//Handle for enemy respawn timer.
 	UPROPERTY(EditAnywhere) float EnemyRespawnDuration = 3.0f;				//Adjustable time it takes to respawn enemy.
+	UPROPERTY() FTimerHandle CleanupTimer;									//Handle for cleanup timer.
+	UPROPERTY(EditAnywhere) float CleanupDuration = 0.5f;					//Adjustable time it takes between Cleanups.
 
 	UPROPERTY() bool bPlayAllowed = false;			  //Overriding Bool to stop Player and Enemy interacting during Warmup.
 	UPROPERTY() bool bPlayerDead = false;			  //Overriding Bool to stop Player interacting when dead.

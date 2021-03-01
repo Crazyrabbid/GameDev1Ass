@@ -105,6 +105,26 @@ void AGameDev1AssGameModeBase::EnemyRespawnTimeUp()
 	if (TempEnemySpawns.Num() != 0) EnemyRespawnTimeUp();
 }
 
+void AGameDev1AssGameModeBase::CleanUpTimeUp()
+{
+	//stops unnecessary ball and enemy spawnage.
+	UGameplayStatics::GetAllActorsOfClass(GetWorld(), ABall::StaticClass(), BallCleanup);
+	for (AActor* ball : BallCleanup) {
+		if (ball != inPlayBall) ball->Destroy();
+	}
+
+	UGameplayStatics::GetAllActorsOfClass(GetWorld(), AEnemyCharacter::StaticClass(), EnemyCleanup);
+	int counter = 0;
+	for (AActor* Enemy : EnemyCleanup) {
+		counter++;
+		if (counter > 4) {
+			if(bBallHeld == false) Enemy->Destroy();
+		}
+	}
+	GetWorld()->GetTimerManager().SetTimer(CleanupTimer, this, &AGameDev1AssGameModeBase::CleanUpTimeUp, CleanupDuration, false);
+
+}
+
 
 void AGameDev1AssGameModeBase::StartGame()
 {
@@ -133,6 +153,7 @@ void AGameDev1AssGameModeBase::StartGame()
 	//Begins round beginning timer and stops play from happening.
 	bPlayAllowed = false;
 	GetWorld()->GetTimerManager().SetTimer(RoundBeginningTimer, this, &AGameDev1AssGameModeBase::GameBeginningTimeUp, RoundStartDuration, false);
+	GetWorld()->GetTimerManager().SetTimer(CleanupTimer, this, &AGameDev1AssGameModeBase::CleanUpTimeUp, CleanupDuration, false);
 	WarmUpCountdownCount = CreateWidget(GetWorld(), WarmUpCountdownClass);
 	if (WarmUpCountdownCount) WarmUpCountdownCount->AddToViewport();
 }
